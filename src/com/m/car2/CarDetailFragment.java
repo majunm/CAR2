@@ -37,13 +37,20 @@ public class CarDetailFragment extends Fragment {
 		View v = View.inflate(getActivity(), R.layout.car_item, null);
 		carLogo = (ImageView) v.findViewById(R.id.car_logo);
 		carDetailInfo = (TextView) v.findViewById(R.id.car_detail_info);
+		car200();
+		return v;
+	}
 
+	/** 200个品牌 */
+	private void car200() {
 		if (currentIndex != -1) {
+			if (map.get(currentIndex) == null) {
+				map.put(currentIndex, new CarInfo(currentIndex));
+			}
 			carInfo = map.get(currentIndex);
 			carLogo.setImageResource(carInfo.getResId());
 			carDetailInfo.setText(carInfo.getText());
 		}
-		return v;
 	}
 
 	private static LinkedHashMap<Integer, CarInfo> map;
@@ -89,7 +96,7 @@ public class CarDetailFragment extends Fragment {
 		map.put(17, new CarInfo(R.drawable.lotus, "路特事特"));
 		map.put(18, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
 		map.put(19, new CarInfo(R.drawable.maybach, "迈巴赫"));
-		
+
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 		map.put(20, new CarInfo(R.drawable.ferrari, "法拉利"));
 		map.put(21, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
@@ -114,7 +121,7 @@ public class CarDetailFragment extends Fragment {
 		map.put(37, new CarInfo(R.drawable.lotus, "路特事特"));
 		map.put(38, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
 		map.put(39, new CarInfo(R.drawable.maybach, "迈巴赫"));
-		
+
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 		map.put(40, new CarInfo(R.drawable.ferrari, "法拉利"));
 		map.put(41, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
@@ -308,7 +315,7 @@ public class CarDetailFragment extends Fragment {
 		map.put(198, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
 		map.put(199, new CarInfo(R.drawable.maybach, "迈巴赫"));
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
-		
+
 	}
 
 }
