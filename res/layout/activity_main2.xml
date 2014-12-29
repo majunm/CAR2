@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#556677"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/mini_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/mini_previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/mini_status_selector"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/previous_normal"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/mini_previous"
+            android:textColor="@color/mini_green"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/mini_classify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/mini_status_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_normal"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/mini_classify"
+            android:textColor="@color/mini_green"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/mini_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/mini_status_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/next_normal"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/mini_next"
+            android:textColor="@color/mini_green"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+</LinearLayout>
