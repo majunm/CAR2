@@ -65,6 +65,7 @@ public class CarDetailFragment extends Fragment {
 	private CarInfo carInfo;
 	static {
 		map = new LinkedHashMap<Integer, CarInfo>();
+		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 		map.put(0, new CarInfo(R.drawable.ferrari, "法拉利"));
 		map.put(1, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
 		map.put(2, new CarInfo(R.drawable.lotus, "路特事特"));
@@ -113,7 +114,7 @@ public class CarDetailFragment extends Fragment {
 		map.put(37, new CarInfo(R.drawable.lotus, "路特事特"));
 		map.put(38, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
 		map.put(39, new CarInfo(R.drawable.maybach, "迈巴赫"));
-		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
+		
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 		map.put(40, new CarInfo(R.drawable.ferrari, "法拉利"));
 		map.put(41, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
