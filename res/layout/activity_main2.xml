@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#556677"
+    android:background="#F4F5F7"
     android:orientation="vertical" >
 
     <android.support.v4.view.ViewPager
@@ -24,43 +24,40 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:background="@drawable/mini_status_selector"
+            android:background="@drawable/car_home_page"
             android:button="@null"
             android:checked="true"
-            android:drawableTop="@drawable/previous_normal"
             android:gravity="center"
             android:paddingBottom="5dp"
             android:text="@string/mini_previous"
-            android:textColor="@color/mini_green"
-            android:textSize="15sp" />
+            android:textColor="@color/mini_color_car"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/mini_classify"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:background="@drawable/mini_status_selector"
+            android:background="@drawable/car_home_page"
             android:button="@null"
-            android:drawableTop="@drawable/classify_normal"
             android:gravity="center"
             android:paddingBottom="5dp"
             android:text="@string/mini_classify"
-            android:textColor="@color/mini_green"
-            android:textSize="15sp" />
+            android:textColor="@color/mini_color_car"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/mini_next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:background="@drawable/mini_status_selector"
+            android:background="@drawable/car_home_page"
             android:button="@null"
-            android:drawableTop="@drawable/next_normal"
             android:gravity="center"
             android:paddingBottom="5dp"
             android:text="@string/mini_next"
-            android:textColor="@color/mini_green"
-            android:textSize="15sp" />
+            android:textColor="@color/mini_color_car"
+            android:textSize="18sp" />
     </RadioGroup>
 
 </LinearLayout>

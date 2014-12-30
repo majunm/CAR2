@@ -8,8 +8,16 @@
         android:id="@+id/car_main_linearlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E6E8E7"
+        android:background="#F4F5F7"
         android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:background="#C3C4C6" />
 
         <ImageView
             android:id="@+id/car_logo"
@@ -17,9 +25,12 @@
             android:layout_height="0dp"
             android:layout_weight="1.0"
             android:contentDescription="@string/car_logo"
-            android:padding="5dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/lamborghini" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -29,37 +40,89 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#556677"
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/car_detail_info"
+                    android:id="@+id/car_english_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
                     android:padding="5dp"
-                    android:text="劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影" />
+                    android:text="Rolls-Royce"
+                    android:textColor="#A3A3A4" />
+
+                <TextView
+                    android:id="@+id/car_china_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="劳斯莱斯"
+                    android:textColor="#A3A3A4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/car_detail_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1.0"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="劳斯莱斯" />
+
+                    <TextView
+                        android:id="@+id/car_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="3.0"
+                        android:background="@drawable/car_name_bg"
+                        android:gravity="center"
+                        android:lineSpacingExtra="1dp"
+                        android:lineSpacingMultiplier="1.0"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影"
+                        android:textColor="@android:color/white"
+                        android:textScaleX="0.9"
+                        android:textSize="15sp" />
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
     <ScrollView
         android:id="@+id/car_story_scroll"
-        android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#556677"
             android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/car_story"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp"
-                android:text="劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影" />
+                android:lineSpacingExtra="1dp"
+                android:lineSpacingMultiplier="1.0"
+                android:padding="8dp"
+                android:text="劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影劳斯莱斯幻影"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.5"
+                android:textSize="15sp" />
         </LinearLayout>
     </ScrollView>
 

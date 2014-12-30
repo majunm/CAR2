@@ -65,6 +65,9 @@ public class CarDetailFragment extends Fragment implements OnClickListener {
 		carStoryScorll = (ScrollView) v.findViewById(R.id.car_story_scroll);
 		carStory = (TextView) v.findViewById(R.id.car_story);
 		mainLayout = (LinearLayout) v.findViewById(R.id.car_main_linearlayout);
+		englishName = (TextView) v.findViewById(R.id.car_english_name);
+		chinaName = (TextView) v.findViewById(R.id.car_china_name);
+		carDescription = (TextView) v.findViewById(R.id.car_detail);
 		registerListener();
 	}
 
@@ -86,6 +89,12 @@ public class CarDetailFragment extends Fragment implements OnClickListener {
 			carInfo = map.get(currentIndex);
 			carLogo.setImageResource(carInfo.getResId());
 			carDetailInfo.setText(carInfo.getText());
+			carDetailInfo.setTextSize(25);
+			carDetailInfo.setSelected(true);
+			carDetailInfo.setTextColor(Color.parseColor("#74DCFF"));
+			englishName.setText("Rolls-Royce");
+			chinaName.setText("劳斯莱斯");
+			carDescription.setText("劳斯莱斯以一个“贵族化”的汽车公司享誉全球，同时也是目前世界三大航空发动机生产商之一。");
 		}
 	}
 
@@ -198,11 +207,15 @@ public class CarDetailFragment extends Fragment implements OnClickListener {
 	private void fillStroyContent() {
 		carStory.setText(storyContent);
 		carStory.setTextSize(18);
-		carStory.setTextColor(Color.GREEN);
+		carStory.setTextColor(Color.parseColor("#666869"));
 	}
 
 	public static String PARCELABLE_KEY = "hehe";
 	private CarInfo carInfo;
+	private TextView englishName;
+	private TextView chinaName;
+	/** 汽车简介 */
+	private TextView carDescription;
 	static {
 		map = new LinkedHashMap<Integer, CarInfo>();
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */

@@ -7,6 +7,24 @@ public class CarInfo implements Parcelable {
 	public int resId;
 	public String text;
 	public String story;
+	public String englishName;
+	public String chinaName;
+	
+	public String getEnglishName() {
+		return englishName;
+	}
+
+	public void setEnglishName(String englishName) {
+		this.englishName = englishName;
+	}
+
+	public String getChinaName() {
+		return chinaName;
+	}
+
+	public void setChinaName(String chinaName) {
+		this.chinaName = chinaName;
+	}
 
 	public String getStory() {
 		return story;
@@ -899,4 +917,24 @@ public class CarInfo implements Parcelable {
 			break;
 		}
 	}
+
+	public CarInfo(int resId, String text, String englishName, String chinaName) {
+		super();
+		this.resId = resId;
+		this.text = text;
+		this.englishName = englishName;
+		this.chinaName = chinaName;
+	}
+
+	public CarInfo(int resId, String text, String story, String englishName,
+			String chinaName) {
+		super();
+		this.resId = resId;
+		this.text = text;
+		this.story = story;
+		this.englishName = englishName;
+		this.chinaName = chinaName;
+	}
+	
+	
 }
