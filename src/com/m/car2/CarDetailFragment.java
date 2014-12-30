@@ -1,8 +1,6 @@
 package com.m.car2;
 
-import java.io.IOException;
 import java.util.LinkedHashMap;
-import java.util.Properties;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

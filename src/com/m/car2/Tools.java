@@ -2,6 +2,9 @@ package com.m.car2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,7 +23,11 @@ public class Tools {
 				sb.append(result);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			Writer writer = new StringWriter();
+			PrintWriter pw = new PrintWriter(writer);
+			e.printStackTrace(pw);
+			pw.close();
+			sb.append(writer.toString());
 		}
 		Log.e("car", "sb.toString()=" + sb.toString());
 		return sb.toString();
