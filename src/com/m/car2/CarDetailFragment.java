@@ -1,16 +1,30 @@
 package com.m.car2;
 
+import java.io.IOException;
 import java.util.LinkedHashMap;
+import java.util.Properties;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class CarDetailFragment extends Fragment {
+public class CarDetailFragment extends Fragment implements OnClickListener {
 	/** 车的logo显示 */
 	private ImageView carLogo;
 	/** 详情介绍 */
@@ -34,11 +48,35 @@ public class CarDetailFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		View v = init();
+		return v;
+	}
+
+	/** 初始化 */
+	private View init() {
 		View v = View.inflate(getActivity(), R.layout.car_item, null);
-		carLogo = (ImageView) v.findViewById(R.id.car_logo);
-		carDetailInfo = (TextView) v.findViewById(R.id.car_detail_info);
+		findView(v);
 		car200();
 		return v;
+	}
+
+	/** 初始化控件 */
+	private void findView(View v) {
+		carLogo = (ImageView) v.findViewById(R.id.car_logo);
+		carDetailInfo = (TextView) v.findViewById(R.id.car_detail_info);
+		carStoryScorll = (ScrollView) v.findViewById(R.id.car_story_scroll);
+		carStory = (TextView) v.findViewById(R.id.car_story);
+		mainLayout = (LinearLayout) v.findViewById(R.id.car_main_linearlayout);
+		registerListener();
+	}
+
+	/** 注册监听 */
+	private void registerListener() {
+		carStory.setOnClickListener(this);
+		carStoryScorll.setOnClickListener(this);
+		mainLayout.setOnClickListener(this);
+		carLogo.setOnClickListener(this);
+		carDetailInfo.setOnClickListener(this);
 	}
 
 	/** 200个品牌 */
@@ -68,30 +106,127 @@ public class CarDetailFragment extends Fragment {
 		return f;
 	}
 
+	private Interpolator accelerator = new AccelerateInterpolator();
+	private Interpolator decelerator = new DecelerateInterpolator();
+	private ScrollView carStoryScorll;
+	private TextView carStory;
+	private LinearLayout mainLayout;
+	/** 故事内容 */
+	private String storyContent = null;
+
+	private void flip(final int position) {
+		runAnim(position);
+	}
+
+	/** 执行动画 */
+	private void runAnim(final int position) {
+		final View visibleView;
+		final View invisibleView;
+		if (mainLayout.getVisibility() == View.GONE) {
+			visibleView = carStoryScorll;
+			invisibleView = mainLayout;
+		} else {
+			visibleView = mainLayout;
+			invisibleView = carStoryScorll;
+		}
+		ObjectAnimator visToInvis = ObjectAnimator.ofFloat(visibleView, "rotationY", 0f,
+				90f);
+		visToInvis.setDuration(500);
+		visToInvis.setInterpolator(accelerator);
+		final ObjectAnimator invisToVis = ObjectAnimator.ofFloat(invisibleView,
+				"rotationY", -90f, 0f);
+		invisToVis.setDuration(500);
+		invisToVis.setInterpolator(decelerator);
+		visToInvis.addListener(new AnimatorListenerAdapter() {
+			@Override
+			public void onAnimationEnd(Animator anim) {
+				visibleView.setVisibility(View.GONE);
+				invisToVis.start();
+				invisibleView.setVisibility(View.VISIBLE);
+				if (carStoryScorll.getVisibility() == View.VISIBLE) {
+					try {
+						if (storyContent == null) {
+							Tools.showProgressDialog(getActivity(), "正在加载....");
+							new Thread() {
+								public void run() {
+									storyContent = Tools.loadData(getActivity(),
+											position % 15);
+									mHandler.sendEmptyMessage(0);
+								}
+							}.start();
+						} else {
+							fillStroyContent();
+						}
+
+					} catch (Exception e) {
+						e.printStackTrace();
+						carStory.setText("--");
+					}
+				}
+			}
+		});
+		visToInvis.start();
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.car_story:
+		case R.id.car_story_scroll:
+		case R.id.car_main_linearlayout:
+		case R.id.car_logo:
+		case R.id.car_detail_info:
+			flip(currentIndex);
+			break;
+		}
+	}
+
+	private Handler mHandler = new Handler() {
+
+		@Override
+		public void handleMessage(Message msg) {
+			Tools.dismissProgressDialog();
+			super.handleMessage(msg);
+			switch (msg.what) {
+			case 0:
+				fillStroyContent();
+				break;
+			default:
+				break;
+			}
+		}
+	};
+
+	private void fillStroyContent() {
+		carStory.setText(storyContent);
+		carStory.setTextSize(18);
+		carStory.setTextColor(Color.GREEN);
+	}
+
 	public static String PARCELABLE_KEY = "hehe";
 	private CarInfo carInfo;
 	static {
 		map = new LinkedHashMap<Integer, CarInfo>();
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
-		map.put(0, new CarInfo(R.drawable.ferrari, "法拉利"));
-		map.put(1, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
-		map.put(2, new CarInfo(R.drawable.lotus, "路特事特"));
-		map.put(3, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
+		map.put(0, new CarInfo(R.drawable.rolls_royce, "劳斯莱斯"));
+		map.put(1, new CarInfo(R.drawable.porsche, "保时捷"));
+		map.put(2, new CarInfo(R.drawable.lotus, "路特斯"));
+		map.put(3, new CarInfo(R.drawable.malassas, "马萨拉蒂"));
 		map.put(4, new CarInfo(R.drawable.maybach, "迈巴赫"));
 
 		map.put(5, new CarInfo(R.drawable.ferrari, "法拉利"));
 		map.put(6, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
-		map.put(7, new CarInfo(R.drawable.lotus, "路特事特"));
-		map.put(8, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
-		map.put(9, new CarInfo(R.drawable.maybach, "迈巴赫"));
+		map.put(7, new CarInfo(R.drawable.audi, "奥迪"));
+		map.put(8, new CarInfo(R.drawable.bmw, "宝马"));
+		map.put(9, new CarInfo(R.drawable.bentley, "宾利"));
 
-		map.put(10, new CarInfo(R.drawable.ferrari, "法拉利"));
-		map.put(11, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
-		map.put(12, new CarInfo(R.drawable.lotus, "路特事特"));
-		map.put(13, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
-		map.put(14, new CarInfo(R.drawable.maybach, "迈巴赫"));
+		map.put(10, new CarInfo(R.drawable.volvo, "沃尔沃"));
+		map.put(11, new CarInfo(R.drawable.landrover, "路虎"));
+		map.put(12, new CarInfo(R.drawable.jaguar, "捷豹"));
+		map.put(13, new CarInfo(R.drawable.jeep, "吉普"));
+		map.put(14, new CarInfo(R.drawable.benz, "奔驰"));
 
-		map.put(15, new CarInfo(R.drawable.ferrari, "法拉利"));
+		map.put(15, new CarInfo(R.drawable.maybach, "迈巴赫"));
 		map.put(16, new CarInfo(R.drawable.lamborghini, "兰博基尼"));
 		map.put(17, new CarInfo(R.drawable.lotus, "路特事特"));
 		map.put(18, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
@@ -315,7 +450,6 @@ public class CarDetailFragment extends Fragment {
 		map.put(198, new CarInfo(R.drawable.malassas, "马拉萨蒂"));
 		map.put(199, new CarInfo(R.drawable.maybach, "迈巴赫"));
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
-
 	}
 
 }

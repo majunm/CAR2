@@ -6,6 +6,15 @@ import android.os.Parcelable;
 public class CarInfo implements Parcelable {
 	public int resId;
 	public String text;
+	public String story;
+
+	public String getStory() {
+		return story;
+	}
+
+	public void setStory(String story) {
+		this.story = story;
+	}
 
 	public int getResId() {
 		return resId;
@@ -71,6 +80,7 @@ public class CarInfo implements Parcelable {
 		case 0:
 			this.resId = R.drawable.ferrari;
 			this.text = "·¨À­Àû";
+			this.story = "";
 			break;
 		case 1:
 			this.resId = R.drawable.ferrari;
@@ -889,5 +899,4 @@ public class CarInfo implements Parcelable {
 			break;
 		}
 	}
-
 }
