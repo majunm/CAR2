@@ -9,11 +9,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -85,7 +87,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 	private long firstTime;
 
-	public class MyViewPagerAdapter extends FragmentPagerAdapter {
+	// public class MyViewPagerAdapter extends FragmentPagerAdapter {
+	/** 没用的赶紧销毁,别浪费资源 */
+	public class MyViewPagerAdapter extends FragmentStatePagerAdapter {
 
 		public MyViewPagerAdapter(FragmentManager fm) {
 			super(fm);
@@ -97,18 +101,30 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			// default:
 			// break;
 			// }
-			return CarDetailFragment.newInstance(currentIndex);
+			CarDetailFragment newInstance = CarDetailFragment.newInstance(currentIndex);
+			return newInstance;
+		}
+
+		@Override
+		public Object instantiateItem(ViewGroup container, int position) {
+			CarDetailFragment f = (CarDetailFragment) super.instantiateItem(container,
+					position);
+			return f;
 		}
 
 		@Override
 		public int getCount() {
-			return 200;
+			return 140;
 		}
 
 		// @Override
 		// public CharSequence getPageTitle(int position) {
 		// return titleList.get(position);
 		// }
+		@Override
+		public int getItemPosition(Object object) {
+			return POSITION_NONE;
+		}
 	}
 
 	@Override
