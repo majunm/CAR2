@@ -11,7 +11,7 @@ import android.content.Context;
 import android.util.Log;
 
 public class Tools {
-	/** 获取故事 position 对应品牌 0 = 劳斯莱斯....*/
+	/** 鑾峰彇鏁呬簨 position 瀵瑰簲鍝佺墝 0 = 鍔虫柉鑾辨柉....*/
 	public static String loadData(Context context, int position) {
 		StringBuilder sb = new StringBuilder();
 		try {
@@ -36,7 +36,7 @@ public class Tools {
 	private static ProgressDialog mProgressDialog;
 
 	/**
-	 * 显示ProgressDialog
+	 * 鏄剧ずProgressDialog
 	 * 
 	 * @param context
 	 * @param message
@@ -50,7 +50,7 @@ public class Tools {
 	}
 
 	/**
-	 * 关闭ProgressDialog
+	 * 鍏抽棴ProgressDialog
 	 */
 	public static void dismissProgressDialog() {
 		if (mProgressDialog != null && mProgressDialog.isShowing()) {

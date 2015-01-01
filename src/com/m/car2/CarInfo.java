@@ -69,7 +69,7 @@ public class CarInfo implements Parcelable {
 		this.text = text;
 	}
 
-	/** 200¸öÆû³µÆ·ÅÆ */
+	/** 200ä¸ªæ±½è½¦å“ç‰Œ */
 	public CarInfo(int type) {
 		super();
 		init(type);
@@ -87,7 +87,7 @@ public class CarInfo implements Parcelable {
 	}
 
 	/**
-	 * ĞòÁĞ»¯ÊµÌåÀà
+	 * åºåˆ—åŒ–å®ä½“ç±»
 	 */
 	public static final Parcelable.Creator<CarInfo> CREATOR = new Creator<CarInfo>() {
 		public CarInfo createFromParcel(Parcel source) {
@@ -103,155 +103,155 @@ public class CarInfo implements Parcelable {
 	};
 
 	/** 
-	 *  ÅÅÃû²»·ÖÏÈºó:
-	 *  0 = ÀÍË¹À³Ë¹    = a0
-	 *  1 = ±öÀû            = a1
-	 *  2 = ±£Ê±½İ        = a2
-	 *  3 = ·¨À­Àû        = a3
-	 *  4 = ÂêÉ¯À­µÙ    = a4
-	 *  5 = À¼²©»ùÄá    = a5
-	 *  6 = ±¼³Û            = a6
-	 *  7 = ±¦Âí            = a7
-	 *  8 = Âõ°ÍºÕ        = a7
-	 *  9 = Â·Ë¹ÌØ        = a9
-	 *  10 = °ÂµÏ   = b0
-	 *  11 = º·Âí    = b1
-	 *  12 = Â·»¢   = b2
-	 *  13 = Á«»¨    = b3
-	 *  14 = °¢¶û·¨¡¤ÂŞÃÜÅ·    = b4
-	 *  15 = ¼ªÀû    = b5
-	 *  16 = Ó¢·ÆÄáµÏ    = b6
-	 *  17 = ÁåÄ¾    = b7
-	 *  18 = Ñ©ÌúÁú    = b8
-	 *  19 = ³¤°²    = b9
-	 *  20 = ³¤°²ÉÌÓÃ    = c0
-	 *  21 = Ãû¾ô    = c1
-	 *  22 = ¿ªÈğ   = c2
-	 *  23 = º£Âí    = c3
-	 *  24 = ¶«·ç    = c4
-	 *  25 = ¼ªÀûÈ«ÇòÓ¥    = c5
-	 *  26 = ÈÕ²ú    = c6
-	 *  27 = ·áÌï  = c7
-	 *  28 = Å·±¦    = c8
-	 *  29 = ½İ±ª    = c9
+	 *  æ’åä¸åˆ†å…ˆå:
+	 *  0 = åŠ³æ–¯è±æ–¯    = a0
+	 *  1 = å®¾åˆ©            = a1
+	 *  2 = ä¿æ—¶æ·        = a2
+	 *  3 = æ³•æ‹‰åˆ©        = a3
+	 *  4 = ç›èæ‹‰è’‚    = a4
+	 *  5 = å…°åšåŸºå°¼    = a5
+	 *  6 = å¥”é©°            = a6
+	 *  7 = å®é©¬            = a7
+	 *  8 = è¿ˆå·´èµ«        = a7
+	 *  9 = è·¯æ–¯ç‰¹        = a9
+	 *  10 = å¥¥è¿ª   = b0
+	 *  11 = æ‚é©¬    = b1
+	 *  12 = è·¯è™   = b2
+	 *  13 = è²èŠ±    = b3
+	 *  14 = é˜¿å°”æ³•Â·ç½—å¯†æ¬§    = b4
+	 *  15 = å‰åˆ©    = b5
+	 *  16 = è‹±è²å°¼è¿ª    = b6
+	 *  17 = é“ƒæœ¨    = b7
+	 *  18 = é›ªé“é¾™    = b8
+	 *  19 = é•¿å®‰    = b9
+	 *  20 = é•¿å®‰å•†ç”¨    = c0
+	 *  21 = åçˆµ    = c1
+	 *  22 = å¼€ç‘   = c2
+	 *  23 = æµ·é©¬    = c3
+	 *  24 = ä¸œé£    = c4
+	 *  25 = å‰åˆ©å…¨çƒé¹°    = c5
+	 *  26 = æ—¥äº§    = c6
+	 *  27 = ä¸°ç”°  = c7
+	 *  28 = æ¬§å®    = c8
+	 *  29 = æ·è±¹    = c9
 	 *  
-	 *  30 = ¸£ÌØÒ°Âí    = d0
-	 *  31 = ±ğ¿Ë    = d1
-	 *  32 = ÎÖ¶ûÎÖ  = d2
-	 *  33 = Ë¹¿Â´ï    = d3
-	 *  34 = ÈÙÍş    = d4
-	 *  35 = ¼ªÀûµÛºÀ    = d5
-	 *  36 = Ó¢Â×    = d6
-	 *  37 = Èğ÷è  = d7
-	 *  38 = Ë¹°ÍÂ³    = d8
-	 *  39 = Íş÷ë    = d9
+	 *  30 = ç¦ç‰¹é‡é©¬    = d0
+	 *  31 = åˆ«å…‹    = d1
+	 *  32 = æ²ƒå°”æ²ƒ  = d2
+	 *  33 = æ–¯æŸ¯è¾¾    = d3
+	 *  34 = è£å¨    = d4
+	 *  35 = å‰åˆ©å¸è±ª    = d5
+	 *  36 = è‹±ä¼¦    = d6
+	 *  37 = ç‘éº’  = d7
+	 *  38 = æ–¯å·´é²    = d8
+	 *  39 = å¨éºŸ    = d9
 	 *  
-	 *  40 = ±êÖÂ    = e0
-	 *  41 = Æô³½    = e1
-	 *  42 = ±¾Ìï   = e2
+	 *  40 = æ ‡è‡´    = e0
+	 *  41 = å¯è¾°    = e1
+	 *  42 = æœ¬ç”°   = e2
 	 *  43 = GMC  = e3
-	 *  44 = ±¦ÂíMini = e4
-	 *  45 = Âí×Ô´ï    = e5
-	 *  46 = ³¤³Ç   = e6
-	 *  47 = ÀíÄî  = e7
-	 *  48 = ´óÖÚ    = e8
-	 *  49 = Â½·ç   = e9
+	 *  44 = å®é©¬Mini = e4
+	 *  45 = é©¬è‡ªè¾¾    = e5
+	 *  46 = é•¿åŸ   = e6
+	 *  47 = ç†å¿µ  = e7
+	 *  48 = å¤§ä¼—    = e8
+	 *  49 = é™†é£   = e9
 	 *  
-	 *  50 = Ñ©·ğÀ¼    = f0
-	 *  51 = ¸£ÌØ    = f1
-	 *  52 = ÆğÑÇ   = f2
-	 *  53 = Èø²©  = f3
-	 *  54 = »ªÆÕ = f4
-	 *  55 = ÖĞ»ª    = f5
-	 *  56 = ÆæÈğ  = f6
-	 *  57 = °¢Ë¹¶Ù¡¤Âí¶¡  = f7
-	 *  58 = ÏÄÀû    = f8
-	 *  59 = À×¿ËÈøË¹   = f9
+	 *  50 = é›ªä½›å…°    = f0
+	 *  51 = ç¦ç‰¹    = f1
+	 *  52 = èµ·äºš   = f2
+	 *  53 = è¨åš  = f3
+	 *  54 = åæ™® = f4
+	 *  55 = ä¸­å    = f5
+	 *  56 = å¥‡ç‘  = f6
+	 *  57 = é˜¿æ–¯é¡¿Â·é©¬ä¸  = f7
+	 *  58 = å¤åˆ©    = f8
+	 *  59 = é›·å…‹è¨æ–¯   = f9
 	 *  
-	 *  60 = ÏÖ´ú    = g0
-	 *  61 = ¼ª°Â    = g1
-	 *  62 = ·ÆÑÇÌØ   = g2
-	 *  63 = ¿­µÏÀ­¿Ë = g3
-	 *  64 = ±±ÆûÍşÍú = g4
-	 *  65 = ÅÁ¼ÓÄá    = g5
-	 *  66 = Î÷ÑÅÌØ  = g6
-	 *  67 = ÏÖ´úÀÍ¶÷Ë¹  = g7
-	 *  68 = ÖÚÌ©   = g8
-	 *  69 = ¿ËÀ³Ë¹ÀÕ  = g9
+	 *  60 = ç°ä»£    = g0
+	 *  61 = å‰å¥¥    = g1
+	 *  62 = è²äºšç‰¹   = g2
+	 *  63 = å‡¯è¿ªæ‹‰å…‹ = g3
+	 *  64 = åŒ—æ±½å¨æ—º = g4
+	 *  65 = å¸•åŠ å°¼    = g5
+	 *  66 = è¥¿é›…ç‰¹  = g6
+	 *  67 = ç°ä»£åŠ³æ©æ–¯  = g7
+	 *  68 = ä¼—æ³°   = g8
+	 *  69 = å…‹è±æ–¯å‹’  = g9
 	 *  
-	 *  70 = ½­»´    = h0
-	 *  71 = À×Åµ    = h1
-	 *  72 = ¿ÆÄáÈü¿Ë   = h2
-	 *  73 = °Í²©Ë¹ = h3
-	 *  74 = ±¦¿¥ = h4
-	 *  75 = ±±¾©Æû³µ    = h5
-	 *  76 = ±±ÆûÖÆÔì = h6
-	 *  77 = ±¼ÌÚ  = h7
-	 *  78 = ±ÈÑÇµÏ   = h8
-	 *  79 = ²¼¼ÓµÏ  = h9
+	 *  70 = æ±Ÿæ·®    = h0
+	 *  71 = é›·è¯º    = h1
+	 *  72 = ç§‘å°¼èµ›å…‹   = h2
+	 *  73 = å·´åšæ–¯ = h3
+	 *  74 = å®éª = h4
+	 *  75 = åŒ—äº¬æ±½è½¦    = h5
+	 *  76 = åŒ—æ±½åˆ¶é€  = h6
+	 *  77 = å¥”è…¾  = h7
+	 *  78 = æ¯”äºšè¿ª   = h8
+	 *  79 = å¸ƒåŠ è¿ª  = h9
 	 *  
-	 *  80 = ²ıºÓ    = i0
-	 *  81 = ´¨ÆûÒ°Âí    = i1
+	 *  80 = æ˜Œæ²³    = i0
+	 *  81 = å·æ±½é‡é©¬    = i1
 	 *  82 = DS   = i2
-	 *  83 = ´ó·¢ = i3
-	 *  84 = µÀÆæ = i4
-	 *  85 = ¶«ÄÏ    = i5
-	 *  86 = ¸£µÏ = i6
-	 *  87 = ¸£Ìï  = i7
-	 *  88 = ¹ÛÖÂ   = i8
-	 *  89 = ¹ãÆû´«ì÷  = i9
+	 *  83 = å¤§å‘ = i3
+	 *  84 = é“å¥‡ = i4
+	 *  85 = ä¸œå—    = i5
+	 *  86 = ç¦è¿ª = i6
+	 *  87 = ç¦ç”°  = i7
+	 *  88 = è§‚è‡´   = i8
+	 *  89 = å¹¿æ±½ä¼ ç¥º  = i9
 	 * 
-	 *  90 = ¹ş·É    = j0
-	 *  91 = º£¸ñ    = j1
-	 *  92 = ºìÆì   = j2
-	 *  93 = »ªÌ© = j3
-	 *  94 = »Æº£ = j4
-	 *  95 = ¼ªÆÕ    = j5
-	 *  96 = ½­Áå = j6
-	 *  97 = ½ğ±­  = j7
+	 *  90 = å“ˆé£    = j0
+	 *  91 = æµ·æ ¼    = j1
+	 *  92 = çº¢æ——   = j2
+	 *  93 = åæ³° = j3
+	 *  94 = é»„æµ· = j4
+	 *  95 = å‰æ™®    = j5
+	 *  96 = æ±Ÿé“ƒ = j6
+	 *  97 = é‡‘æ¯  = j7
 	 *  98 = AC Schnitzer = j8
-	 *  99 = ÖĞĞË  = j9
+	 *  99 = ä¸­å…´  = j9
 	 *  
-	 *  100 = Íş×ÈÂü    = k0
-	 *  101 = Ë«»·    = k1
-	 *  102 = ÊÀ¾ô   = k2
-	 *  103 = ÈıÁâ = k3
-	 *  104 = Á¦·« = k4
-	 *  105 = ¿¨¶ûÉ­    = k5
-	 *  106 = Ú©¸è = k6
-	 *  107 = Ë¼Ãú  = k7
-	 *  108 = ÁÔ±ª   = k8
-	 *  109 = Ë«Áú  = k9
+	 *  100 = å¨å…¹æ›¼    = k0
+	 *  101 = åŒç¯    = k1
+	 *  102 = ä¸–çˆµ   = k2
+	 *  103 = ä¸‰è± = k3
+	 *  104 = åŠ›å¸† = k4
+	 *  105 = å¡å°”æ£®    = k5
+	 *  106 = è®´æ­Œ = k6
+	 *  107 = æ€é“­  = k7
+	 *  108 = çŒè±¹   = k8
+	 *  109 = åŒé¾™  = k9
 	 *  
 	 *  110 = Gumpert = l0
-	 *  111 = ¹â¸Ô    = l1
-	 *  112 = ¿­°ÛºÕ   = l2
-	 *  113 = ÄÉÖÇ½İ = l3
-	 *  114 = ÁÖ¿Ï = l4
-	 *  115 = Âõ¿­ÂÖ    = l5
-	 *  116 = ÓÀÔ´ = l6
-	 *  117 = ÌÚÊÆ  = l7
+	 *  111 = å…‰å†ˆ    = l1
+	 *  112 = å‡¯ä½°èµ«   = l2
+	 *  113 = çº³æ™ºæ· = l3
+	 *  114 = æ—è‚¯ = l4
+	 *  115 = è¿ˆå‡¯è½®    = l5
+	 *  116 = æ°¸æº = l6
+	 *  117 = è…¾åŠ¿  = l7
 	 *  118 = KTM   = l8
-	 *  119 = ±¼³ÛSmart = l9
+	 *  119 = å¥”é©°Smart = l9
 	 *  
-	 *  120 = Èü¶÷    = m0
-	 *  121 = ÌØË¹À­    = m1
-	 *  122 = Ò»Æû   = m2
-	 *  123 = Å·ÀÊ = m3
-	 *  124 = ¹ş¸¥ = m4
-	 *  125 = ´ïÎ÷ÑÇ    = m5
+	 *  120 = èµ›æ©    = m0
+	 *  121 = ç‰¹æ–¯æ‹‰    = m1
+	 *  122 = ä¸€æ±½   = m2
+	 *  123 = æ¬§æœ— = m3
+	 *  124 = å“ˆå¼— = m4
+	 *  125 = è¾¾è¥¿äºš    = m5
 	 *  126 = Fisker = m6
-	 *  127 = Ö®Åµ = m7
+	 *  127 = ä¹‹è¯º = m7
 	 *  128 = Noble  = m8
-	 *  129 = Ä¦¸ùÆû³µ  = m9
+	 *  129 = æ‘©æ ¹æ±½è½¦  = m9
 	 *  
-	 *  130 = ¾ÅÁúÆû³µ    = n0
-	 *  131 = »ªæë    = n1
-	 *  132 = ºãÌìÆû³µ   = n2
+	 *  130 = ä¹é¾™æ±½è½¦    = n0
+	 *  131 = åéª    = n1
+	 *  132 = æ’å¤©æ±½è½¦   = n2
 	 *  133 = Hennessey = n3
-	 *  134 = ¸£ÆûĞÂÁúÂí = n4
-	 *  135 = ÎÖ¿ËË¹ºÀ¶û    = n5
-	 *  136 = Ë¹ÅÉÀÊ = n6
+	 *  134 = ç¦æ±½æ–°é¾™é©¬ = n4
+	 *  135 = æ²ƒå…‹æ–¯è±ªå°”    = n5
+	 *  136 = æ–¯æ´¾æœ— = n6
 	 *  137 = ----  = n7
 	 *  138 = ----   = n8
 	 *  139 = ----  = n9
@@ -260,306 +260,306 @@ public class CarInfo implements Parcelable {
 		switch (type % 140) {
 		case 0:
 			this.resId = R.drawable.a0;
-			this.text = "ÀÍË¹À³Ë¹";
-			this.chinaName = "ÀÍË¹À³Ë¹";
+			this.text = "åŠ³æ–¯è±æ–¯";
+			this.chinaName = "åŠ³æ–¯è±æ–¯";
 			this.englishName = "Rolls-Royce";
-			this.description = "ÀÍË¹À³Ë¹ÒÔÒ»¸ö¡°¹ó×å»¯¡±µÄÆû³µ¹«Ë¾ÏíÓşÈ«Çò£¬Í¬Ê±Ò²ÊÇÄ¿Ç°ÊÀ½çÈı´óº½¿Õ·¢¶¯»úÉú²úÉÌÖ®Ò»¡£";
+			this.description = "åŠ³æ–¯è±æ–¯ä»¥ä¸€ä¸ªâ€œè´µæ—åŒ–â€çš„æ±½è½¦å…¬å¸äº«èª‰å…¨çƒï¼ŒåŒæ—¶ä¹Ÿæ˜¯ç›®å‰ä¸–ç•Œä¸‰å¤§èˆªç©ºå‘åŠ¨æœºç”Ÿäº§å•†ä¹‹ä¸€ã€‚";
 			break;
 		case 1:
 			this.resId = R.drawable.a1;
-			this.text = "±öÀû";
-			this.chinaName = "±öÀû";
+			this.text = "å®¾åˆ©";
+			this.chinaName = "å®¾åˆ©";
 			this.englishName = "Bentley";
 			this.description = "";
 			break;
 		case 2:
 			this.resId = R.drawable.a2;
-			this.text = "±£Ê±½İ";
-			this.chinaName = "±£Ê±½İ";
+			this.text = "ä¿æ—¶æ·";
+			this.chinaName = "ä¿æ—¶æ·";
 			this.englishName = "Porsche";
 			this.description = "";
 			break;
 		case 3:
 			this.resId = R.drawable.a3;
-			this.text = "·¨À­Àû";
-			this.chinaName = "·¨À­Àû";
+			this.text = "æ³•æ‹‰åˆ©";
+			this.chinaName = "æ³•æ‹‰åˆ©";
 			this.englishName = "Ferrari";
 			this.description = "";
 			break;
 		case 4:
 			this.resId = R.drawable.a4;
-			this.text = "ÂêÉ¯À­µÙ";
-			this.chinaName = "ÂêÉ¯À­µÙ";
+			this.text = "ç›èæ‹‰è’‚";
+			this.chinaName = "ç›èæ‹‰è’‚";
 			this.englishName = "Maserati";
 			this.description = "";
 			break;
 		case 5:
 			this.resId = R.drawable.a5;
-			this.text = "À¼²©»ùÄá";
-			this.chinaName = "À¼²©»ùÄá";
+			this.text = "å…°åšåŸºå°¼";
+			this.chinaName = "å…°åšåŸºå°¼";
 			this.englishName = "Lamborghini";
 			this.description = "";
 			break;
 		case 6:
 			this.resId = R.drawable.a6;
-			this.text = "±¼³Û";
-			this.chinaName = "±¼³Û";
+			this.text = "å¥”é©°";
+			this.chinaName = "å¥”é©°";
 			this.englishName = "Benz";
 			this.description = "";
 			break;
 		case 7:
 			this.resId = R.drawable.a7;
-			this.text = "±¦Âí";
-			this.chinaName = "±¦Âí";
+			this.text = "å®é©¬";
+			this.chinaName = "å®é©¬";
 			this.englishName = "BMW";
 			this.description = "";
 			break;
 		case 8:
 			this.resId = R.drawable.a8;
-			this.text = "Âõ°ÍºÕ";
-			this.chinaName = "Âõ°ÍºÕ";
+			this.text = "è¿ˆå·´èµ«";
+			this.chinaName = "è¿ˆå·´èµ«";
 			this.englishName = "Maybach";
 			this.description = "";
 			break;
 		case 9:
 			this.resId = R.drawable.a9;
-			this.text = "Â·Ë¹ÌØ";
-			this.chinaName = "Â·Ë¹ÌØ";
+			this.text = "è·¯æ–¯ç‰¹";
+			this.chinaName = "è·¯æ–¯ç‰¹";
 			this.englishName = "Lotusnyo";
 			this.description = "";
 			break;
 		case 10:
 			this.resId = R.drawable.b0;
-			this.text = "°ÂµÏ";
-			this.chinaName = "°ÂµÏ";
+			this.text = "å¥¥è¿ª";
+			this.chinaName = "å¥¥è¿ª";
 			this.englishName = "Audi";
 			this.description = "";
 			break;
 		case 11:
 			this.resId = R.drawable.b1;
-			this.text = "º·Âí";
-			this.chinaName = "º·Âí";
+			this.text = "æ‚é©¬";
+			this.chinaName = "æ‚é©¬";
 			this.englishName = "HUMMER";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 12:
 			this.resId = R.drawable.b2;
-			this.text = "Â·»¢";
-			this.chinaName = "Â·»¢";
+			this.text = "è·¯è™";
+			this.chinaName = "è·¯è™";
 			this.englishName = "Land Rover";
 			this.description = "";
 			break;
 		case 13:
 			this.resId = R.drawable.b3;
-			this.text = "Á«»¨";
-			this.chinaName = "Á«»¨";
+			this.text = "è²èŠ±";
+			this.chinaName = "è²èŠ±";
 			this.englishName = "LianHua";
 			this.description = "";
 			break;
 		case 14:
 			this.resId = R.drawable.b4;
-			this.text = "°¢¶û·¨¡¤ÂŞÃÜÅ·";
-			this.chinaName = "°¢¶û·¨¡¤ÂŞÃÜÅ·";
+			this.text = "é˜¿å°”æ³•Â·ç½—å¯†æ¬§";
+			this.chinaName = "é˜¿å°”æ³•Â·ç½—å¯†æ¬§";
 			this.englishName = "Alfa Romeo";
 			this.description = "";
 			break;
 		case 15:
 			this.resId = R.drawable.b5;
-			this.text = "¼ªÀû";
-			this.chinaName = "¼ªÀû";
+			this.text = "å‰åˆ©";
+			this.chinaName = "å‰åˆ©";
 			this.englishName = "GEELY";
 			this.description = "";
 			break;
 		case 16:
 			this.resId = R.drawable.b6;
-			this.text = "Ó¢·ÆÄáµÏ";
-			this.chinaName = "Ó¢·ÆÄáµÏ";
+			this.text = "è‹±è²å°¼è¿ª";
+			this.chinaName = "è‹±è²å°¼è¿ª";
 			this.englishName = "INFINITI";
 			this.description = "";
 			break;
 		case 17:
 			this.resId = R.drawable.b7;
-			this.text = "ÁåÄ¾";
-			this.chinaName = "ÁåÄ¾";
+			this.text = "é“ƒæœ¨";
+			this.chinaName = "é“ƒæœ¨";
 			this.englishName = "SUZUKI";
 			this.description = "";
 			break;
 		case 18:
 			this.resId = R.drawable.b8;
-			this.text = "Ñ©ÌúÁú";
-			this.chinaName = "Ñ©ÌúÁú";
+			this.text = "é›ªé“é¾™";
+			this.chinaName = "é›ªé“é¾™";
 			this.englishName = "CITROEN";
 			this.description = "";
 			break;
 		case 19:
 			this.resId = R.drawable.b9;
-			this.text = "³¤°²";
-			this.chinaName = "³¤°²";
+			this.text = "é•¿å®‰";
+			this.chinaName = "é•¿å®‰";
 			this.englishName = "CHANGAN";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 20:
 			this.resId = R.drawable.c0;
-			this.text = "³¤°²ÉÌÓÃ";
-			this.chinaName = "³¤°²ÉÌÓÃ";
+			this.text = "é•¿å®‰å•†ç”¨";
+			this.chinaName = "é•¿å®‰å•†ç”¨";
 			this.englishName = "Chang'an_for_Business";
 			this.description = "";
 			break;
 		case 21:
 			this.resId = R.drawable.c1;
-			this.text = "Ãû¾ô";
-			this.chinaName = "Ãû¾ô";
+			this.text = "åçˆµ";
+			this.chinaName = "åçˆµ";
 			this.englishName = "MG";
 			this.description = "";
 			break;
 		case 22:
 			this.resId = R.drawable.c2;
-			this.text = "¿ªÈğ";
-			this.chinaName = "¿ªÈğ";
+			this.text = "å¼€ç‘";
+			this.chinaName = "å¼€ç‘";
 			this.englishName = "Karry";
 			this.description = "";
 			break;
 		case 23:
 			this.resId = R.drawable.c3;
-			this.text = "º£Âí";
-			this.chinaName = "º£Âí";
+			this.text = "æµ·é©¬";
+			this.chinaName = "æµ·é©¬";
 			this.englishName = "Haima";
 			this.description = "";
 			break;
 		case 24:
 			this.resId = R.drawable.c4;
-			this.text = "¶«·ç";
-			this.chinaName = "¶«·ç";
+			this.text = "ä¸œé£";
+			this.chinaName = "ä¸œé£";
 			this.englishName = "DongFeng";
 			this.description = "";
 			break;
 		case 25:
 			this.resId = R.drawable.c5;
-			this.text = "¼ªÀûÈ«ÇòÓ¥";
-			this.chinaName = "¼ªÀûÈ«ÇòÓ¥";
+			this.text = "å‰åˆ©å…¨çƒé¹°";
+			this.chinaName = "å‰åˆ©å…¨çƒé¹°";
 			this.englishName = "GLEAGLE";
 			this.description = "";
 			break;
 		case 26:
 			this.resId = R.drawable.c6;
-			this.text = "ÈÕ²ú";
-			this.chinaName = "ÈÕ²ú";
+			this.text = "æ—¥äº§";
+			this.chinaName = "æ—¥äº§";
 			this.englishName = "NISSAN";
 			this.description = "";
 			break;
 		case 27:
 			this.resId = R.drawable.c7;
-			this.text = "·áÌï";
-			this.chinaName = "·áÌï";
+			this.text = "ä¸°ç”°";
+			this.chinaName = "ä¸°ç”°";
 			this.englishName = "TOYOTA";
 			this.description = "";
 			break;
 		case 28:
 			this.resId = R.drawable.c8;
-			this.text = "Å·±¦";
-			this.chinaName = "Å·±¦";
+			this.text = "æ¬§å®";
+			this.chinaName = "æ¬§å®";
 			this.englishName = "OPEL";
 			this.description = "";
 			break;
 		case 29:
 			this.resId = R.drawable.c9;
-			this.text = "½İ±ª";
-			this.chinaName = "½İ±ª";
+			this.text = "æ·è±¹";
+			this.chinaName = "æ·è±¹";
 			this.englishName = "Jaguar";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 30:
 			this.resId = R.drawable.d0;
-			this.text = "¸£ÌØÒ°Âí";
-			this.chinaName = "¸£ÌØÒ°Âí";
+			this.text = "ç¦ç‰¹é‡é©¬";
+			this.chinaName = "ç¦ç‰¹é‡é©¬";
 			this.englishName = "MUSTANG";
 			this.description = "";
 			break;
 		case 31:
 			this.resId = R.drawable.d1;
-			this.text = "±ğ¿Ë";
-			this.chinaName = "±ğ¿Ë";
+			this.text = "åˆ«å…‹";
+			this.chinaName = "åˆ«å…‹";
 			this.englishName = "Buick";
 			this.description = "";
 			break;
 		case 32:
 			this.resId = R.drawable.d2;
-			this.text = "ÎÖ¶ûÎÖ";
-			this.chinaName = "ÎÖ¶ûÎÖ";
+			this.text = "æ²ƒå°”æ²ƒ";
+			this.chinaName = "æ²ƒå°”æ²ƒ";
 			this.englishName = "Volvo";
 			this.description = "";
 			break;
 		case 33:
 			this.resId = R.drawable.d3;
-			this.text = "Ë¹¿Â´ï";
-			this.chinaName = "Ë¹¿Â´ï";
+			this.text = "æ–¯æŸ¯è¾¾";
+			this.chinaName = "æ–¯æŸ¯è¾¾";
 			this.englishName = "SKODA";
 			this.description = "";
 			break;
 		case 34:
 			this.resId = R.drawable.d4;
-			this.text = "ÈÙÍş";
-			this.chinaName = "ÈÙÍş";
+			this.text = "è£å¨";
+			this.chinaName = "è£å¨";
 			this.englishName = "Roewe";
 			this.description = "";
 			break;
 		case 35:
 			this.resId = R.drawable.d5;
-			this.text = "¼ªÀûµÛºÀ";
-			this.chinaName = "¼ªÀûµÛºÀ";
+			this.text = "å‰åˆ©å¸è±ª";
+			this.chinaName = "å‰åˆ©å¸è±ª";
 			this.englishName = "EMGRAND";
 			this.description = "";
 			break;
 		case 36:
 			this.resId = R.drawable.d6;
-			this.text = "Ó¢Â×";
-			this.chinaName = "Ó¢Â×";
+			this.text = "è‹±ä¼¦";
+			this.chinaName = "è‹±ä¼¦";
 			this.englishName = "Engloncar";
 			this.description = "";
 			break;
 		case 37:
 			this.resId = R.drawable.d7;
-			this.text = "Èğ÷è";
-			this.chinaName = "Èğ÷è";
+			this.text = "ç‘éº’";
+			this.chinaName = "ç‘éº’";
 			this.englishName = "RIICH";
 			this.description = "";
 			break;
 		case 38:
 			this.resId = R.drawable.d8;
-			this.text = "Ë¹°ÍÂ³";
-			this.chinaName = "Ë¹°ÍÂ³";
+			this.text = "æ–¯å·´é²";
+			this.chinaName = "æ–¯å·´é²";
 			this.englishName = "SUBARU";
 			this.description = "";
 			break;
 		case 39:
 			this.resId = R.drawable.d9;
-			this.text = "Íş÷ë";
-			this.chinaName = "Íş÷ë";
+			this.text = "å¨éºŸ";
+			this.chinaName = "å¨éºŸ";
 			this.englishName = "RELY";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 40:
 			this.resId = R.drawable.e0;
-			this.text = "±êÖÂ";
-			this.chinaName = "±êÖÂ";
+			this.text = "æ ‡è‡´";
+			this.chinaName = "æ ‡è‡´";
 			this.englishName = "PEUGEOT";
 			this.description = "";
 			break;
 		case 41:
 			this.resId = R.drawable.e1;
-			this.text = "Æô³½";
-			this.chinaName = "Æô³½";
+			this.text = "å¯è¾°";
+			this.chinaName = "å¯è¾°";
 			this.englishName = "Venucia";
 			this.description = "";
 			break;
 		case 42:
 			this.resId = R.drawable.e2;
-			this.text = "±¾Ìï";
-			this.chinaName = "±¾Ìï";
+			this.text = "æœ¬ç”°";
+			this.chinaName = "æœ¬ç”°";
 			this.englishName = "Volvo";
 			this.description = "";
 			break;
@@ -572,471 +572,471 @@ public class CarInfo implements Parcelable {
 			break;
 		case 44:
 			this.resId = R.drawable.e4;
-			this.text = "±¦ÂíMini";
-			this.chinaName = "±¦ÂíMini";
+			this.text = "å®é©¬Mini";
+			this.chinaName = "å®é©¬Mini";
 			this.englishName = "BMW_MINI";
 			this.description = "";
 			break;
 		case 45:
 			this.resId = R.drawable.e5;
-			this.text = "Âí×Ô´ï";
-			this.chinaName = "Âí×Ô´ï";
+			this.text = "é©¬è‡ªè¾¾";
+			this.chinaName = "é©¬è‡ªè¾¾";
 			this.englishName = "Mazda";
 			this.description = "";
 			break;
 		case 46:
 			this.resId = R.drawable.e6;
-			this.text = "³¤³Ç";
-			this.chinaName = "³¤³Ç";
+			this.text = "é•¿åŸ";
+			this.chinaName = "é•¿åŸ";
 			this.englishName = "Great Wall";
 			this.description = "";
 			break;
 		case 47:
 			this.resId = R.drawable.e7;
-			this.text = "ÀíÄî";
-			this.chinaName = "ÀíÄî";
+			this.text = "ç†å¿µ";
+			this.chinaName = "ç†å¿µ";
 			this.englishName = "linian";
 			this.description = "";
 			break;
 		case 48:
 			this.resId = R.drawable.e8;
-			this.text = "´óÖÚ";
-			this.chinaName = "´óÖÚ";
+			this.text = "å¤§ä¼—";
+			this.chinaName = "å¤§ä¼—";
 			this.englishName = "Volkswagen";
 			this.description = "";
 			break;
 		case 49:
 			this.resId = R.drawable.e9;
-			this.text = "Â½·ç";
-			this.chinaName = "Â½·ç";
+			this.text = "é™†é£";
+			this.chinaName = "é™†é£";
 			this.englishName = "landwind";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 50:
 			this.resId = R.drawable.f0;
-			this.text = "Ñ©·ğÀ¼";
-			this.chinaName = "Ñ©·ğÀ¼";
+			this.text = "é›ªä½›å…°";
+			this.chinaName = "é›ªä½›å…°";
 			this.englishName = "Chevrolet";
 			this.description = "";
 			break;
 		case 51:
 			this.resId = R.drawable.f1;
-			this.text = "¸£ÌØ";
-			this.chinaName = "¸£ÌØ";
+			this.text = "ç¦ç‰¹";
+			this.chinaName = "ç¦ç‰¹";
 			this.englishName = "Ford";
 			this.description = "";
 			break;
 		case 52:
 			this.resId = R.drawable.f2;
-			this.text = "ÆğÑÇ";
-			this.chinaName = "ÆğÑÇ";
+			this.text = "èµ·äºš";
+			this.chinaName = "èµ·äºš";
 			this.englishName = "KIA";
 			this.description = "";
 			break;
 		case 53:
 			this.resId = R.drawable.f3;
-			this.text = "Èø²©";
-			this.chinaName = "Èø²©";
+			this.text = "è¨åš";
+			this.chinaName = "è¨åš";
 			this.englishName = "SAAB";
 			this.description = "";
 			break;
 		case 54:
 			this.resId = R.drawable.f4;
-			this.text = "»ªÆÕ";
-			this.chinaName = "»ªÆÕ";
+			this.text = "åæ™®";
+			this.chinaName = "åæ™®";
 			this.englishName = "HuaPu";
 			this.description = "";
 			break;
 		case 55:
 			this.resId = R.drawable.f5;
-			this.text = "ÖĞ»ª";
-			this.chinaName = "ÖĞ»ª";
+			this.text = "ä¸­å";
+			this.chinaName = "ä¸­å";
 			this.englishName = "ZhongHua";
 			this.description = "";
 			break;
 		case 56:
 			this.resId = R.drawable.f6;
-			this.text = "ÆæÈğ";
-			this.chinaName = "ÆæÈğ";
+			this.text = "å¥‡ç‘";
+			this.chinaName = "å¥‡ç‘";
 			this.englishName = "chery";
 			this.description = "";
 			break;
 		case 57:
 			this.resId = R.drawable.f7;
-			this.text = "°¢Ë¹¶Ù¡¤Âí¶¡";
-			this.chinaName = "°¢Ë¹¶Ù¡¤Âí¶¡";
+			this.text = "é˜¿æ–¯é¡¿Â·é©¬ä¸";
+			this.chinaName = "é˜¿æ–¯é¡¿Â·é©¬ä¸";
 			this.englishName = "AstonMartin";
 			this.description = "";
 			break;
 		case 58:
 			this.resId = R.drawable.f8;
-			this.text = "ÏÄÀû";
-			this.chinaName = "ÏÄÀû";
+			this.text = "å¤åˆ©";
+			this.chinaName = "å¤åˆ©";
 			this.englishName = "Xiali";
 			this.description = "";
 			break;
 		case 59:
 			this.resId = R.drawable.f9;
-			this.text = "À×¿ËÈøË¹";
-			this.chinaName = "À×¿ËÈøË¹";
+			this.text = "é›·å…‹è¨æ–¯";
+			this.chinaName = "é›·å…‹è¨æ–¯";
 			this.englishName = "Lexus";
 			this.description = "";
 			break;
 		/** --------------------- */
 		case 60:
 			this.resId = R.drawable.g0;
-			this.text = "ÏÖ´ú";
-			this.chinaName = "ÏÖ´ú";
+			this.text = "ç°ä»£";
+			this.chinaName = "ç°ä»£";
 			this.englishName = "HYUNDAI";
 			this.description = "";
 			break;
 		case 61:
 			this.resId = R.drawable.g1;
-			this.text = "¼ª°Â";
-			this.chinaName = "¼ª°Â";
+			this.text = "å‰å¥¥";
+			this.chinaName = "å‰å¥¥";
 			this.englishName = "Ji-Ao";
 			this.description = "";
 			break;
 		case 62:
 			this.resId = R.drawable.g2;
-			this.text = "·ÆÑÇÌØ";
-			this.chinaName = "·ÆÑÇÌØ";
+			this.text = "è²äºšç‰¹";
+			this.chinaName = "è²äºšç‰¹";
 			this.englishName = "FIAT";
 			this.description = "";
 			break;
 		case 63:
 			this.resId = R.drawable.g3;
-			this.text = "¿­µÏÀ­¿Ë";
-			this.chinaName = "¿­µÏÀ­¿Ë";
+			this.text = "å‡¯è¿ªæ‹‰å…‹";
+			this.chinaName = "å‡¯è¿ªæ‹‰å…‹";
 			this.englishName = "Cadillac";
-			this.description = "ÃÀ¹úÍ¨ÓÃ¹«Ë¾";
+			this.description = "ç¾å›½é€šç”¨å…¬å¸";
 			break;
 		case 64:
 			this.resId = R.drawable.g4;
-			this.text = "±±ÆûÍşÍú";
-			this.chinaName = "±±ÆûÍşÍú";
+			this.text = "åŒ—æ±½å¨æ—º";
+			this.chinaName = "åŒ—æ±½å¨æ—º";
 			this.englishName = "Wei-Wang";
 			this.description = "";
 			break;
 		case 65:
 			this.resId = R.drawable.g5;
-			this.text = "ÅÁ¼ÓÄá";
-			this.chinaName = "ÅÁ¼ÓÄá";
+			this.text = "å¸•åŠ å°¼";
+			this.chinaName = "å¸•åŠ å°¼";
 			this.englishName = "PAGANI";
-			this.description = "²úµØ:Òâ´óÀû¡¤Ä¦µÂÄÉ";
+			this.description = "äº§åœ°:æ„å¤§åˆ©Â·æ‘©å¾·çº³";
 			break;
 		case 66:
 			this.resId = R.drawable.g6;
-			this.text = "Î÷ÑÅÌØ";
-			this.chinaName = "Î÷ÑÅÌØ";
+			this.text = "è¥¿é›…ç‰¹";
+			this.chinaName = "è¥¿é›…ç‰¹";
 			this.englishName = "Seat";
-			this.description = "µÂ¹ú´óÖÚÆû³µ¹«Ë¾";
+			this.description = "å¾·å›½å¤§ä¼—æ±½è½¦å…¬å¸";
 			break;
 		case 67:
 			this.resId = R.drawable.g7;
-			this.text = "ÏÖ´úÀÍ¶÷Ë¹";
-			this.chinaName = "ÏÖ´úÀÍ¶÷Ë¹";
+			this.text = "ç°ä»£åŠ³æ©æ–¯";
+			this.chinaName = "ç°ä»£åŠ³æ©æ–¯";
 			this.englishName = "POHENS";
-			this.description = "º«³µÏÖ´úÆû³µ³µ¹«Ë¾";
+			this.description = "éŸ©è½¦ç°ä»£æ±½è½¦è½¦å…¬å¸";
 			break;
 		case 68:
 			this.resId = R.drawable.g8;
-			this.text = "ÖÚÌ©";
-			this.chinaName = "ÖÚÌ©";
+			this.text = "ä¼—æ³°";
+			this.chinaName = "ä¼—æ³°";
 			this.englishName = "Z-Tai";
-			this.description = "ÖĞ¹úÄÚµØ-Á¥Êô¹«Ë¾£ºÖÚÌ©¿Ø¹É¼¯ÍÅ";
+			this.description = "ä¸­å›½å†…åœ°-éš¶å±å…¬å¸ï¼šä¼—æ³°æ§è‚¡é›†å›¢";
 			break;
 		case 69:
 			this.resId = R.drawable.g9;
-			this.text = "¿ËÀ³Ë¹ÀÕ";
-			this.chinaName = "¿ËÀ³Ë¹ÀÕ";
+			this.text = "å…‹è±æ–¯å‹’";
+			this.chinaName = "å…‹è±æ–¯å‹’";
 			this.englishName = "Chrysler";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú¡¤ÃÜĞª¸ùÖİº£À¼µÂÅÁ¿Ë";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½Â·å¯†æ­‡æ ¹å·æµ·å…°å¾·å¸•å…‹";
 			break;
 		/** --------------------- */
 		case 70:
 			this.resId = R.drawable.h0;
-			this.text = "½­»´";
-			this.chinaName = "½­»´";
+			this.text = "æ±Ÿæ·®";
+			this.chinaName = "æ±Ÿæ·®";
 			this.englishName = "JAC";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤°²»ÕºÏ·Ê\nÁ¥Êô¹«Ë¾£º°²»Õ½­»´Æû³µ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å®‰å¾½åˆè‚¥\néš¶å±å…¬å¸ï¼šå®‰å¾½æ±Ÿæ·®æ±½è½¦è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 71:
 			this.resId = R.drawable.h1;
-			this.text = "À×Åµ";
-			this.chinaName = "À×Åµ";
+			this.text = "é›·è¯º";
+			this.chinaName = "é›·è¯º";
 			this.englishName = "RENAULT";
-			this.description = "²ú¡¡¡¡µØ£º·¨¹ú¡¤²¼ÂåÄù-±ÈÑï¹Å\nÁ¥Êô¹«Ë¾£ºÀ×ÅµÆû³µ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ³•å›½Â·å¸ƒæ´›æ¶…-æ¯”æ‰¬å¤\néš¶å±å…¬å¸ï¼šé›·è¯ºæ±½è½¦å…¬å¸";
 			break;
 		case 72:
 			this.resId = R.drawable.h2;
-			this.text = "¿ÆÄáÈü¿Ë";
-			this.chinaName = "¿ÆÄáÈü¿Ë";
+			this.text = "ç§‘å°¼èµ›å…‹";
+			this.chinaName = "ç§‘å°¼èµ›å…‹";
 			this.englishName = "Koenigsegg";
-			this.description = "²ú¡¡¡¡µØ£ºÈğµä";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç‘å…¸";
 			break;
 		case 73:
 			this.resId = R.drawable.h3;
-			this.text = "°Í²©Ë¹";
-			this.chinaName = "°Í²©Ë¹";
+			this.text = "å·´åšæ–¯";
+			this.chinaName = "å·´åšæ–¯";
 			this.englishName = "BRABUS";
-			this.description = "²ú¡¡¡¡µØ£ºµÂ¹ú\nÁ¥Êô¹«Ë¾£º°Í²©Ë¹ S¼¶,°Í²©Ë¹ SLS¼¶";
+			this.description = "äº§ã€€ã€€åœ°ï¼šå¾·å›½\néš¶å±å…¬å¸ï¼šå·´åšæ–¯ Sçº§,å·´åšæ–¯ SLSçº§";
 			break;
 		case 74:
 			this.resId = R.drawable.h4;
-			this.text = "±¦¿¥";
-			this.chinaName = "±¦¿¥";
+			this.text = "å®éª";
+			this.chinaName = "å®éª";
 			this.englishName = "Bao-Jun";
-			this.description = "Á¥Êô¹«Ë¾£ºÉÏº£Í¨ÓÃ";
+			this.description = "éš¶å±å…¬å¸ï¼šä¸Šæµ·é€šç”¨";
 			break;
 		case 75:
 			this.resId = R.drawable.h5;
-			this.text = "±±¾©Æû³µ";
-			this.chinaName = "±±¾©Æû³µ";
+			this.text = "åŒ—äº¬æ±½è½¦";
+			this.chinaName = "åŒ—äº¬æ±½è½¦";
 			this.englishName = "Beijing-Car";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤±±¾©\nÁ¥Êô¹«Ë¾£º±±Æû¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·åŒ—äº¬\néš¶å±å…¬å¸ï¼šåŒ—æ±½é›†å›¢";
 			break;
 		case 76:
 			this.resId = R.drawable.h6;
-			this.text = "±±ÆûÖÆÔì";
-			this.chinaName = "±±ÆûÖÆÔì";
+			this.text = "åŒ—æ±½åˆ¶é€ ";
+			this.chinaName = "åŒ—æ±½åˆ¶é€ ";
 			this.englishName = "Beijing-Builder";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤±±¾©\nÁ¥Êô¹«Ë¾£º±±¾©Æû³µÖÆÔì³§";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·åŒ—äº¬\néš¶å±å…¬å¸ï¼šåŒ—äº¬æ±½è½¦åˆ¶é€ å‚";
 			break;
 		case 77:
 			this.resId = R.drawable.h7;
-			this.text = "±¼ÌÚ";
-			this.chinaName = "±¼ÌÚ";
+			this.text = "å¥”è…¾";
+			this.chinaName = "å¥”è…¾";
 			this.englishName = "BESTURN";
-			this.description = "Á¥Êô¹«Ë¾£ºÒ»Æû¼¯ÍÅ";
+			this.description = "éš¶å±å…¬å¸ï¼šä¸€æ±½é›†å›¢";
 			break;
 		case 78:
 			this.resId = R.drawable.h8;
-			this.text = "±ÈÑÇµÏ";
-			this.chinaName = "±ÈÑÇµÏ";
+			this.text = "æ¯”äºšè¿ª";
+			this.chinaName = "æ¯”äºšè¿ª";
 			this.englishName = "BYD";
-			this.description = "²ú¡¡¡¡µØ£ºÉîÛÚÊĞ\nÁ¥Êô¹«Ë¾£º±ÈÑÇµÏ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ·±åœ³å¸‚\néš¶å±å…¬å¸ï¼šæ¯”äºšè¿ªè‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 79:
 			this.resId = R.drawable.h9;
-			this.text = "²¼¼ÓµÏ";
-			this.chinaName = "²¼¼ÓµÏ";
+			this.text = "å¸ƒåŠ è¿ª";
+			this.chinaName = "å¸ƒåŠ è¿ª";
 			this.englishName = "BUGATTI";
-			this.description = "²ú¡¡¡¡µØ£º·¨¹ú¡¤°¢¶ûÈøË¹\nÁ¥Êô¹«Ë¾£º´óÖÚ¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ³•å›½Â·é˜¿å°”è¨æ–¯\néš¶å±å…¬å¸ï¼šå¤§ä¼—é›†å›¢";
 			break;
 		/** --------------------- */
 		case 80:
 			this.resId = R.drawable.i0;
-			this.text = "²ıºÓ";
-			this.chinaName = "²ıºÓ";
+			this.text = "æ˜Œæ²³";
+			this.chinaName = "æ˜Œæ²³";
 			this.englishName = "ChangHe";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤½­Î÷Ê¡¾°µÂÕòÊĞ\nÁ¥Êô¹«Ë¾£ºÖĞ¹ú³¤°²Æû³µ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ±Ÿè¥¿çœæ™¯å¾·é•‡å¸‚\néš¶å±å…¬å¸ï¼šä¸­å›½é•¿å®‰æ±½è½¦é›†å›¢è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 81:
 			this.resId = R.drawable.i1;
-			this.text = "´¨ÆûÒ°Âí";
-			this.chinaName = "´¨ÆûÒ°Âí";
+			this.text = "å·æ±½é‡é©¬";
+			this.chinaName = "å·æ±½é‡é©¬";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ËÄ´¨\nÁ¥Êô¹«Ë¾£º´¨Æû¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å››å·\néš¶å±å…¬å¸ï¼šå·æ±½é›†å›¢";
 			break;
 		case 82:
 			this.resId = R.drawable.i2;
 			this.text = "DS";
 			this.chinaName = "DS";
 			this.englishName = "DS";
-			this.description = "²ú¡¡¡¡µØ£º·¨¹ú¡¤°ÍÀè\nÁ¥Êô¹«Ë¾£º±êÖÂÑ©ÌúÁú¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ³•å›½Â·å·´é»\néš¶å±å…¬å¸ï¼šæ ‡è‡´é›ªé“é¾™é›†å›¢";
 			break;
 		case 83:
 			this.resId = R.drawable.i3;
-			this.text = "´ó·¢";
-			this.chinaName = "´ó·¢";
+			this.text = "å¤§å‘";
+			this.chinaName = "å¤§å‘";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÈÕ±¾\nÁ¥Êô¹«Ë¾£º´ó·¢¹¤ÒµÖêÊ½»áÉç";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ—¥æœ¬\néš¶å±å…¬å¸ï¼šå¤§å‘å·¥ä¸šæ ªå¼ä¼šç¤¾";
 			break;
 		case 84:
 			this.resId = R.drawable.i4;
-			this.text = "µÀÆæ";
-			this.chinaName = "µÀÆæ";
+			this.text = "é“å¥‡";
+			this.chinaName = "é“å¥‡";
 			this.englishName = "DODGE";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º¿ËÀ³Ë¹ÀÕ¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼šå…‹è±æ–¯å‹’é›†å›¢";
 			break;
 		case 85:
 			this.resId = R.drawable.i5;
-			this.text = "¶«ÄÏ";
-			this.chinaName = "¶«ÄÏ";
+			this.text = "ä¸œå—";
+			this.chinaName = "ä¸œå—";
 			this.englishName = "Beijing-Car";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¸£½¨Ê¡¸£ÖİÊĞ\nÁ¥Êô¹«Ë¾£º¶«ÄÏ(¸£½¨)Æû³µ¹¤ÒµÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·ç¦å»ºçœç¦å·å¸‚\néš¶å±å…¬å¸ï¼šä¸œå—(ç¦å»º)æ±½è½¦å·¥ä¸šæœ‰é™å…¬å¸";
 			break;
 		case 86:
 			this.resId = R.drawable.i6;
-			this.text = "¸£µÏ";
-			this.chinaName = "¸£µÏ";
+			this.text = "ç¦è¿ª";
+			this.chinaName = "ç¦è¿ª";
 			this.englishName = "FODAYAUTO";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¹ã¶«\nÁ¥Êô¹«Ë¾£º¹ã¶«¸£µÏÆû³µÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å¹¿ä¸œ\néš¶å±å…¬å¸ï¼šå¹¿ä¸œç¦è¿ªæ±½è½¦æœ‰é™å…¬å¸";
 			break;
 		case 87:
 			this.resId = R.drawable.i7;
-			this.text = "¸£Ìï";
-			this.chinaName = "¸£Ìï";
+			this.text = "ç¦ç”°";
+			this.chinaName = "ç¦ç”°";
 			this.englishName = "FOTON";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤±±¾©ÊĞ²ıÆ½Çø\nÁ¥Êô¹«Ë¾£º±±Æû¸£ÌïÆû³µ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·åŒ—äº¬å¸‚æ˜Œå¹³åŒº\néš¶å±å…¬å¸ï¼šåŒ—æ±½ç¦ç”°æ±½è½¦è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 88:
 			this.resId = R.drawable.i8;
-			this.text = "¹ÛÖÂ";
-			this.chinaName = "¹ÛÖÂ";
+			this.text = "è§‚è‡´";
+			this.chinaName = "è§‚è‡´";
 			this.englishName = "QOROS";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ÉÏº£\nÁ¥Êô¹«Ë¾£ºÆæÈğÆû³µÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·ä¸Šæµ·\néš¶å±å…¬å¸ï¼šå¥‡ç‘æ±½è½¦æœ‰é™å…¬å¸";
 			break;
 		case 89:
 			this.resId = R.drawable.i9;
-			this.text = "¹ãÆû´«ì÷";
-			this.chinaName = "¹ãÆû´«ì÷";
+			this.text = "å¹¿æ±½ä¼ ç¥º";
+			this.chinaName = "å¹¿æ±½ä¼ ç¥º";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¹ãÖİ\nÁ¥Êô¹«Ë¾£º¹ãÆû¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å¹¿å·\néš¶å±å…¬å¸ï¼šå¹¿æ±½é›†å›¢";
 			break;
 		/** --------------------- */
 		case 90:
 			this.resId = R.drawable.j0;
-			this.text = "¹ş·É";
-			this.chinaName = "¹ş·É";
+			this.text = "å“ˆé£";
+			this.chinaName = "å“ˆé£";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºÚÁú½­Ê¡¹ş¶û±õ\nÁ¥Êô¹«Ë¾£º¹ş¶û±õ¹ş·ÉÆû³µ¹¤Òµ¼¯ÍÅÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·é»‘é¾™æ±Ÿçœå“ˆå°”æ»¨\néš¶å±å…¬å¸ï¼šå“ˆå°”æ»¨å“ˆé£æ±½è½¦å·¥ä¸šé›†å›¢æœ‰é™å…¬å¸";
 			break;
 		case 91:
 			this.resId = R.drawable.j1;
-			this.text = "º£¸ñ";
-			this.chinaName = "º£¸ñ";
+			this.text = "æµ·æ ¼";
+			this.chinaName = "æµ·æ ¼";
 			this.englishName = "HIGER";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤½­ËÕËÕÖİ\nÁ¥Êô¹«Ë¾£º½ğÁúÁªºÏÆû³µ¹¤Òµ(ËÕÖİ)ÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ±Ÿè‹è‹å·\néš¶å±å…¬å¸ï¼šé‡‘é¾™è”åˆæ±½è½¦å·¥ä¸š(è‹å·)æœ‰é™å…¬å¸";
 			break;
 		case 92:
 			this.resId = R.drawable.j2;
-			this.text = "ºìÆì";
-			this.chinaName = "ºìÆì";
+			this.text = "çº¢æ——";
+			this.chinaName = "çº¢æ——";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¼ªÁÖÊ¡³¤´ºÊĞ\nÁ¥Êô¹«Ë¾£ºÒ»Æû¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å‰æ—çœé•¿æ˜¥å¸‚\néš¶å±å…¬å¸ï¼šä¸€æ±½é›†å›¢";
 			break;
 		case 93:
 			this.resId = R.drawable.j3;
-			this.text = "»ªÌ©";
-			this.chinaName = "»ªÌ©";
+			this.text = "åæ³°";
+			this.chinaName = "åæ³°";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú\nÁ¥Êô¹«Ë¾£º»ªÌ©Æû³µ¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½\néš¶å±å…¬å¸ï¼šåæ³°æ±½è½¦é›†å›¢";
 			break;
 		case 94:
 			this.resId = R.drawable.j4;
-			this.text = "»Æº£";
-			this.chinaName = "»Æº£";
+			this.text = "é»„æµ·";
+			this.chinaName = "é»„æµ·";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ÁÉÄşÉòÑôµ¤¶«ÊĞ\nÁ¥Êô¹«Ë¾£ºÁÉÄşÊï¹âÆû³µ¼¯ÍÅ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·è¾½å®æ²ˆé˜³ä¸¹ä¸œå¸‚\néš¶å±å…¬å¸ï¼šè¾½å®æ›™å…‰æ±½è½¦é›†å›¢è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 95:
 			this.resId = R.drawable.j5;
-			this.text = "¼ªÆÕ";
-			this.chinaName = "¼ªÆÕ";
+			this.text = "å‰æ™®";
+			this.chinaName = "å‰æ™®";
 			this.englishName = "Jeep";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º´÷Ä·ÀÕ¿ËÀ³Ë¹ÀÕ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼šæˆ´å§†å‹’å…‹è±æ–¯å‹’";
 			break;
 		case 96:
 			this.resId = R.drawable.j6;
-			this.text = "½­Áå";
-			this.chinaName = "½­Áå";
+			this.text = "æ±Ÿé“ƒ";
+			this.chinaName = "æ±Ÿé“ƒ";
 			this.englishName = "JMC";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤½­Î÷Ê¡ÄÏ²ıÊĞ\nÁ¥Êô¹«Ë¾£º½­ÁåÆû³µ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ±Ÿè¥¿çœå—æ˜Œå¸‚\néš¶å±å…¬å¸ï¼šæ±Ÿé“ƒæ±½è½¦è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 97:
 			this.resId = R.drawable.j7;
-			this.text = "½ğ±­";
-			this.chinaName = "½ğ±­";
+			this.text = "é‡‘æ¯";
+			this.chinaName = "é‡‘æ¯";
 			this.englishName = "FOTON";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ÉòÑôÊĞ\nÁ¥Êô¹«Ë¾£º»ª³¿Æû³µ¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ²ˆé˜³å¸‚\néš¶å±å…¬å¸ï¼šåæ™¨æ±½è½¦é›†å›¢";
 			break;
 		case 98:
 			this.resId = R.drawable.j8;
 			this.text = "AC Schnitzer";
 			this.chinaName = "AC Schnitzer";
 			this.englishName = "AC Schnitzer";
-			this.description = "²ú¡¡¡¡µØ£ºµÂ¹ú\nÁ¥Êô¹«Ë¾£ºKohl Automobile GmbhºÍSchnitzer";
+			this.description = "äº§ã€€ã€€åœ°ï¼šå¾·å›½\néš¶å±å…¬å¸ï¼šKohl Automobile Gmbhå’ŒSchnitzer";
 			break;
 		case 99:
 			this.resId = R.drawable.j9;
-			this.text = "ÖĞĞË";
-			this.chinaName = "ÖĞĞË";
+			this.text = "ä¸­å…´";
+			this.chinaName = "ä¸­å…´";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºÓ±±\nÁ¥Êô¹«Ë¾£ººÓ±±ÖĞĞËÆû³µÖÆÔìÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ²³åŒ—\néš¶å±å…¬å¸ï¼šæ²³åŒ—ä¸­å…´æ±½è½¦åˆ¶é€ æœ‰é™å…¬å¸";
 			break;
 		/** --------------------- */
 		case 100:
 			this.resId = R.drawable.k0;
-			this.text = "Íş×ÈÂü";
-			this.chinaName = "Íş×ÈÂü";
+			this.text = "å¨å…¹æ›¼";
+			this.chinaName = "å¨å…¹æ›¼";
 			this.englishName = "Wiesmann";
-			this.description = "²ú¡¡¡¡µØ£ºµÂ¹úDulman\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šå¾·å›½Dulman\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 101:
 			this.resId = R.drawable.k1;
-			this.text = "Ë«»·";
-			this.chinaName = "Ë«»·";
+			this.text = "åŒç¯";
+			this.chinaName = "åŒç¯";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºÓ±±¡¤Ê¯¼Ò×¯\nÁ¥Êô¹«Ë¾£ºÊ¯¼Ò×¯Ë«»·Æû³µ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ²³åŒ—Â·çŸ³å®¶åº„\néš¶å±å…¬å¸ï¼šçŸ³å®¶åº„åŒç¯æ±½è½¦è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 102:
 			this.resId = R.drawable.k2;
-			this.text = "ÊÀ¾ô";
-			this.chinaName = "ÊÀ¾ô";
+			this.text = "ä¸–çˆµ";
+			this.chinaName = "ä¸–çˆµ";
 			this.englishName = "SPYKER";
-			this.description = "²ú¡¡¡¡µØ£ººÉÀ¼\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šè·å…°\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 103:
 			this.resId = R.drawable.k3;
-			this.text = "ÈıÁâ";
-			this.chinaName = "ÈıÁâ";
+			this.text = "ä¸‰è±";
+			this.chinaName = "ä¸‰è±";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÈÕ±¾\nÁ¥Êô¹«Ë¾£ºÈıÁâ¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ—¥æœ¬\néš¶å±å…¬å¸ï¼šä¸‰è±é›†å›¢";
 			break;
 		case 104:
 			this.resId = R.drawable.k4;
-			this.text = "Á¦·«";
-			this.chinaName = "Á¦·«";
+			this.text = "åŠ›å¸†";
+			this.chinaName = "åŠ›å¸†";
 			this.englishName = "LIFAN";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ÖØÇì\nÁ¥Êô¹«Ë¾£ºÖØÇìÁ¦·«ÊµÒµ(¼¯ÍÅ)¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·é‡åº†\néš¶å±å…¬å¸ï¼šé‡åº†åŠ›å¸†å®ä¸š(é›†å›¢)å…¬å¸";
 			break;
 		case 105:
 			this.resId = R.drawable.k5;
-			this.text = "¿¨¶ûÉ­";
-			this.chinaName = "¿¨¶ûÉ­";
+			this.text = "å¡å°”æ£®";
+			this.chinaName = "å¡å°”æ£®";
 			this.englishName = "carlsson";
-			this.description = "²ú¡¡¡¡µØ£ºµÂ¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šå¾·å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 106:
 			this.resId = R.drawable.k6;
-			this.text = "Ú©¸è";
-			this.chinaName = "Ú©¸è";
+			this.text = "è®´æ­Œ";
+			this.chinaName = "è®´æ­Œ";
 			this.englishName = "Acura";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£ºÈÕ±¾±¾ÌïÆû³µ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼šæ—¥æœ¬æœ¬ç”°æ±½è½¦å…¬å¸";
 			break;
 		case 107:
 			this.resId = R.drawable.k7;
-			this.text = "Ë¼Ãú";
-			this.chinaName = "Ë¼Ãú";
+			this.text = "æ€é“­";
+			this.chinaName = "æ€é“­";
 			this.englishName = "CIIMO";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú\nÁ¥Êô¹«Ë¾£º¶«·ç±¾Ìï";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½\néš¶å±å…¬å¸ï¼šä¸œé£æœ¬ç”°";
 			break;
 		case 108:
 			this.resId = R.drawable.k8;
-			this.text = "ÁÔ±ª";
-			this.chinaName = "ÁÔ±ª";
+			this.text = "çŒè±¹";
+			this.chinaName = "çŒè±¹";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºşÄÏ\nÁ¥Êô¹«Ë¾£º¹ãÆû³¤·áÆû³µ¹É·İÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ¹–å—\néš¶å±å…¬å¸ï¼šå¹¿æ±½é•¿ä¸°æ±½è½¦è‚¡ä»½æœ‰é™å…¬å¸";
 			break;
 		case 109:
 			this.resId = R.drawable.k9;
-			this.text = "Ë«Áú";
-			this.chinaName = "Ë«Áú";
+			this.text = "åŒé¾™";
+			this.chinaName = "åŒé¾™";
 			this.englishName = "SSANGYONG";
-			this.description = "²ú¡¡¡¡µØ£ºº«¹ú\nÁ¥Êô¹«Ë¾£ºº«¹úË«Áú¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šéŸ©å›½\néš¶å±å…¬å¸ï¼šéŸ©å›½åŒé¾™é›†å›¢";
 			break;
 		/** --------------------- */
 		case 110:
@@ -1044,212 +1044,212 @@ public class CarInfo implements Parcelable {
 			this.text = "Gumpert";
 			this.chinaName = "Gumpert";
 			this.englishName = "Gumpert";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£ºMTM¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼šMTMé›†å›¢";
 			break;
 		case 111:
 			this.resId = R.drawable.l1;
-			this.text = "¹â¸Ô";
-			this.chinaName = "¹â¸Ô";
+			this.text = "å…‰å†ˆ";
+			this.chinaName = "å…‰å†ˆ";
 			this.englishName = "MITSUOKA";
-			this.description = "²ú¡¡¡¡µØ£ºÈÕ±¾\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šæ—¥æœ¬\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 112:
 			this.resId = R.drawable.l2;
-			this.text = "¿­°ÛºÕ";
-			this.chinaName = "¿­°ÛºÕ";
+			this.text = "å‡¯ä½°èµ«";
+			this.chinaName = "å‡¯ä½°èµ«";
 			this.englishName = "KOMBAT";
-			this.description = "²ú¡¡¡¡µØ£º¶íÂŞË¹\nÁ¥Êô¹«Ë¾£ºDartz¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¿„ç½—æ–¯\néš¶å±å…¬å¸ï¼šDartzé›†å›¢";
 			break;
 		case 113:
 			this.resId = R.drawable.l3;
-			this.text = "ÄÉÖÇ½İ";
-			this.chinaName = "ÄÉÖÇ½İ";
+			this.text = "çº³æ™ºæ·";
+			this.chinaName = "çº³æ™ºæ·";
 			this.englishName = "Luxgen";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤Õã½­¡¤º¼Öİ\nÁ¥Êô¹«Ë¾£ºÌ¨ÍåÔ£Â¡¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æµ™æ±ŸÂ·æ­å·\néš¶å±å…¬å¸ï¼šå°æ¹¾è£•éš†é›†å›¢";
 			break;
 		case 114:
 			this.resId = R.drawable.l4;
-			this.text = "ÁÖ¿Ï";
-			this.chinaName = "ÁÖ¿Ï";
+			this.text = "æ—è‚¯";
+			this.chinaName = "æ—è‚¯";
 			this.englishName = "lincoln";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£ºÃÀ¹ú¸£ÌØÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼šç¾å›½ç¦ç‰¹æ±½è½¦";
 			break;
 		case 115:
 			this.resId = R.drawable.l5;
-			this.text = "Âõ¿­ÂÖ";
-			this.chinaName = "Âõ¿­ÂÖ";
+			this.text = "è¿ˆå‡¯è½®";
+			this.chinaName = "è¿ˆå‡¯è½®";
 			this.englishName = "McLaren";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£ºÃ·ÈüµÂË¹-±¼³Û";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼šæ¢…èµ›å¾·æ–¯-å¥”é©°";
 			break;
 		case 116:
 			this.resId = R.drawable.l6;
-			this.text = "ÓÀÔ´";
-			this.chinaName = "ÓÀÔ´";
+			this.text = "æ°¸æº";
+			this.chinaName = "æ°¸æº";
 			this.englishName = "jonway";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤Õã½­\nÁ¥Êô¹«Ë¾£ºÕã½­ÓÀÔ´¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æµ™æ±Ÿ\néš¶å±å…¬å¸ï¼šæµ™æ±Ÿæ°¸æºé›†å›¢";
 			break;
 		case 117:
 			this.resId = R.drawable.l7;
-			this.text = "ÌÚÊÆ";
-			this.chinaName = "ÌÚÊÆ";
+			this.text = "è…¾åŠ¿";
+			this.chinaName = "è…¾åŠ¿";
 			this.englishName = "DENZA";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ÉîÛÚ\nÁ¥Êô¹«Ë¾£º±ÈÑÇµÏ¡¤´÷Ä·ÀÕ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ·±åœ³\néš¶å±å…¬å¸ï¼šæ¯”äºšè¿ªÂ·æˆ´å§†å‹’";
 			break;
 		case 118:
 			this.resId = R.drawable.l8;
 			this.text = "KTM";
 			this.chinaName = "KTM";
 			this.englishName = "KTM";
-			this.description = "²ú¡¡¡¡µØ£º°ÂµØÀû¡¤Mattighofen\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šå¥¥åœ°åˆ©Â·Mattighofen\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 119:
 			this.resId = R.drawable.l9;
-			this.text = "±¼³ÛSmart";
-			this.chinaName = "±¼³ÛSmart";
+			this.text = "å¥”é©°Smart";
+			this.chinaName = "å¥”é©°Smart";
 			this.englishName = "Smart";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£ºÃ·ÈüµÂË¹-±¼³ÛºÍSwatch¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼šæ¢…èµ›å¾·æ–¯-å¥”é©°å’ŒSwatchå…¬å¸";
 			break;
 		/** --------------------- */
 		case 120:
 			this.resId = R.drawable.m0;
-			this.text = "Èü¶÷";
-			this.chinaName = "Èü¶÷";
+			this.text = "èµ›æ©";
+			this.chinaName = "èµ›æ©";
 			this.englishName = "Scion";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º·áÌïÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼šä¸°ç”°æ±½è½¦";
 			break;
 		case 121:
 			this.resId = R.drawable.m1;
-			this.text = "ÌØË¹À­";
-			this.chinaName = "ÌØË¹À­";
+			this.text = "ç‰¹æ–¯æ‹‰";
+			this.chinaName = "ç‰¹æ–¯æ‹‰";
 			this.englishName = "TESLA";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 122:
 			this.resId = R.drawable.m2;
-			this.text = "Ò»Æû";
-			this.chinaName = "Ò»Æû";
+			this.text = "ä¸€æ±½";
+			this.chinaName = "ä¸€æ±½";
 			this.englishName = "KOMBAT";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú\nÁ¥Êô¹«Ë¾£ºÖĞ¹úµÚÒ»Æû³µ¼¯ÍÅ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½\néš¶å±å…¬å¸ï¼šä¸­å›½ç¬¬ä¸€æ±½è½¦é›†å›¢å…¬å¸";
 			break;
 		case 123:
 			this.resId = R.drawable.m3;
-			this.text = "Å·ÀÊ";
-			this.chinaName = "Å·ÀÊ";
+			this.text = "æ¬§æœ—";
+			this.chinaName = "æ¬§æœ—";
 			this.englishName = "Oley";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¼ªÁÖ¡¤³¤´º\nÁ¥Êô¹«Ë¾£ºÒ»Æû¼¯ÍÅ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·å‰æ—Â·é•¿æ˜¥\néš¶å±å…¬å¸ï¼šä¸€æ±½é›†å›¢";
 			break;
 		case 124:
 			this.resId = R.drawable.m4;
-			this.text = "¹ş¸¥";
-			this.chinaName = "¹ş¸¥";
+			this.text = "å“ˆå¼—";
+			this.chinaName = "å“ˆå¼—";
 			this.englishName = "HAVAL";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºÓ±±Ê¡¡¤±£¶¨ÊĞ\nÁ¥Êô¹«Ë¾£º³¤³ÇÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ²³åŒ—çœÂ·ä¿å®šå¸‚\néš¶å±å…¬å¸ï¼šé•¿åŸæ±½è½¦";
 			break;
 		case 125:
 			this.resId = R.drawable.m5;
-			this.text = "´ïÎ÷ÑÇ";
-			this.chinaName = "´ïÎ÷ÑÇ";
+			this.text = "è¾¾è¥¿äºš";
+			this.chinaName = "è¾¾è¥¿äºš";
 			this.englishName = "Dacia";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£ºÀ×ÅµÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼šé›·è¯ºæ±½è½¦";
 			break;
 		case 126:
 			this.resId = R.drawable.m6;
 			this.text = "Fisker";
-			this.chinaName = "FiskerÆû³µ";
+			this.chinaName = "Fiskeræ±½è½¦";
 			this.englishName = "Fisker";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 127:
 			this.resId = R.drawable.m7;
-			this.text = "Ö®Åµ";
-			this.chinaName = "Ö®Åµ";
+			this.text = "ä¹‹è¯º";
+			this.chinaName = "ä¹‹è¯º";
 			this.englishName = "ZINORO";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤±±¾©ÊĞ\nÁ¥Êô¹«Ë¾£º»ª³¿±¦ÂíÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·åŒ—äº¬å¸‚\néš¶å±å…¬å¸ï¼šåæ™¨å®é©¬æ±½è½¦";
 			break;
 		case 128:
 			this.resId = R.drawable.m8;
 			this.text = "Noble";
-			this.chinaName = "NobleÆû³µ";
+			this.chinaName = "Nobleæ±½è½¦";
 			this.englishName = "Noble";
-			this.description = "²ú¡¡¡¡µØ£ºÓ¢¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šè‹±å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 129:
 			this.resId = R.drawable.m9;
-			this.text = "Ä¦¸ùÆû³µ";
-			this.chinaName = "Ä¦¸ùÆû³µ";
+			this.text = "æ‘©æ ¹æ±½è½¦";
+			this.chinaName = "æ‘©æ ¹æ±½è½¦";
 			this.englishName = "morgan";
-			this.description = "²ú¡¡¡¡µØ£ºÓ¢¹ú\nÁ¥Êô¹«Ë¾£ºÄ¦¸ùÆû³µ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šè‹±å›½\néš¶å±å…¬å¸ï¼šæ‘©æ ¹æ±½è½¦å…¬å¸";
 			break;
 		/** --------------------- */
 		case 130:
 			this.resId = R.drawable.n0;
-			this.text = "¾ÅÁúÆû³µ";
-			this.chinaName = "joylong¾ÅÁúÉÌÎñ³µ";
+			this.text = "ä¹é¾™æ±½è½¦";
+			this.chinaName = "joylongä¹é¾™å•†åŠ¡è½¦";
 			this.englishName = "joylong";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤½­ËÕÊ¡¡¤ÑïÖİÊĞ\nÁ¥Êô¹«Ë¾£º½­ËÕ¾ÅÁúÆû³µÖÆÔìÓĞÏŞ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ±Ÿè‹çœÂ·æ‰¬å·å¸‚\néš¶å±å…¬å¸ï¼šæ±Ÿè‹ä¹é¾™æ±½è½¦åˆ¶é€ æœ‰é™å…¬å¸";
 			break;
 		case 131:
 			this.resId = R.drawable.n1;
-			this.text = "»ªæë";
-			this.chinaName = "»ªæë";
+			this.text = "åéª";
+			this.chinaName = "åéª";
 			this.englishName = "HORKI";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£º¶«·çÔÃ´ïÆğÑÇ";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼šä¸œé£æ‚¦è¾¾èµ·äºš";
 			break;
 		case 132:
 			this.resId = R.drawable.n2;
-			this.text = "ºãÌìÆû³µ";
-			this.chinaName = "CHTCºãÌìÆû³µ";
+			this.text = "æ’å¤©æ±½è½¦";
+			this.chinaName = "CHTCæ’å¤©æ±½è½¦";
 			this.englishName = "CHTC";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤ºÓ±±¡¤±£¶¨\nÁ¥Êô¹«Ë¾£ºÖĞ¹úµÚÒ»Æû³µ¼¯ÍÅ¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·æ²³åŒ—Â·ä¿å®š\néš¶å±å…¬å¸ï¼šä¸­å›½ç¬¬ä¸€æ±½è½¦é›†å›¢å…¬å¸";
 			break;
 		case 133:
 			this.resId = R.drawable.n3;
 			this.text = "Hennessey";
 			this.chinaName = "Hennessey";
 			this.englishName = "Hennessey";
-			this.description = "²ú¡¡¡¡µØ£ºÃÀ¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šç¾å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 134:
 			this.resId = R.drawable.n4;
-			this.text = "¸£ÆûĞÂÁúÂí";
-			this.chinaName = "¸£ÆûĞÂÁúÂí";
+			this.text = "ç¦æ±½æ–°é¾™é©¬";
+			this.chinaName = "ç¦æ±½æ–°é¾™é©¬";
 			this.englishName = "NLM MOTOR";
-			this.description = "²ú¡¡¡¡µØ£ºÖĞ¹ú¡¤¸£½¨Ê¡\nÁ¥Êô¹«Ë¾£º¸£½¨Ê¡Æû³µ¹¤Òµ¼¯ÍÅ¿Ø¹É¹«Ë¾";
+			this.description = "äº§ã€€ã€€åœ°ï¼šä¸­å›½Â·ç¦å»ºçœ\néš¶å±å…¬å¸ï¼šç¦å»ºçœæ±½è½¦å·¥ä¸šé›†å›¢æ§è‚¡å…¬å¸";
 			break;
 		case 135:
 			this.resId = R.drawable.n5;
-			this.text = "ÎÖ¿ËË¹ºÀ¶û";
-			this.chinaName = "ÎÖ¿ËË¹ºÀ¶û";
+			this.text = "æ²ƒå…‹æ–¯è±ªå°”";
+			this.chinaName = "æ²ƒå…‹æ–¯è±ªå°”";
 			this.englishName = "VAUXHALL";
-			this.description = "²ú¡¡¡¡µØ£ºÓ¢¹ú¡¤ÎÖ¿ËË¹ºÀ¶û\nÁ¥Êô¹«Ë¾£ºÍ¨ÓÃÆû³µ";
+			this.description = "äº§ã€€ã€€åœ°ï¼šè‹±å›½Â·æ²ƒå…‹æ–¯è±ªå°”\néš¶å±å…¬å¸ï¼šé€šç”¨æ±½è½¦";
 			break;
 		case 136:
 			this.resId = R.drawable.n6;
-			this.text = "Ë¹ÅÉÀÊ";
-			this.chinaName = "Ë¹ÅÉÀÊ";
+			this.text = "æ–¯æ´¾æœ—";
+			this.chinaName = "æ–¯æ´¾æœ—";
 			this.englishName = "Spirra";
-			this.description = "²ú¡¡¡¡µØ£ºº«¹ú\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼šéŸ©å›½\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 137:
 			this.resId = R.drawable.n7;
 			this.text = "----";
 			this.chinaName = "----";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 138:
 			this.resId = R.drawable.n8;
 			this.text = "----";
 			this.chinaName = "----";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼š----";
 			break;
 		case 139:
 			this.resId = R.drawable.n9;
 			this.text = "----";
 			this.chinaName = "----";
 			this.englishName = "----";
-			this.description = "²ú¡¡¡¡µØ£º----\nÁ¥Êô¹«Ë¾£º----";
+			this.description = "äº§ã€€ã€€åœ°ï¼š----\néš¶å±å…¬å¸ï¼š----";
 			break;
 		/** --------------------- */
 
@@ -1265,155 +1265,155 @@ public class CarInfo implements Parcelable {
 	}
 
 	/** 
-	 *  ÅÅÃû²»·ÖÏÈºó:
-	 *  0 = ÀÍË¹À³Ë¹    = a0
-	 *  1 = ±öÀû            = a1
-	 *  2 = ±£Ê±½İ        = a2
-	 *  3 = ·¨À­Àû        = a3
-	 *  4 = ÂêÉ¯À­µÙ    = a4
-	 *  5 = À¼²©»ùÄá    = a5
-	 *  6 = ±¼³Û            = a6
-	 *  7 = ±¦Âí            = a7
-	 *  8 = Âõ°ÍºÕ        = a7
-	 *  9 = Â·Ë¹ÌØ        = a9
-	 *  10 = °ÂµÏ   = b0
-	 *  11 = º·Âí    = b1
-	 *  12 = Â·»¢   = b2
-	 *  13 = Á«»¨    = b3
-	 *  14 = °¢¶û·¨¡¤ÂŞÃÜÅ·    = b4
-	 *  15 = ¼ªÀû    = b5
-	 *  16 = Ó¢·ÆÄáµÏ    = b6
-	 *  17 = ÁåÄ¾    = b7
-	 *  18 = Ñ©ÌúÁú    = b8
-	 *  19 = ³¤°²    = b9
-	 *  20 = ³¤°²ÉÌÓÃ    = c0
-	 *  21 = Ãû¾ô    = c1
-	 *  22 = ¿ªÈğ   = c2
-	 *  23 = º£Âí    = c3
-	 *  24 = ¶«·ç    = c4
-	 *  25 = ¼ªÀûÈ«ÇòÓ¥    = c5
-	 *  26 = ÈÕ²ú    = c6
-	 *  27 = ·áÌï  = c7
-	 *  28 = Å·±¦    = c8
-	 *  29 = ½İ±ª    = c9
+	 *  æ’åä¸åˆ†å…ˆå:
+	 *  0 = åŠ³æ–¯è±æ–¯    = a0
+	 *  1 = å®¾åˆ©            = a1
+	 *  2 = ä¿æ—¶æ·        = a2
+	 *  3 = æ³•æ‹‰åˆ©        = a3
+	 *  4 = ç›èæ‹‰è’‚    = a4
+	 *  5 = å…°åšåŸºå°¼    = a5
+	 *  6 = å¥”é©°            = a6
+	 *  7 = å®é©¬            = a7
+	 *  8 = è¿ˆå·´èµ«        = a7
+	 *  9 = è·¯æ–¯ç‰¹        = a9
+	 *  10 = å¥¥è¿ª   = b0
+	 *  11 = æ‚é©¬    = b1
+	 *  12 = è·¯è™   = b2
+	 *  13 = è²èŠ±    = b3
+	 *  14 = é˜¿å°”æ³•Â·ç½—å¯†æ¬§    = b4
+	 *  15 = å‰åˆ©    = b5
+	 *  16 = è‹±è²å°¼è¿ª    = b6
+	 *  17 = é“ƒæœ¨    = b7
+	 *  18 = é›ªé“é¾™    = b8
+	 *  19 = é•¿å®‰    = b9
+	 *  20 = é•¿å®‰å•†ç”¨    = c0
+	 *  21 = åçˆµ    = c1
+	 *  22 = å¼€ç‘   = c2
+	 *  23 = æµ·é©¬    = c3
+	 *  24 = ä¸œé£    = c4
+	 *  25 = å‰åˆ©å…¨çƒé¹°    = c5
+	 *  26 = æ—¥äº§    = c6
+	 *  27 = ä¸°ç”°  = c7
+	 *  28 = æ¬§å®    = c8
+	 *  29 = æ·è±¹    = c9
 	 *  
-	 *  30 = ¸£ÌØÒ°Âí    = d0
-	 *  31 = ±ğ¿Ë    = d1
-	 *  32 = ÎÖ¶ûÎÖ  = d2
-	 *  33 = Ë¹¿Â´ï    = d3
-	 *  34 = ÈÙÍş    = d4
-	 *  35 = ¼ªÀûµÛºÀ    = d5
-	 *  36 = Ó¢Â×    = d6
-	 *  37 = Èğ÷è  = d7
-	 *  38 = Ë¹°ÍÂ³    = d8
-	 *  39 = Íş÷ë    = d9
+	 *  30 = ç¦ç‰¹é‡é©¬    = d0
+	 *  31 = åˆ«å…‹    = d1
+	 *  32 = æ²ƒå°”æ²ƒ  = d2
+	 *  33 = æ–¯æŸ¯è¾¾    = d3
+	 *  34 = è£å¨    = d4
+	 *  35 = å‰åˆ©å¸è±ª    = d5
+	 *  36 = è‹±ä¼¦    = d6
+	 *  37 = ç‘éº’  = d7
+	 *  38 = æ–¯å·´é²    = d8
+	 *  39 = å¨éºŸ    = d9
 	 *  
-	 *  40 = ±êÖÂ    = e0
-	 *  41 = Æô³½    = e1
-	 *  42 = ±¾Ìï   = e2
+	 *  40 = æ ‡è‡´    = e0
+	 *  41 = å¯è¾°    = e1
+	 *  42 = æœ¬ç”°   = e2
 	 *  43 = GMC  = e3
-	 *  44 = ±¦ÂíMini = e4
-	 *  45 = Âí×Ô´ï    = e5
-	 *  46 = ³¤³Ç   = e6
-	 *  47 = ÀíÄî  = e7
-	 *  48 = ´óÖÚ    = e8
-	 *  49 = Â½·ç   = e9
+	 *  44 = å®é©¬Mini = e4
+	 *  45 = é©¬è‡ªè¾¾    = e5
+	 *  46 = é•¿åŸ   = e6
+	 *  47 = ç†å¿µ  = e7
+	 *  48 = å¤§ä¼—    = e8
+	 *  49 = é™†é£   = e9
 	 *  
-	 *  50 = Ñ©·ğÀ¼    = f0
-	 *  51 = ¸£ÌØ    = f1
-	 *  52 = ÆğÑÇ   = f2
-	 *  53 = Èø²©  = f3
-	 *  54 = »ªÆÕ = f4
-	 *  55 = ÖĞ»ª    = f5
-	 *  56 = ÆæÈğ  = f6
-	 *  57 = °¢Ë¹¶Ù¡¤Âí¶¡  = f7
-	 *  58 = ÏÄÀû    = f8
-	 *  59 = À×¿ËÈøË¹   = f9
+	 *  50 = é›ªä½›å…°    = f0
+	 *  51 = ç¦ç‰¹    = f1
+	 *  52 = èµ·äºš   = f2
+	 *  53 = è¨åš  = f3
+	 *  54 = åæ™® = f4
+	 *  55 = ä¸­å    = f5
+	 *  56 = å¥‡ç‘  = f6
+	 *  57 = é˜¿æ–¯é¡¿Â·é©¬ä¸  = f7
+	 *  58 = å¤åˆ©    = f8
+	 *  59 = é›·å…‹è¨æ–¯   = f9
 	 *  
-	 *  60 = ÏÖ´ú    = g0
-	 *  61 = ¼ª°Â    = g1
-	 *  62 = ·ÆÑÇÌØ   = g2
-	 *  63 = ¿­µÏÀ­¿Ë = g3
-	 *  64 = ±±ÆûÍşÍú = g4
-	 *  65 = ÅÁ¼ÓÄá    = g5
-	 *  66 = Î÷ÑÅÌØ  = g6
-	 *  67 = ÏÖ´úÀÍ¶÷Ë¹  = g7
-	 *  68 = ÖÚÌ©   = g8
-	 *  69 = ¿ËÀ³Ë¹ÀÕ  = g9
+	 *  60 = ç°ä»£    = g0
+	 *  61 = å‰å¥¥    = g1
+	 *  62 = è²äºšç‰¹   = g2
+	 *  63 = å‡¯è¿ªæ‹‰å…‹ = g3
+	 *  64 = åŒ—æ±½å¨æ—º = g4
+	 *  65 = å¸•åŠ å°¼    = g5
+	 *  66 = è¥¿é›…ç‰¹  = g6
+	 *  67 = ç°ä»£åŠ³æ©æ–¯  = g7
+	 *  68 = ä¼—æ³°   = g8
+	 *  69 = å…‹è±æ–¯å‹’  = g9
 	 *  
-	 *  70 = ½­»´    = h0
-	 *  71 = À×Åµ    = h1
-	 *  72 = ¿ÆÄáÈü¿Ë   = h2
-	 *  73 = °Í²©Ë¹ = h3
-	 *  74 = ±¦¿¥ = h4
-	 *  75 = ±±¾©Æû³µ    = h5
-	 *  76 = ±±ÆûÖÆÔì = h6
-	 *  77 = ±¼ÌÚ  = h7
-	 *  78 = ±ÈÑÇµÏ   = h8
-	 *  79 = ²¼¼ÓµÏ  = h9
+	 *  70 = æ±Ÿæ·®    = h0
+	 *  71 = é›·è¯º    = h1
+	 *  72 = ç§‘å°¼èµ›å…‹   = h2
+	 *  73 = å·´åšæ–¯ = h3
+	 *  74 = å®éª = h4
+	 *  75 = åŒ—äº¬æ±½è½¦    = h5
+	 *  76 = åŒ—æ±½åˆ¶é€  = h6
+	 *  77 = å¥”è…¾  = h7
+	 *  78 = æ¯”äºšè¿ª   = h8
+	 *  79 = å¸ƒåŠ è¿ª  = h9
 	 *  
-	 *  80 = ²ıºÓ    = i0
-	 *  81 = ´¨ÆûÒ°Âí    = i1
+	 *  80 = æ˜Œæ²³    = i0
+	 *  81 = å·æ±½é‡é©¬    = i1
 	 *  82 = DS   = i2
-	 *  83 = ´ó·¢ = i3
-	 *  84 = µÀÆæ = i4
-	 *  85 = ¶«ÄÏ    = i5
-	 *  86 = ¸£µÏ = i6
-	 *  87 = ¸£Ìï  = i7
-	 *  88 = ¹ÛÖÂ   = i8
-	 *  89 = ¹ãÆû´«ì÷  = i9
+	 *  83 = å¤§å‘ = i3
+	 *  84 = é“å¥‡ = i4
+	 *  85 = ä¸œå—    = i5
+	 *  86 = ç¦è¿ª = i6
+	 *  87 = ç¦ç”°  = i7
+	 *  88 = è§‚è‡´   = i8
+	 *  89 = å¹¿æ±½ä¼ ç¥º  = i9
 	 * 
-	 *  90 = ¹ş·É    = j0
-	 *  91 = º£¸ñ    = j1
-	 *  92 = ºìÆì   = j2
-	 *  93 = »ªÌ© = j3
-	 *  94 = »Æº£ = j4
-	 *  95 = ¼ªÆÕ    = j5
-	 *  96 = ½­Áå = j6
-	 *  97 = ½ğ±­  = j7
+	 *  90 = å“ˆé£    = j0
+	 *  91 = æµ·æ ¼    = j1
+	 *  92 = çº¢æ——   = j2
+	 *  93 = åæ³° = j3
+	 *  94 = é»„æµ· = j4
+	 *  95 = å‰æ™®    = j5
+	 *  96 = æ±Ÿé“ƒ = j6
+	 *  97 = é‡‘æ¯  = j7
 	 *  98 = AC Schnitzer = j8
-	 *  99 = ÖĞĞË  = j9
+	 *  99 = ä¸­å…´  = j9
 	 *  
-	 *  100 = Íş×ÈÂü    = k0
-	 *  101 = Ë«»·    = k1
-	 *  102 = ÊÀ¾ô   = k2
-	 *  103 = ÈıÁâ = k3
-	 *  104 = Á¦·« = k4
-	 *  105 = ¿¨¶ûÉ­    = k5
-	 *  106 = Ú©¸è = k6
-	 *  107 = Ë¼Ãú  = k7
-	 *  108 = ÁÔ±ª   = k8
-	 *  109 = Ë«Áú  = k9
+	 *  100 = å¨å…¹æ›¼    = k0
+	 *  101 = åŒç¯    = k1
+	 *  102 = ä¸–çˆµ   = k2
+	 *  103 = ä¸‰è± = k3
+	 *  104 = åŠ›å¸† = k4
+	 *  105 = å¡å°”æ£®    = k5
+	 *  106 = è®´æ­Œ = k6
+	 *  107 = æ€é“­  = k7
+	 *  108 = çŒè±¹   = k8
+	 *  109 = åŒé¾™  = k9
 	 *  
 	 *  110 = Gumpert = l0
-	 *  111 = ¹â¸Ô    = l1
-	 *  112 = ¿­°ÛºÕ   = l2
-	 *  113 = ÄÉÖÇ½İ = l3
-	 *  114 = ÁÖ¿Ï = l4
-	 *  115 = Âõ¿­ÂÖ    = l5
-	 *  116 = ÓÀÔ´ = l6
-	 *  117 = ÌÚÊÆ  = l7
+	 *  111 = å…‰å†ˆ    = l1
+	 *  112 = å‡¯ä½°èµ«   = l2
+	 *  113 = çº³æ™ºæ· = l3
+	 *  114 = æ—è‚¯ = l4
+	 *  115 = è¿ˆå‡¯è½®    = l5
+	 *  116 = æ°¸æº = l6
+	 *  117 = è…¾åŠ¿  = l7
 	 *  118 = KTM   = l8
-	 *  119 = ±¼³ÛSmart = l9
+	 *  119 = å¥”é©°Smart = l9
 	 *  
-	 *  120 = Èü¶÷    = m0
-	 *  121 = ÌØË¹À­    = m1
-	 *  122 = Ò»Æû   = m2
-	 *  123 = Å·ÀÊ = m3
-	 *  124 = ¹ş¸¥ = m4
-	 *  125 = ´ïÎ÷ÑÇ    = m5
+	 *  120 = èµ›æ©    = m0
+	 *  121 = ç‰¹æ–¯æ‹‰    = m1
+	 *  122 = ä¸€æ±½   = m2
+	 *  123 = æ¬§æœ— = m3
+	 *  124 = å“ˆå¼— = m4
+	 *  125 = è¾¾è¥¿äºš    = m5
 	 *  126 = Fisker = m6
-	 *  127 = Ö®Åµ = m7
+	 *  127 = ä¹‹è¯º = m7
 	 *  128 = Noble  = m8
-	 *  129 = Ä¦¸ùÆû³µ  = m9
+	 *  129 = æ‘©æ ¹æ±½è½¦  = m9
 	 *  
-	 *  130 = ¾ÅÁúÆû³µ    = n0
-	 *  131 = »ªæë    = n1
-	 *  132 = ºãÌìÆû³µ   = n2
+	 *  130 = ä¹é¾™æ±½è½¦    = n0
+	 *  131 = åéª    = n1
+	 *  132 = æ’å¤©æ±½è½¦   = n2
 	 *  133 = Hennessey = n3
-	 *  134 = ¸£ÆûĞÂÁúÂí = n4
-	 *  135 = ÎÖ¿ËË¹ºÀ¶û    = n5
-	 *  136 = Ë¹ÅÉÀÊ = n6
+	 *  134 = ç¦æ±½æ–°é¾™é©¬ = n4
+	 *  135 = æ²ƒå…‹æ–¯è±ªå°”    = n5
+	 *  136 = æ–¯æ´¾æœ— = n6
 	 *  137 = ----  = n7
 	 *  138 = ----   = n8
 	 *  139 = ----  = n9

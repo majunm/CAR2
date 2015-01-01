@@ -74,7 +74,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			}
 		}
 
-		/** Çå¿ÕÑÕÉ«Öµ */
+		/** æ¸…ç©ºé¢œè‰²å€¼ */
 		private void clearColorStatus() {
 			previous.setTextColor(Color.parseColor("#6D6D6F"));
 			next.setTextColor(Color.parseColor("#6D6D6F"));
@@ -82,13 +82,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		}
 	};
 
-	/** ±êÌâ */
+	/** æ ‡é¢˜ */
 	private TextView carCommonTitle;
 
 	private long firstTime;
 
 	// public class MyViewPagerAdapter extends FragmentPagerAdapter {
-	/** Ã»ÓÃµÄ¸Ï½ôÏú»Ù,±ğÀË·Ñ×ÊÔ´ */
+	/** æ²¡ç”¨çš„èµ¶ç´§é”€æ¯,åˆ«æµªè´¹èµ„æº */
 	public class MyViewPagerAdapter extends FragmentStatePagerAdapter {
 
 		public MyViewPagerAdapter(FragmentManager fm) {
@@ -140,7 +140,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		}
 	}
 
-	/** ×Ô¶¨Òåactionbar */
+	/** è‡ªå®šä¹‰actionbar */
 	public void setActionBarLayout(int layoutId) {
 		ActionBar actionBar = getActionBar();
 		if (null != actionBar) {
@@ -160,15 +160,15 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	}
 
 	/**
-	 * °´Á½´ÎÍË³öÓ¦ÓÃ~~
+	 * æŒ‰ä¸¤æ¬¡é€€å‡ºåº”ç”¨~~
 	 */
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			long secondTime = System.currentTimeMillis();
-			if (secondTime - firstTime > 1000) {// Èç¹ûÁ½´Î°´¼üÊ±¼ä¼ä¸ô´óÓÚ800ºÁÃë£¬Ôò²»ÍË³ö
-				firstTime = secondTime;// ¸üĞÂfirstTime
-				Toast.makeText(this, "ÔÙ°´Ò»´ÎÍË³ö", 0).show();
+			if (secondTime - firstTime > 1000) {// å¦‚æœä¸¤æ¬¡æŒ‰é”®æ—¶é—´é—´éš”å¤§äº800æ¯«ç§’ï¼Œåˆ™ä¸é€€å‡º
+				firstTime = secondTime;// æ›´æ–°firstTime
+				Toast.makeText(this, "å†æŒ‰ä¸€æ¬¡é€€å‡º", 0).show();
 				try {
 				} catch (Exception e) {
 					e.printStackTrace();
