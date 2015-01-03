@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+杏仁黄    #FAF9DE   RGB(250, 249, 222)
+秋叶褐    #FFF2E2   RGB(255, 242, 226)
+胭脂红    #FDE6E0   RGB(253, 230, 224)
+青草绿    #E3EDCD   RGB(227, 237, 205)
+海天蓝    #DCE2F1   RGB(220, 226, 241)
+葛巾紫    #E9EBFE   RGB(233, 235, 254)
+极光灰    #EAEAEF   RGB(234, 234, 239)
+    -->
+
+    <color name="mini_white">#FFFAF0</color>
+    <!-- 花白 -->
+    <color name="mini_half_transparent">#10000000</color>
+    <!-- 半透明 -->
+    <color name="mini_color_car">#6D6D6F</color>
+    <color name="mini_green_1">#00FF00</color>
+    <!-- 绿色 -->
+    <color name="mini_red">#FF0000</color>
+    <!-- 红色 -->
+    <color name="mini">#1bbc9b</color>
+    <!-- 色 -->
+    <color name="mini_line">#9B5B78</color>
+    <!-- 分割线 -->
+    <color name="mini_line_one">#E3EDCD</color>
+    <!-- 分割线 -->
+    <color name="mini_blue_color">#00FFFF</color>
+    <!-- 天天蓝 -->
+    <color name="mini_color">#515151</color>
+    <!-- 灰色 -->
+    <color name="mini_cool_black_00">#22333300</color>
+    <!-- 炫黑 -->
+    <color name="mini_cool_black_01">#E0000000</color>
+    <!-- 炫黑 -->
+    <color name="mini_cool_black_02">#C0000000</color>
+    <!-- 炫黑 -->
+    <color name="mini_transparent">#9000</color>
+    <!-- 设置透明度为56%(9/16)左右 -->
+    <color name="mini_cool_blue">#3463b4</color>
+    <!-- cool bule -->
+    <color name="mini_cool_cool">#1bbc9b</color>
+    <color name="mini_actionbar_color">#F0F0F0</color>
+    <!-- cool bule -->
+
+</resources>
