@@ -1,5 +1,8 @@
 package com.m.car2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.ActionBar;
 import android.app.ActionBar.LayoutParams;
 import android.content.Context;
@@ -9,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,11 +27,12 @@ import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
 
-	private RadioButton previous;
-	private RadioButton next;
+	private RadioButton carBrand;
+	private RadioButton setting;
 	private RadioButton classify;
 
 	private RadioGroup group;
+	private int currentIndex = R.id.car_brand;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +41,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		setActionBarLayout(R.layout.car_actionbar_layout);
 		container = (FrameLayout) findViewById(R.id.car_cotainer);
 		group = (RadioGroup) findViewById(R.id.mini_group);
-		previous = (RadioButton) findViewById(R.id.mini_previous);
-		next = (RadioButton) findViewById(R.id.car_setting);
+		carBrand = (RadioButton) findViewById(R.id.car_brand);
+		setting = (RadioButton) findViewById(R.id.car_setting);
 		classify = (RadioButton) findViewById(R.id.mini_classify);
 		group.setOnCheckedChangeListener(onCheckedChangeListener);
 		for (int i = 0; i < group.getChildCount(); i++) {
@@ -46,52 +51,65 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 						.parseColor("#74DCFF"));
 			}
 		}
+		carFragment = new CarFragment();
 		getSupportFragmentManager().beginTransaction()
-				.replace(R.id.car_cotainer, new CarFragment()).commit();
-		
-//		Fragment fragment = (Fragment) mFragmentPagerAdapter
-//				.instantiateItem(container, checkedId);
-//		mFragmentPagerAdapter.setPrimaryItem(container, 0, fragment);
-//		mFragmentPagerAdapter.finishUpdate(container);
+				.add(R.id.car_cotainer, carFragment).commit();
+		// group.check(currentIndex);
 	}
 
 	public OnCheckedChangeListener onCheckedChangeListener = new OnCheckedChangeListener() {
-		@Override
 		public void onCheckedChanged(RadioGroup group, int checkedId) {
-			Fragment fragment = (Fragment) mFragmentPagerAdapter
-					.instantiateItem(container, checkedId);
-			mFragmentPagerAdapter.setPrimaryItem(container, 0, fragment);
-			mFragmentPagerAdapter.finishUpdate(container);
-			// FragmentTransaction ft = getSupportFragmentManager()
-			// .beginTransaction();
-			// switch (checkedId) {
-			// case R.id.mini_previous:
-			// // Toast.makeText(getApplicationContext(), "@0@@", 0).show();
-			// previous.setTextColor(Color.parseColor("#74DCFF"));
-			// ft.replace(R.id.car_cotainer, new CarFragment());
-			// break;
-			// case R.id.car_setting:
-			// next.setTextColor(Color.parseColor("#74DCFF"));
-			// ft.replace(R.id.car_cotainer, new SettingFragment());
-			// break;
-			// case R.id.mini_classify:
-			// // classify.setTextColor(Color.parseColor("#1bbc9b"));
-			// classify.setTextColor(Color.parseColor("#74DCFF"));
-			// ft.replace(R.id.car_cotainer, new TestFragment());
-			// break;
-			// }
-			// ft.commit();
+			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+			clearColorStatus();
+			hideFragments(ft);
+			switch (checkedId) {
+			case R.id.car_brand:
+
+				carBrand.setTextColor(Color.parseColor("#74DCFF"));
+				if (carFragment == null) {
+					carFragment = new CarFragment();
+					ft.add(R.id.car_cotainer, carFragment);
+				} else {
+					ft.show(carFragment);
+				}
+				break;
+			case R.id.mini_classify:
+				classify.setTextColor(Color.parseColor("#74DCFF"));
+				if (testFragment == null) {
+					testFragment = new TestFragment();
+					ft.add(R.id.car_cotainer, testFragment);
+				} else {
+					ft.show(testFragment);
+				}
+				break;
+			case R.id.car_setting:
+				setting.setTextColor(Color.parseColor("#74DCFF"));
+				if (settingFragment == null) {
+					settingFragment = new SettingFragment();
+					ft.add(R.id.car_cotainer, settingFragment);
+				} else {
+					ft.show(settingFragment);
+				}
+				break;
+			}
+			ft.commit();
+			// Fragment fragment = (Fragment)
+			// mFragmentPagerAdapter.instantiateItem(
+			// container, index);
+			// Log.e("debug", "index=" + index);
+			// mFragmentPagerAdapter.setPrimaryItem(container, 0, fragment);
+			// mFragmentPagerAdapter.finishUpdate(container);
 		}
 
 	};
 
 	/** 清空颜色值 */
 	private void clearColorStatus() {
-		previous.setTextColor(Color.parseColor("#6D6D6F"));
-		next.setTextColor(Color.parseColor("#6D6D6F"));
+		carBrand.setTextColor(Color.parseColor("#6D6D6F"));
+		setting.setTextColor(Color.parseColor("#6D6D6F"));
 		classify.setTextColor(Color.parseColor("#6D6D6F"));
 	}
-	
+
 	/** 标题 */
 	private TextView carCommonTitle;
 
@@ -117,19 +135,19 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		@Override
 		public Fragment getItem(int position) {
-			clearColorStatus();
+			Fragment f = null;
 			switch (position) {
-			case R.id.mini_previous:
-				previous.setTextColor(Color.parseColor("#74DCFF"));
-				return new CarFragment();
-			case R.id.car_setting:
-				next.setTextColor(Color.parseColor("#74DCFF"));
-				return new SettingFragment();
-			case R.id.mini_classify:
+			case 0:
+				carBrand.setTextColor(Color.parseColor("#74DCFF"));
+				f = new CarFragment();
+			case 2:
+				setting.setTextColor(Color.parseColor("#74DCFF"));
+				f = new SettingFragment();
+			case 1:
 				classify.setTextColor(Color.parseColor("#74DCFF"));
-				return new TestFragment();
+				f = new TestFragment();
 			}
-			return new CarFragment();
+			return f;
 		}
 
 		@Override
@@ -137,6 +155,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			return 3;
 		}
 	};
+	private CarFragment carFragment;
+	private TestFragment testFragment;
+	private SettingFragment settingFragment;
 
 	/** 自定义actionbar */
 	public void setActionBarLayout(int layoutId) {
@@ -148,8 +169,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			View v = inflator.inflate(layoutId, null);
 			carCommonTitle = (TextView) v.findViewById(R.id.car_common_title);
-			ImageView carCommonMore = (ImageView) v
-					.findViewById(R.id.car_common_more);
+			ImageView carCommonMore = (ImageView) v.findViewById(R.id.car_common_more);
 			carCommonMore.setOnClickListener(this);
 			carCommonTitle.setOnClickListener(this);
 			ActionBar.LayoutParams layout = new ActionBar.LayoutParams(
@@ -178,6 +198,18 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			}
 		}
 		return super.onKeyUp(keyCode, event);
+	}
+
+	private void hideFragments(FragmentTransaction transaction) {
+		if (carFragment != null) {
+			transaction.hide(carFragment);
+		}
+		if (testFragment != null) {
+			transaction.hide(testFragment);
+		}
+		if (settingFragment != null) {
+			transaction.hide(settingFragment);
+		}
 	}
 
 }
