@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/car_feedback_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@id/one_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/one_title_bg" >
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/one_title"
+            android:text="@string/userfeedback"
+            android:textColor="@color/one_textcolor"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@id/returnShareSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@id/feedback_back"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:padding="15dp"
+                android:contentDescription="@null"
+                android:src="@drawable/return_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_feedback"
+        android:layout_marginLeft="25.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="18.0dip"
+                android:orientation="vertical"
+                android:text="@string/contact_ours"
+                android:textColor="@color/black"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:id="@id/car_feedback_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="7.0dip"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:text="@string/contact_ours_details"
+                android:textColor="@color/dimgray"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="13.0dip"
+                android:text="@string/email"
+                android:textColor="@color/dimgray"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@id/email_editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="3.0dip"
+                android:autoLink="email"
+                android:background="@drawable/feedback_edit_bg"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/dimgray"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@id/emailClew_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clew_content"
+                android:textColor="@color/dimgray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="13.0dip"
+                android:text="@string/mobile"
+                android:textColor="@color/dimgray"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@id/mobile_editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="3.0dip"
+                android:autoLink="phone"
+                android:background="@drawable/feedback_edit_bg"
+                android:inputType="phone"
+                android:textColor="@color/dimgray"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/feedback_content"
+                android:textColor="@color/dimgray"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@id/feedbackContent_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/feedback_edit_bg"
+                android:inputType="textMultiLine"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                android:textColor="@color/dimgray"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@id/feedbackClew_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clew_content1"
+                android:textColor="@color/dimgray"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@id/submitFeedBack"
+                android:layout_width="wrap_content"
+                android:layout_height="35.0dip"
+                android:layout_marginTop="4.5dip"
+                android:background="@drawable/feedback_btn_selector"
+                android:gravity="center"
+                android:onClick="submitFeedback"
+                android:text="@string/submit_feedback"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,22 +1,16 @@
 package com.m.car2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.ActionBar;
 import android.app.ActionBar.LayoutParams;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -25,7 +19,9 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends FragmentActivity implements OnClickListener {
+import com.m.base.BaseActivity;
+
+public class MainActivity extends BaseActivity {
 
 	private RadioButton carBrand;
 	private RadioButton setting;
@@ -38,7 +34,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		setActionBarLayout(R.layout.car_actionbar_layout);
 		container = (FrameLayout) findViewById(R.id.car_cotainer);
 		group = (RadioGroup) findViewById(R.id.mini_group);
 		carBrand = (RadioButton) findViewById(R.id.car_brand);
@@ -130,7 +125,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		}
 	}
 
-	private FragmentPagerAdapter mFragmentPagerAdapter = new FragmentPagerAdapter(
+	public FragmentPagerAdapter mFragmentPagerAdapter = new FragmentPagerAdapter(
 			getSupportFragmentManager()) {
 
 		@Override
@@ -158,25 +153,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	private CarFragment carFragment;
 	private TestFragment testFragment;
 	private SettingFragment settingFragment;
-
-	/** 自定义actionbar */
-	public void setActionBarLayout(int layoutId) {
-		ActionBar actionBar = getActionBar();
-		if (null != actionBar) {
-			actionBar.setDisplayShowHomeEnabled(false);
-			actionBar.setDisplayShowCustomEnabled(true);
-			LayoutInflater inflator = (LayoutInflater) this
-					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			View v = inflator.inflate(layoutId, null);
-			carCommonTitle = (TextView) v.findViewById(R.id.car_common_title);
-			ImageView carCommonMore = (ImageView) v.findViewById(R.id.car_common_more);
-			carCommonMore.setOnClickListener(this);
-			carCommonTitle.setOnClickListener(this);
-			ActionBar.LayoutParams layout = new ActionBar.LayoutParams(
-					LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
-			actionBar.setCustomView(v, layout);
-		}
-	}
 
 	/**
 	 * 按两次退出应用~~
@@ -210,6 +186,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		if (settingFragment != null) {
 			transaction.hide(settingFragment);
 		}
+	}
+
+	@Override
+	public void resetNavigation() {
+
 	}
 
 }

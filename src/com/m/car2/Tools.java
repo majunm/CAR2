@@ -6,8 +6,11 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 
 public class Tools {
@@ -56,6 +59,54 @@ public class Tools {
 		if (mProgressDialog != null && mProgressDialog.isShowing()) {
 			mProgressDialog.dismiss();
 			mProgressDialog = null;
+		}
+	}
+
+	/** 跳转不带动画 */
+	public static void activityJump(Context context, Class<?> clazz) {
+		activityJump(context, clazz, true);
+	}
+
+	/** 跳转关闭自己带动画 */
+	public static void activityJumpWithAnimation(Context context, Class<?> clazz) {
+		activityJumpWithAnimation(context, clazz, true);
+	}
+
+	/** 跳转带动画 ,变量控制关闭自己 true = 关闭 false = 不关闭 */
+	public static void activityJumpWithAnimation(Context context, Class<?> clazz,
+			boolean isClosed) {
+		activityJumping(context, clazz, isClosed, null);
+	}
+
+	/** 跳转带动画 ,变量控制关闭自己 true = 关闭 false = 不关闭 ,佩带bundle对象 */
+	public static void activityJumping(Context context, Class<?> clazz, boolean isClosed,
+			Bundle bundle) {
+		Intent intent = new Intent(context, clazz);
+		if (bundle != null) {
+			intent.putExtras(bundle);
+		}
+		// intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+		context.startActivity(intent);
+		if (isClosed) {
+			((Activity) context).finish();
+		}
+		((Activity) context).overridePendingTransition(R.anim.slide_right_in,
+				R.anim.mini_hold);
+	}
+
+	/** 关闭自己动画 */
+	public static void beginExit(Context context) {
+		((Activity) context).finish();
+		((Activity) context).overridePendingTransition(R.anim.mini_hold,
+				R.anim.slide_right_out);
+	}
+
+	/** 跳转,是否关闭自己，变量控制,不带动画 */
+	public static void activityJump(Context context, Class<?> clazz, boolean isClose) {
+		Intent intent = new Intent(context, clazz);
+		context.startActivity(intent);
+		if (isClose) {
+			((Activity) context).finish();
 		}
 	}
 

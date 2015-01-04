@@ -29,7 +29,7 @@
             android:checked="true"
             android:gravity="center"
             android:paddingBottom="5dp"
-            android:text="@string/mini_previous"
+            android:text="@string/mini_brand"
             android:textColor="@color/mini_color_car"
             android:textSize="18sp" />
 
