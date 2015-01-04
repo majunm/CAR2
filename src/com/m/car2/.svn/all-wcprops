@@ -1,47 +1,59 @@
 K 25
 svn:wc:ra_dav:version-url
-V 39
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2
+V 40
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2
 END
 Tools.java
 K 25
 svn:wc:ra_dav:version-url
-V 50
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/Tools.java
+V 51
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/Tools.java
 END
 CarInfo.java
 K 25
 svn:wc:ra_dav:version-url
-V 52
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/CarInfo.java
+V 53
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/CarInfo.java
 END
 MainActivity.java
 K 25
 svn:wc:ra_dav:version-url
-V 57
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/MainActivity.java
+V 58
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/MainActivity.java
 END
 SettingFragment.java
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/SettingFragment.java
+V 61
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/SettingFragment.java
 END
 TestFragment.java
 K 25
 svn:wc:ra_dav:version-url
-V 57
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/TestFragment.java
+V 58
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/TestFragment.java
+END
+CarFeedBackActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/CarFeedBackActivity.java
 END
 CarFragment.java
 K 25
 svn:wc:ra_dav:version-url
-V 56
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/CarFragment.java
+V 57
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/CarFragment.java
+END
+CarCopyrightActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/CarCopyrightActivity.java
 END
 CarDetailFragment.java
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/car/!svn/ver/2/CAR2/src/com/m/car2/CarDetailFragment.java
+V 63
+/svn/car2/!svn/ver/8/CAR2/src/com/m/car2/CarDetailFragment.java
 END

@@ -15,6 +15,7 @@ public class SettingFragment extends Fragment implements OnClickListener {
 
 	private TextView feedbackHint;
 	private RelativeLayout feedbackLayout;
+	private RelativeLayout copyrightLayout;
 	private ImageView feedbackArrow;
 
 	@Override
@@ -29,6 +30,7 @@ public class SettingFragment extends Fragment implements OnClickListener {
 		feedbackHint = (TextView) view.findViewById(R.id.car_feedback);
 		feedbackArrow = (ImageView) view.findViewById(R.id.car_feedback_arrow);
 		feedbackLayout = (RelativeLayout) view.findViewById(R.id.car_feedback_layout);
+		copyrightLayout = (RelativeLayout) view.findViewById(R.id.car_copyright_layout);
 		registerListener();
 	}
 
@@ -36,6 +38,7 @@ public class SettingFragment extends Fragment implements OnClickListener {
 		feedbackHint.setOnClickListener(this);
 		feedbackArrow.setOnClickListener(this);
 		feedbackLayout.setOnClickListener(this);
+		copyrightLayout.setOnClickListener(this);
 	}
 
 	@Override
@@ -48,7 +51,7 @@ public class SettingFragment extends Fragment implements OnClickListener {
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
-			addPreferencesFromResource(R.xml.preferences);
+			//addPreferencesFromResource(R.xml.preferences);
 		}
 	}
 
@@ -61,7 +64,10 @@ public class SettingFragment extends Fragment implements OnClickListener {
 			Tools.activityJumpWithAnimation(getActivity(), CarFeedBackActivity.class,
 					false);
 			break;
-
+		case R.id.car_copyright_layout:
+			Tools.activityJumpWithAnimation(getActivity(), CarCopyrightActivity.class,
+					false);
+			break;
 		default:
 			break;
 		}

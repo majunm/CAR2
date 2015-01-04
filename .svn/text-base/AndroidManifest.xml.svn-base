@@ -23,6 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.m.car2.CarFeedBackActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme_Light"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.m.car2.CarCopyrightActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme_Light" >
+        </activity>
     </application>
 
 </manifest>

@@ -12,6 +12,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 public class Tools {
 	/** 获取故事 position 对应品牌 0 = 劳斯莱斯....*/
@@ -110,4 +112,26 @@ public class Tools {
 		}
 	}
 
+	/**
+	 * 关闭软键盘
+	 */
+	public static void closeSoftKeyboard(View v, Activity context) {
+		Log.e("majun95598", "close soft keyboard.....");
+		InputMethodManager inputManager = (InputMethodManager) context
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		if (inputManager.isActive()) {
+			inputManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
+		}
+	}
+
+	/**
+	 * 开启或者关闭软键盘
+	 */
+	public static void openOrClosedSoftKeyboard(View v) {
+		InputMethodManager inputManager = (InputMethodManager) v.getContext()
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		// inputManager.showSoftInput(v, 0); // 开启软键盘
+		inputManager.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+	}
+	
 }

@@ -1,47 +1,57 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 19
+/svn/car2/!svn/act/
 K 25
 svn:wc:ra_dav:version-url
-V 24
-/svn/car/!svn/ver/1/CAR2
+V 25
+/svn/car2/!svn/ver/8/CAR2
 END
 .classpath
 K 25
 svn:wc:ra_dav:version-url
-V 35
-/svn/car/!svn/ver/2/CAR2/.classpath
+V 36
+/svn/car2/!svn/ver/8/CAR2/.classpath
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/car2/!svn/ver/9/CAR2/project.properties
 END
 .project
 K 25
 svn:wc:ra_dav:version-url
-V 33
-/svn/car/!svn/ver/2/CAR2/.project
+V 34
+/svn/car2/!svn/ver/8/CAR2/.project
 END
 .gitignore
 K 25
 svn:wc:ra_dav:version-url
-V 35
-/svn/car/!svn/ver/2/CAR2/.gitignore
+V 36
+/svn/car2/!svn/ver/8/CAR2/.gitignore
 END
 lint.xml
 K 25
 svn:wc:ra_dav:version-url
-V 33
-/svn/car/!svn/ver/2/CAR2/lint.xml
+V 34
+/svn/car2/!svn/ver/8/CAR2/lint.xml
 END
 proguard-project.txt
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/svn/car/!svn/ver/2/CAR2/proguard-project.txt
+V 46
+/svn/car2/!svn/ver/8/CAR2/proguard-project.txt
 END
 AndroidManifest.xml
 K 25
 svn:wc:ra_dav:version-url
-V 44
-/svn/car/!svn/ver/2/CAR2/AndroidManifest.xml
+V 45
+/svn/car2/!svn/ver/8/CAR2/AndroidManifest.xml
 END
 ic_launcher-web.png
 K 25
 svn:wc:ra_dav:version-url
-V 44
-/svn/car/!svn/ver/2/CAR2/ic_launcher-web.png
+V 45
+/svn/car2/!svn/ver/8/CAR2/ic_launcher-web.png
 END

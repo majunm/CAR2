@@ -1,41 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 35
-/svn/car/!svn/ver/2/CAR2/res/layout
+V 33
+/svn/car2/!svn/ver/8/CAR2/res/xml
 END
-activity_main.xml
+preferences.xml
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/svn/car/!svn/ver/2/CAR2/res/layout/activity_main.xml
-END
-activity_main2.xml
-K 25
-svn:wc:ra_dav:version-url
-V 54
-/svn/car/!svn/ver/2/CAR2/res/layout/activity_main2.xml
-END
-car_setting.xml
-K 25
-svn:wc:ra_dav:version-url
-V 51
-/svn/car/!svn/ver/2/CAR2/res/layout/car_setting.xml
-END
-car_item.xml
-K 25
-svn:wc:ra_dav:version-url
-V 48
-/svn/car/!svn/ver/2/CAR2/res/layout/car_item.xml
-END
-car_actionbar_layout.xml
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/svn/car/!svn/ver/2/CAR2/res/layout/car_actionbar_layout.xml
-END
-car_test.xml
-K 25
-svn:wc:ra_dav:version-url
-V 48
-/svn/car/!svn/ver/2/CAR2/res/layout/car_test.xml
+V 49
+/svn/car2/!svn/ver/8/CAR2/res/xml/preferences.xml
 END
