@@ -2,8 +2,8 @@
 
 dir
 8
-http://192.168.1.102:8080/svn/car2/CAR2/res/drawable
-http://192.168.1.102:8080/svn/car2
+http://192.168.1.101:8080/svn/car2/CAR2/res/drawable
+http://192.168.1.101:8080/svn/car2
 
 
 
@@ -400,6 +400,40 @@ m
 
 794
 
+car_night_titlebg.png
+file
+10
+
+
+
+2015-01-05T13:02:51.739369Z
+6dff77a1840602a96b62fc2824618d7c
+2015-01-05T15:40:52.800655Z
+10
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30578
+
 car_img_bg.png
 file
 
@@ -433,6 +467,40 @@ has-props
 
 
 5947
+
+car_day.9.png
+file
+10
+
+
+
+2015-01-05T13:02:51.702367Z
+77661859a953781250ba8bef85724806
+2015-01-05T15:40:52.800655Z
+10
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3595
 
 car_checked.png
 file
@@ -671,6 +739,40 @@ m
 
 
 292
+
+car_day_name_bg.9.png
+file
+10
+
+
+
+2015-01-05T13:02:51.704367Z
+b34db5784f72068df11417c5fac55f7b
+2015-01-05T15:40:52.800655Z
+10
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+737
 
 answer_bg_selector.xml
 file
@@ -1080,6 +1182,40 @@ m
 
 306
 
+car_night.9.png
+file
+10
+
+
+
+2015-01-05T13:02:51.708367Z
+72f216bc3b40f168c2933d79e9cf5029
+2015-01-05T15:40:52.800655Z
+10
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3415
+
 popwindow_right_bg_selector.xml
 file
 
@@ -1250,6 +1386,40 @@ m
 
 537
 
+car_night_name_bg.9.png
+file
+10
+
+
+
+2015-01-05T13:02:51.711367Z
+358cbea2768c34af8db7d8aad177caf0
+2015-01-05T15:40:52.800655Z
+10
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+427
+
 umeng_update_wifi_disable.png
 file
 
@@ -1318,40 +1488,6 @@ has-props
 
 288
 
-car_home_page.9.png
-file
-
-
-
-
-2014-12-31T11:52:42.566680Z
-77661859a953781250ba8bef85724806
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3595
-
 umeng_update_dialog_bg.xml
 file
 
@@ -1385,6 +1521,30 @@ m
 
 
 227
+
+car_home_page.9.png
+file
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 umeng_update_ok_selector.xml
 file

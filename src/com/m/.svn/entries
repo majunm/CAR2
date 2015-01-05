@@ -2,8 +2,8 @@
 
 dir
 8
-http://192.168.1.102:8080/svn/car2/CAR2/src/com/m
-http://192.168.1.102:8080/svn/car2
+http://192.168.1.101:8080/svn/car2/CAR2/src/com/m
+http://192.168.1.101:8080/svn/car2
 
 
 
@@ -26,9 +26,21 @@ m
 
 3eb53f89-77fc-fa43-b897-f71aee0b0588
 
+fragment
+dir
+
 car2
 dir
 
+domain
+dir
+
 base
+dir
+
+activity
+dir
+
+util
 dir
 

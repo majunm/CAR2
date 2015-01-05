@@ -2,8 +2,8 @@
 
 dir
 8
-http://192.168.1.102:8080/svn/car2/CAR2/assets
-http://192.168.1.102:8080/svn/car2
+http://192.168.1.101:8080/svn/car2/CAR2/assets
+http://192.168.1.101:8080/svn/car2
 
 
 
@@ -25,9 +25,6 @@ m
 
 
 3eb53f89-77fc-fa43-b897-f71aee0b0588
-
-txt
-dir
 
 2.txt
 file
@@ -62,6 +59,9 @@ has-props
 
 
 2492
+
+txt
+dir
 
 3.txt
 file
@@ -131,9 +131,6 @@ has-props
 
 2807
 
-image
-dir
-
 5.txt
 file
 
@@ -167,6 +164,9 @@ has-props
 
 
 2886
+
+image
+dir
 
 6.txt
 file

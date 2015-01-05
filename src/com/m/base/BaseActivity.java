@@ -17,10 +17,12 @@ import android.widget.TextView;
 
 import com.m.car2.R;
 
-public abstract class BaseActivity extends FragmentActivity implements OnClickListener {
+public abstract class BaseActivity extends FragmentActivity implements
+		OnClickListener {
 	protected Context mContext;
 	/** 是白天黑夜? */
-	protected boolean isNight = false;
+	protected static boolean isNight = false;
+
 	/** 重置标题导航条 */
 	public abstract void resetNavigation();
 
@@ -50,7 +52,8 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 			LayoutInflater inflator = (LayoutInflater) this
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			View v = inflator.inflate(layoutId, null);
-			actionbarLayout = (RelativeLayout) v.findViewById(R.id.car_actionbarLayout);
+			actionbarLayout = (RelativeLayout) v
+					.findViewById(R.id.car_actionbarLayout);
 			carCommonTitle = (TextView) v.findViewById(R.id.car_common_title);
 			carCommonMore = (ImageView) v.findViewById(R.id.car_common_more);
 			carCommonMore.setOnClickListener(this);
@@ -80,27 +83,28 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			receiver(context, intent);
-//			try {
-//				if (intent.getAction().equals("chage_status")) {
-//					if (intent.getStringExtra("dayornight").equals("night")) {
-//						Log.e("car", "NIGHT");
-//					} else if (intent.getStringExtra("dayornight").equals("day")) {
-//						Log.e("car", "DAY");
-//					} else {
-//						Log.e("car", "UNKNOW WHY!");
-//					}
-//				}
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//				Log.e("car", "UNKNOW WHY! EXCEPTION ");
-//			}
+			try {
+				if (intent.getAction().equals("chage_status")) {
+					if (intent.getStringExtra("dayornight").equals("night")) {
+						isNight = true;
+					} else if (intent.getStringExtra("dayornight")
+							.equals("day")) {
+						isNight = false;
+					} else {
+						isNight = false;
+					}
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				isNight = false;
+			}
 		}
 	};
 	protected IntentFilter filter;
 	protected RelativeLayout actionbarLayout;
 
 	public abstract void receiver(Context context, Intent intent);
-	
+
 	protected void onDestroy() {
 		try {
 			super.onDestroy();

@@ -27,7 +27,8 @@ public class CarFragment extends BaseFragment {
 		View view = View.inflate(getActivity(), R.layout.activity_main2, null);
 		m_vp = (ViewPager) view.findViewById(R.id.viewpager);
 		lLayout = (LinearLayout) view.findViewById(R.id.car_fragment_layout);
-		m_vp.setAdapter(new MyViewPagerAdapter(getActivity().getSupportFragmentManager()));
+		m_vp.setAdapter(new MyViewPagerAdapter(getActivity()
+				.getSupportFragmentManager()));
 		return view;
 	}
 
@@ -44,14 +45,15 @@ public class CarFragment extends BaseFragment {
 			// default:
 			// break;
 			// }
-			CarDetailFragment newInstance = CarDetailFragment.newInstance(currentIndex);
+			CarDetailFragment newInstance = CarDetailFragment
+					.newInstance(currentIndex);
 			return newInstance;
 		}
 
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
-			CarDetailFragment f = (CarDetailFragment) super.instantiateItem(container,
-					position);
+			CarDetailFragment f = (CarDetailFragment) super.instantiateItem(
+					container, position);
 			return f;
 		}
 
@@ -68,13 +70,17 @@ public class CarFragment extends BaseFragment {
 
 	@Override
 	public void receiver(Context context, Intent intent) {
-
+		if (Tools.isDayChange(getActivity()) || isNight) {
+			lLayout.setBackgroundColor(Color.parseColor("#333333"));
+		} else {
+			lLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
+		}
 	}
 
 	@Override
 	public void onStart() {
 		super.onStart();
-		if (Tools.isDayChange(getActivity())) {
+		if (Tools.isDayChange(getActivity()) || isNight) {
 			lLayout.setBackgroundColor(Color.parseColor("#333333"));
 		} else {
 			lLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));

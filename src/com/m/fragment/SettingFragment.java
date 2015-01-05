@@ -42,12 +42,17 @@ public class SettingFragment extends BaseFragment {
 	private void findView(View view) {
 		feedbackHint = (TextView) view.findViewById(R.id.car_feedback);
 		feedbackArrow = (ImageView) view.findViewById(R.id.car_feedback_arrow);
-		feedbackLayout = (RelativeLayout) view.findViewById(R.id.car_feedback_layout);
-		copyrightLayout = (RelativeLayout) view.findViewById(R.id.car_copyright_layout);
-		goGradeLayout = (RelativeLayout) view.findViewById(R.id.car_gograde_layout);
-		carChangeNight = (RelativeLayout) view.findViewById(R.id.car_night_model_layout);
+		feedbackLayout = (RelativeLayout) view
+				.findViewById(R.id.car_feedback_layout);
+		copyrightLayout = (RelativeLayout) view
+				.findViewById(R.id.car_copyright_layout);
+		goGradeLayout = (RelativeLayout) view
+				.findViewById(R.id.car_gograde_layout);
+		carChangeNight = (RelativeLayout) view
+				.findViewById(R.id.car_night_model_layout);
 		settingLayout = (RelativeLayout) view.findViewById(R.id.setting_layout);
-		openSwitch = (ImageView) view.findViewById(R.id.car_night_model_open_icon);
+		openSwitch = (ImageView) view
+				.findViewById(R.id.car_night_model_open_icon);
 		versionNumber = (TextView) view.findViewById(R.id.car_version);
 		registerListener();
 		versionNumber.setText(Tools.getVersionInfo(getActivity()));
@@ -82,12 +87,12 @@ public class SettingFragment extends BaseFragment {
 		case R.id.car_feedback:
 		case R.id.car_feedback_layout:
 		case R.id.car_feedback_arrow:
-			Tools.activityJumpWithAnimation(getActivity(), CarFeedBackActivity.class,
-					false);
+			Tools.activityJumpWithAnimation(getActivity(),
+					CarFeedBackActivity.class, false);
 			break;
 		case R.id.car_copyright_layout:
-			Tools.activityJumpWithAnimation(getActivity(), CarCopyrightActivity.class,
-					false);
+			Tools.activityJumpWithAnimation(getActivity(),
+					CarCopyrightActivity.class, false);
 			break;
 		case R.id.car_gograde_layout:
 			Tools.activityJumpWithAnimation(getActivity(),
@@ -112,15 +117,6 @@ public class SettingFragment extends BaseFragment {
 	@Override
 	public void receiver(Context context, Intent intent) {
 		try {
-			if (intent.getAction().equals("chage_status")) {
-				if (intent.getStringExtra("dayornight").equals("night")) {
-					isNight = true;
-				} else if (intent.getStringExtra("dayornight").equals("day")) {
-					isNight = false;
-				} else {
-					isNight = false;
-				}
-			}
 			if (isNight) {
 				// settingLayout.setBackgroundColor(Color.parseColor("#33333333"));
 				Tools.setDayChange(getActivity(), true);

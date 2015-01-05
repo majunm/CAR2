@@ -43,15 +43,6 @@ public class TestFragment extends BaseFragment {
 	@Override
 	public void receiver(Context context, Intent intent) {
 		try {
-			if (intent.getAction().equals("chage_status")) {
-				if (intent.getStringExtra("dayornight").equals("night")) {
-					isNight = true;
-				} else if (intent.getStringExtra("dayornight").equals("day")) {
-					isNight = false;
-				} else {
-					isNight = false;
-				}
-			}
 			if (isNight) {
 				testLayout.setBackgroundColor(Color.parseColor("#333333"));
 			} else {

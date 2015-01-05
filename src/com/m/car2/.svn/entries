@@ -2,8 +2,8 @@
 
 dir
 8
-http://192.168.1.102:8080/svn/car2/CAR2/src/com/m/car2
-http://192.168.1.102:8080/svn/car2
+http://192.168.1.101:8080/svn/car2/CAR2/src/com/m/car2
+http://192.168.1.101:8080/svn/car2
 
 
 
@@ -28,15 +28,11 @@ m
 
 Tools.java
 file
+13
 
 
 
 
-2015-01-04T13:34:44.564072Z
-ea76430183e97d6b4c2680d102234e86
-2015-01-04T15:21:08.578216Z
-8
-m
 
 
 
@@ -52,93 +48,11 @@ m
 
 
 
-
-
-
-
-
-
-4189
-
-SettingFragment.java
-file
-
-
-
-
-2015-01-04T13:07:08.098327Z
-736c66fc1f16f0cc7f0e760923357063
-2015-01-04T15:21:08.578216Z
-8
-m
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2276
-
-MainActivity.java
-file
-
-
-
-
-2015-01-04T11:58:01.340146Z
-44a40278fd27ee5850f92e7fd445a2e9
-2015-01-04T15:21:08.578216Z
-8
-m
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5515
+deleted
 
 CarInfo.java
 file
-
-
-
-
-2014-12-31T14:26:18.803838Z
-693201a97b37c67227ee46bb795962ef
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -158,21 +72,59 @@ m
 
 
 
+deleted
+
+MainActivity.java
+file
+13
 
 
-40177
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+SettingFragment.java
+file
+13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 TestFragment.java
 file
-
-
-
-
-2015-01-02T07:35:07.404134Z
-47ce2914f954910872ebf546820ce678
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -192,21 +144,11 @@ m
 
 
 
-
-
-594
+deleted
 
 CarFeedBackActivity.java
 file
-
-
-
-
-2015-01-04T13:34:25.324971Z
-b59d370e616c9417b9ddf16f1c20501a
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -226,21 +168,11 @@ m
 
 
 
-
-
-1278
+deleted
 
 CarFragment.java
 file
-
-
-
-
-2015-01-02T05:31:00.233411Z
-39cea45063544c505dd2d7f8c2deaa10
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -260,21 +192,11 @@ m
 
 
 
-
-
-1649
+deleted
 
 CarCopyrightActivity.java
 file
-
-
-
-
-2015-01-04T14:22:07.404673Z
-8b2362575df9d95a9aff190bbbdf501b
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -294,21 +216,11 @@ m
 
 
 
-
-
-2045
+deleted
 
 CarDetailFragment.java
 file
-
-
-
-
-2015-01-01T02:56:00.074873Z
-aee535811bb716ff1642938d309e9fde
-2015-01-04T15:21:08.578216Z
-8
-m
+13
 
 
 
@@ -328,7 +240,5 @@ m
 
 
 
-
-
-72198
+deleted
 
