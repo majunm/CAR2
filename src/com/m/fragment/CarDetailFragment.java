@@ -84,6 +84,7 @@ public class CarDetailFragment extends BaseFragment {
 		chinaName = (TextView) v.findViewById(R.id.car_china_name);
 		carDescription = (TextView) v.findViewById(R.id.car_detail);
 		carDetailLayout = (LinearLayout) v.findViewById(R.id.car_detail_layout);
+		carIconLayout = (LinearLayout) v.findViewById(R.id.car_icon);
 		hint = (TextView) v.findViewById(R.id.car_hint);
 		hint1 = (TextView) v.findViewById(R.id.car_hint_1);
 		registerListener();
@@ -261,6 +262,7 @@ public class CarDetailFragment extends BaseFragment {
 	/** 汽车简介 */
 	private TextView carDescription;
 	private LinearLayout carDetailLayout;
+	private LinearLayout carIconLayout;
 	/** 提示当前第几页 */
 	private TextView hint;
 	private TextView hint1;
@@ -1111,7 +1113,9 @@ public class CarDetailFragment extends BaseFragment {
 		if (Tools.isDayChange(getActivity())) {
 			carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
 			carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
+			carIconLayout.setBackgroundColor(Color.parseColor("#55667788"));
 		} else {
+			carIconLayout.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
 			carDetailLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
 			carDescription.setBackgroundResource(R.drawable.car_name_bg);
 		}
@@ -1121,13 +1125,15 @@ public class CarDetailFragment extends BaseFragment {
 	public void onStart() {
 		super.onStart();
 		Log.e("car", "TCarDetailFragment==" + Tools.isDayChange(getActivity()));
-		if (Tools.isDayChange(getActivity())) {
-			carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
-			carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
-		} else {
-			carDetailLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
-			carDescription.setBackgroundResource(R.drawable.car_name_bg);
-		}
+		// if (Tools.isDayChange(getActivity())) {
+		// carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
+		// carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
+		// carIconLayout.setBackgroundColor(Color.parseColor("#55667788"));
+		// } else {
+		// carIconLayout.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
+		// carDetailLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
+		// carDescription.setBackgroundResource(R.drawable.car_name_bg);
+		// }
 	}
 
 }
