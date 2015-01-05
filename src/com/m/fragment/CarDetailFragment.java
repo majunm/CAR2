@@ -1108,12 +1108,19 @@ public class CarDetailFragment extends BaseFragment {
 
 	@Override
 	public void receiver(Context context, Intent intent) {
-
+		if (Tools.isDayChange(getActivity())) {
+			carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
+			carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
+		} else {
+			carDetailLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
+			carDescription.setBackgroundResource(R.drawable.car_name_bg);
+		}
 	}
 
 	@Override
 	public void onStart() {
 		super.onStart();
+		Log.e("car", "TCarDetailFragment==" + Tools.isDayChange(getActivity()));
 		if (Tools.isDayChange(getActivity())) {
 			carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
 			carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
