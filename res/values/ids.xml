@@ -28,7 +28,7 @@
     <item type="id" name="feedback_back">false</item>
     <item type="id" name="one_title">false</item>
     <item type="id" name="oneDetailsPage_Line1">false</item>
-    <item type="id" name="go_grade_layout">false</item>
+    <item type="id" name="car_gograde_layout">false</item>
     <item type="id" name="go_grade_text">false</item>
     <item type="id" name="oneDetailsPage_arrowhead">false</item>
     <item type="id" name="oneDetailsPage_Line2">false</item>
@@ -181,7 +181,7 @@
     <item type="id" name="night_model">false</item>
     <item type="id" name="night_model_icon">false</item>
     <item type="id" name="night_model_textview">false</item>
-    <item type="id" name="night_model_open_icon">false</item>
+    <item type="id" name="car_night_model_open_icon">false</item>
     <item type="id" name="oneDetailsPage_Line7">false</item>
     <item type="id" name="applyitem">false</item>
     <item type="id" name="recom_app_layout01">false</item>
@@ -213,7 +213,7 @@
     <item type="id" name="microblog_text">false</item>
     <item type="id" name="copyRight">false</item>
     <item type="id" name="one_teams">false</item>
-    <item type="id" name="copyright_img">false</item>
+    <item type="id" name="car_copyright_details">false</item>
     <item type="id" name="car_feedback_layout">false</item>
     <item type="id" name="one_feedback">false</item>
     <item type="id" name="textView1">false</item>
@@ -320,7 +320,7 @@
     <item type="id" name="sina_login_layout">false</item>
     <item type="id" name="glance_over_set">false</item>
     <item type="id" name="set_layout_line01">false</item>
-    <item type="id" name="night_model_layout">false</item>
+    <item type="id" name="car_night_model_layout">false</item>
     <item type="id" name="night_model_change_hint">false</item>
     <item type="id" name="set_layout_line02">false</item>
     <item type="id" name="account_number_set">false</item>
@@ -356,7 +356,7 @@
     <item type="id" name="set_layout_line12">false</item>
     <item type="id" name="version_layout">false</item>
     <item type="id" name="version_hint">false</item>
-    <item type="id" name="version_number">false</item>
+    <item type="id" name="car_version">false</item>
     <item type="id" name="set_layout_line13">false</item>
     <item type="id" name="stow_rlayout">false</item>
     <item type="id" name="showpage_title">false</item>

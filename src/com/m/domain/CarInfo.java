@@ -1,4 +1,7 @@
-package com.m.car2;
+package com.m.domain;
+
+import com.m.car2.R;
+import com.m.car2.R.drawable;
 
 import android.os.Parcel;
 import android.os.Parcelable;

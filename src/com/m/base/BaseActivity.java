@@ -2,9 +2,13 @@ package com.m.base;
 
 import android.app.ActionBar;
 import android.app.ActionBar.LayoutParams;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,14 +19,18 @@ import com.m.car2.R;
 
 public abstract class BaseActivity extends FragmentActivity implements OnClickListener {
 	protected Context mContext;
+
 	/** 重置标题导航条 */
 	public abstract void resetNavigation();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		try {
 			setActionBarLayout(R.layout.car_actionbar_layout);
 			mContext = this;
+			filter = new IntentFilter("chage_status");
+			registerReceiver(dayStatusChangeReceiver, filter);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -62,6 +70,37 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 
 		default:
 			break;
+		}
+	}
+
+	protected BroadcastReceiver dayStatusChangeReceiver = new BroadcastReceiver() {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			try {
+				if (intent.getAction().equals("chage_status")) {
+					if (intent.getStringExtra("dayornight").equals("night")) {
+						Log.e("car", "NIGHT");
+					} else if (intent.getStringExtra("dayornight").equals("day")) {
+						Log.e("car", "DAY");
+					} else {
+						Log.e("car", "UNKNOW WHY!");
+					}
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				Log.e("car", "UNKNOW WHY! EXCEPTION ");
+			}
+		}
+	};
+	private IntentFilter filter;
+
+	protected void onDestroy() {
+		try {
+			super.onDestroy();
+			unregisterReceiver(dayStatusChangeReceiver);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

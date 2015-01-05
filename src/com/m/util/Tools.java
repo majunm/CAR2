@@ -1,4 +1,4 @@
-package com.m.car2;
+package com.m.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,12 +6,22 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
+import com.m.car2.R;
+import com.m.car2.R.anim;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.SparseArray;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
@@ -133,5 +143,65 @@ public class Tools {
 		// inputManager.showSoftInput(v, 0); // 开启软键盘
 		inputManager.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
 	}
-	
+
+	/**
+	 * @description :获取版本号
+	 */
+	public static String getVersionInfo(Context context) {
+		PackageManager packageManager = context.getPackageManager();
+		try {
+			PackageInfo packageInfo = packageManager.getPackageInfo(
+					context.getPackageName(), 0);
+			return packageInfo.versionName;
+		} catch (NameNotFoundException e) {
+			e.printStackTrace();
+			Log.e("majunjun", "can't reach........");
+			return "";
+		}
+	}
+
+	/**
+	 * @description :获取应用名称
+	 */
+	public static String getApplicationName(Activity context) {
+		PackageManager packageManager = null;
+		ApplicationInfo applicationInfo = null;
+		try {
+			packageManager = context.getPackageManager();
+			applicationInfo = packageManager.getApplicationInfo(context.getPackageName(),
+					0);
+		} catch (PackageManager.NameNotFoundException e) {
+			applicationInfo = null;
+		}
+		return (String) packageManager.getApplicationLabel(applicationInfo);
+	}
+
+	/** 非空判断 */
+	public static boolean isEmpty(String str) {
+		return TextUtils.isEmpty(str);
+	}
+
+	/** 开启浏览器 */
+	public static void openBrowser(Context context, Uri uri) {
+		Uri mUri = Uri.parse("http://www.mumayi.com/android-680519.html");
+		Intent in = new Intent(Intent.ACTION_VIEW, mUri);
+		((Activity) context).startActivity(in);
+	}
+
+	/**获取控件*/
+	@SuppressWarnings("unchecked")
+	public static <T extends View> T getWidget(View view, int id) {
+		SparseArray<View> hashMap = (SparseArray<View>) view.getTag();
+		if (hashMap == null) {
+			hashMap = new SparseArray<View>();
+			view.setTag(hashMap);
+		}
+		View childView = hashMap.get(id);
+		if (childView == null) {
+			childView = view.findViewById(id);
+			hashMap.put(id, childView);
+		}
+		return (T) childView;
+	}
+
 }

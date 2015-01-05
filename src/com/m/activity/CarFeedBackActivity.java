@@ -1,4 +1,4 @@
-package com.m.car2;
+package com.m.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.m.base.BaseActivity;
+import com.m.car2.R;
+import com.m.car2.R.id;
+import com.m.car2.R.layout;
+import com.m.util.Tools;
 
 public class CarFeedBackActivity extends BaseActivity {
 	private TextView feedbackDetails;

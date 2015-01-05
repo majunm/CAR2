@@ -108,7 +108,7 @@
                 android:src="@drawable/one_client_line" />
 
             <RelativeLayout
-                android:id="@id/night_model_layout"
+                android:id="@id/car_night_model_layout"
                 android:layout_width="fill_parent"
                 android:layout_height="45.0dip"
                 android:layout_below="@id/set_layout_line01"
@@ -139,7 +139,7 @@
                     android:gravity="center" >
 
                     <ImageView
-                        android:id="@id/night_model_open_icon"
+                        android:id="@id/car_night_model_open_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -155,14 +155,15 @@
                 android:id="@id/set_layout_line02"
                 android:layout_width="fill_parent"
                 android:layout_height="1.0dip"
-                android:layout_below="@id/night_model_layout"
+                android:layout_below="@id/car_night_model_layout"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16.0dip"
                 android:layout_marginRight="16.0dip"
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                 />
 
             <TextView
                 android:id="@id/account_number_set"
@@ -174,7 +175,8 @@
                 android:text="@string/account_number_hint"
                 android:textColor="@color/one_textcolor"
                 android:textSize="16.0sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
             <ImageView
                 android:id="@id/set_layout_line03"
@@ -188,7 +190,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@id/clear_sina_info_layout"
@@ -197,7 +200,8 @@
                 android:layout_below="@id/set_layout_line03"
                 android:layout_marginBottom="1.0dip"
                 android:layout_marginTop="1.0dip"
-                android:background="@drawable/one_list_selector" >
+                android:background="@drawable/one_list_selector"
+                android:visibility="gone" >
 
                 <TextView
                     android:id="@id/clear_sina_info_hint"
@@ -219,7 +223,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="25.0dip"
                     android:background="@drawable/attention_sportq_bg"
-                    android:gravity="center" >
+                    android:gravity="center"
+                    android:visibility="gone" >
 
                     <ImageView
                         android:id="@id/clear_sina_info_icon"
@@ -245,7 +250,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@id/share_set_hint"
@@ -257,7 +263,8 @@
                 android:text="@string/set"
                 android:textColor="@color/one_textcolor"
                 android:textSize="16.0sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
             <ImageView
                 android:id="@id/set_layout_line05"
@@ -271,7 +278,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@id/clear_tencent_info_layout"
@@ -280,7 +288,8 @@
                 android:layout_below="@id/set_layout_line05"
                 android:layout_marginBottom="1.0dip"
                 android:layout_marginTop="1.0dip"
-                android:background="@drawable/one_list_selector" >
+                android:background="@drawable/one_list_selector"
+                android:visibility="gone" >
 
                 <TextView
                     android:id="@id/clear_tencent_info_hint"
@@ -328,7 +337,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@id/clear_renn_info_layout"
@@ -337,7 +347,8 @@
                 android:layout_below="@id/set_layout_line06"
                 android:layout_marginBottom="1.0dip"
                 android:layout_marginTop="1.0dip"
-                android:background="@drawable/one_list_selector" >
+                android:background="@drawable/one_list_selector"
+                android:visibility="gone" >
 
                 <TextView
                     android:id="@id/clear_renn_info_hint"
@@ -385,7 +396,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@id/about_hint"
@@ -414,7 +426,7 @@
                 android:src="@drawable/one_client_line" />
 
             <RelativeLayout
-                android:id="@id/go_grade_layout"
+                android:id="@id/car_gograde_layout"
                 android:layout_width="fill_parent"
                 android:layout_height="45.0dip"
                 android:layout_below="@id/set_layout_line08"
@@ -450,7 +462,7 @@
                 android:id="@id/set_layout_line09"
                 android:layout_width="fill_parent"
                 android:layout_height="1.0dip"
-                android:layout_below="@id/go_grade_layout"
+                android:layout_below="@id/car_gograde_layout"
                 android:layout_gravity="center"
                 android:layout_marginLeft="46.0dip"
                 android:layout_marginRight="16.0dip"
@@ -512,7 +524,8 @@
                 android:layout_below="@id/set_layout_line10"
                 android:layout_marginBottom="1.0dip"
                 android:layout_marginTop="1.0dip"
-                android:background="@drawable/one_list_selector" >
+                android:background="@drawable/one_list_selector"
+                android:visibility="gone" >
 
                 <TextView
                     android:id="@id/about_ours_hint"
@@ -549,7 +562,8 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
-                android:src="@drawable/one_client_line" />
+                android:src="@drawable/one_client_line"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@id/car_feedback_layout"
@@ -620,13 +634,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@id/version_number"
+                    android:id="@id/car_version"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30.0dip"
-                    android:textColor="@color/one_textcolor"
+                    android:textColor="@color/home_page_author"
                     android:textSize="15.0sp" />
             </RelativeLayout>
 

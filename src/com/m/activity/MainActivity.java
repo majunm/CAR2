@@ -1,25 +1,25 @@
-package com.m.car2;
+package com.m.activity;
 
-import android.app.ActionBar;
-import android.app.ActionBar.LayoutParams;
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.m.base.BaseActivity;
+import com.m.car2.R;
+import com.m.car2.R.id;
+import com.m.car2.R.layout;
+import com.m.fragment.CarFragment;
+import com.m.fragment.SettingFragment;
+import com.m.fragment.TestFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity {
 	private RadioButton classify;
 
 	private RadioGroup group;
-	private int currentIndex = R.id.car_brand;
+	private int currentIndex = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends BaseActivity {
 			hideFragments(ft);
 			switch (checkedId) {
 			case R.id.car_brand:
-
+				currentIndex = 0;
 				carBrand.setTextColor(Color.parseColor("#74DCFF"));
 				if (carFragment == null) {
 					carFragment = new CarFragment();
@@ -69,6 +69,7 @@ public class MainActivity extends BaseActivity {
 				}
 				break;
 			case R.id.mini_classify:
+				currentIndex = 1;
 				classify.setTextColor(Color.parseColor("#74DCFF"));
 				if (testFragment == null) {
 					testFragment = new TestFragment();
@@ -78,6 +79,7 @@ public class MainActivity extends BaseActivity {
 				}
 				break;
 			case R.id.car_setting:
+				currentIndex = 2;
 				setting.setTextColor(Color.parseColor("#74DCFF"));
 				if (settingFragment == null) {
 					settingFragment = new SettingFragment();
@@ -94,6 +96,7 @@ public class MainActivity extends BaseActivity {
 			// Log.e("debug", "index=" + index);
 			// mFragmentPagerAdapter.setPrimaryItem(container, 0, fragment);
 			// mFragmentPagerAdapter.finishUpdate(container);
+			resetNavigation();
 		}
 
 	};
@@ -104,9 +107,6 @@ public class MainActivity extends BaseActivity {
 		setting.setTextColor(Color.parseColor("#6D6D6F"));
 		classify.setTextColor(Color.parseColor("#6D6D6F"));
 	}
-
-	/** 标题 */
-	private TextView carCommonTitle;
 
 	private long firstTime;
 
@@ -190,7 +190,19 @@ public class MainActivity extends BaseActivity {
 
 	@Override
 	public void resetNavigation() {
-
+		try {
+			switch (currentIndex) {
+			case 0:
+			case 1:
+				carCommonMore.setVisibility(View.VISIBLE);
+				break;
+			case 2:
+				carCommonMore.setVisibility(View.GONE);
+				break;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

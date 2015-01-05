@@ -33,20 +33,22 @@
                 android:id="@id/car_copyright_return"
                 android:layout_width="wrap_content"
                 android:layout_height="48.0dip"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/return_button" />
         </RelativeLayout>
     </RelativeLayout>
 
-<!--     <ImageView
+    <!--
+         <ImageView
         android:id="@id/loader_welcome_ad01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:visibility="gone"
         android:contentDescription="@null"
-        android:src="@drawable/loader_icon" /> -->
+        android:src="@drawable/loader_icon" />
+    -->
 
     <ImageView
         android:id="@id/car_copyright_loading"
@@ -56,12 +58,12 @@
         android:contentDescription="@null"
         android:src="@drawable/loader_icon" />
 
-    <ImageView
-        android:id="@id/copyright_img"
+    <TextView
+        android:id="@id/car_copyright_details"
         android:layout_width="fill_parent"
+        android:layout_margin="20dp"
         android:layout_height="fill_parent"
-        android:layout_below="@id/one_teams"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop" />
+        android:layout_centerInParent="true"
+        android:layout_below="@id/one_teams" />
 
 </RelativeLayout>
