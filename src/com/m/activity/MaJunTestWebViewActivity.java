@@ -1,6 +1,8 @@
 package com.m.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -106,5 +108,10 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 			return false;
 		}
 		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void receiver(Context context, Intent intent) {
+		
 	}
 }

@@ -13,12 +13,14 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
@@ -202,6 +204,25 @@ public class Tools {
 			hashMap.put(id, childView);
 		}
 		return (T) childView;
+	}
+
+	private static SharedPreferences mDefPref;
+
+	public static boolean isDayChange(Context context) {
+		return getDefPref(context).getBoolean(DAY_CHANGE, false);
+	}
+
+	public static void setDayChange(Context context, boolean isDayChange) {
+		getDefPref(context).edit().putBoolean(DAY_CHANGE, isDayChange).commit();
+	}
+
+	public static String DAY_CHANGE = "day_change";
+
+	public static SharedPreferences getDefPref(Context context) {
+		if (mDefPref == null) {
+			mDefPref = PreferenceManager.getDefaultSharedPreferences(context);
+		}
+		return mDefPref;
 	}
 
 }

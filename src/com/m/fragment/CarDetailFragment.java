@@ -5,6 +5,8 @@ import java.util.LinkedHashMap;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -81,6 +83,7 @@ public class CarDetailFragment extends BaseFragment {
 		englishName = (TextView) v.findViewById(R.id.car_english_name);
 		chinaName = (TextView) v.findViewById(R.id.car_china_name);
 		carDescription = (TextView) v.findViewById(R.id.car_detail);
+		carDetailLayout = (LinearLayout) v.findViewById(R.id.car_detail_layout);
 		hint = (TextView) v.findViewById(R.id.car_hint);
 		hint1 = (TextView) v.findViewById(R.id.car_hint_1);
 		registerListener();
@@ -257,6 +260,7 @@ public class CarDetailFragment extends BaseFragment {
 	private TextView chinaName;
 	/** 汽车简介 */
 	private TextView carDescription;
+	private LinearLayout carDetailLayout;
 	/** 提示当前第几页 */
 	private TextView hint;
 	private TextView hint1;
@@ -1100,6 +1104,23 @@ public class CarDetailFragment extends BaseFragment {
 		map.put(139, new CarInfo(R.drawable.n9, "----", "----", "----", ""));
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 
+	}
+
+	@Override
+	public void receiver(Context context, Intent intent) {
+
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		if (Tools.isDayChange(getActivity())) {
+			carDetailLayout.setBackgroundColor(Color.parseColor("#333333"));
+			carDescription.setBackgroundResource(R.drawable.car_night_name_bg);
+		} else {
+			carDetailLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
+			carDescription.setBackgroundResource(R.drawable.car_name_bg);
+		}
 	}
 
 }

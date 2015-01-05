@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class BaseFragment extends Fragment implements OnClickListener {
+public abstract class BaseFragment extends Fragment implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,24 +22,27 @@ public class BaseFragment extends Fragment implements OnClickListener {
 		}
 	}
 
+	/** 是白天黑夜? */
+	protected boolean isNight = false;
 	protected BroadcastReceiver dayStatusChangeReceiver = new BroadcastReceiver() {
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			try {
-				if (intent.getAction().equals("chage_status")) {
-					if (intent.getStringExtra("dayornight").equals("night")) {
-						Log.e("car", "BASEFRAGMENT NIGHT");
-					} else if (intent.getStringExtra("dayornight").equals("day")) {
-						Log.e("car", "BASEFRAGMENT DAY");
-					} else {
-						Log.e("car", "BaseFragment UNKNOW WHY!");
-					}
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-				Log.e("car", "BaseFragment UNKNOW WHY! EXCEPTION ");
-			}
+			// try {
+			// if (intent.getAction().equals("chage_status")) {
+			// if (intent.getStringExtra("dayornight").equals("night")) {
+			// Log.e("car", "BASEFRAGMENT NIGHT");
+			// } else if (intent.getStringExtra("dayornight").equals("day")) {
+			// Log.e("car", "BASEFRAGMENT DAY");
+			// } else {
+			// Log.e("car", "BaseFragment UNKNOW WHY!");
+			// }
+			// }
+			// } catch (Exception e) {
+			// e.printStackTrace();
+			// Log.e("car", "BaseFragment UNKNOW WHY! EXCEPTION ");
+			// }
+			receiver(context, intent);
 		}
 	};
 	private IntentFilter filter;
@@ -54,9 +57,11 @@ public class BaseFragment extends Fragment implements OnClickListener {
 		}
 	}
 
+	public abstract void receiver(Context context, Intent intent);
+
 	@Override
 	public void onClick(View v) {
-		
+
 	}
 
 }

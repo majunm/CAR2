@@ -1,5 +1,7 @@
 package com.m.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -77,7 +79,7 @@ public class CarCopyrightActivity extends BaseActivity {
 				+ "<B>商业合作:</B>&nbsp;&nbsp;747673016@qq.com";
 		copyrightDetail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
 		copyrightDetail.setText(Html.fromHtml(source));
-		copyrightDetail.setGravity(Gravity.CENTER|Gravity.TOP);
+		copyrightDetail.setGravity(Gravity.CENTER | Gravity.TOP);
 	}
 
 	@Override
@@ -110,4 +112,9 @@ public class CarCopyrightActivity extends BaseActivity {
 		}
 
 	};
+
+	@Override
+	public void receiver(Context context, Intent intent) {
+
+	}
 }

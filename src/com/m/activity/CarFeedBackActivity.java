@@ -1,5 +1,7 @@
 package com.m.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -53,6 +55,11 @@ public class CarFeedBackActivity extends BaseActivity {
 	@Override
 	public void resetNavigation() {
 		getActionBar().hide();
+	}
+
+	@Override
+	public void receiver(Context context, Intent intent) {
+		
 	}
 
 }

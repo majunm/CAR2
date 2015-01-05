@@ -1,34 +1,32 @@
 package com.m.fragment;
 
-import com.m.activity.CarCopyrightActivity;
-import com.m.activity.CarFeedBackActivity;
-import com.m.activity.MaJunTestWebViewActivity;
-import com.m.base.BaseFragment;
-import com.m.car2.R;
-import com.m.car2.R.id;
-import com.m.car2.R.layout;
-import com.m.util.Tools;
-
+import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class SettingFragment extends BaseFragment  {
+import com.m.activity.CarCopyrightActivity;
+import com.m.activity.CarFeedBackActivity;
+import com.m.activity.MaJunTestWebViewActivity;
+import com.m.base.BaseFragment;
+import com.m.car2.R;
+import com.m.util.Tools;
+
+public class SettingFragment extends BaseFragment {
 
 	private TextView feedbackHint;
 	private RelativeLayout feedbackLayout;
 	private RelativeLayout copyrightLayout;
 	private RelativeLayout goGradeLayout;
 	private RelativeLayout carChangeNight;
+	private RelativeLayout settingLayout;
 	private ImageView feedbackArrow;
 	private ImageView openSwitch;
 	private TextView versionNumber;
@@ -48,6 +46,7 @@ public class SettingFragment extends BaseFragment  {
 		copyrightLayout = (RelativeLayout) view.findViewById(R.id.car_copyright_layout);
 		goGradeLayout = (RelativeLayout) view.findViewById(R.id.car_gograde_layout);
 		carChangeNight = (RelativeLayout) view.findViewById(R.id.car_night_model_layout);
+		settingLayout = (RelativeLayout) view.findViewById(R.id.setting_layout);
 		openSwitch = (ImageView) view.findViewById(R.id.car_night_model_open_icon);
 		versionNumber = (TextView) view.findViewById(R.id.car_version);
 		registerListener();
@@ -107,6 +106,31 @@ public class SettingFragment extends BaseFragment  {
 			break;
 		default:
 			break;
+		}
+	}
+
+	@Override
+	public void receiver(Context context, Intent intent) {
+		try {
+			if (intent.getAction().equals("chage_status")) {
+				if (intent.getStringExtra("dayornight").equals("night")) {
+					isNight = true;
+				} else if (intent.getStringExtra("dayornight").equals("day")) {
+					isNight = false;
+				} else {
+					isNight = false;
+				}
+			}
+			if (isNight) {
+				// settingLayout.setBackgroundColor(Color.parseColor("#33333333"));
+				Tools.setDayChange(getActivity(), true);
+				settingLayout.setBackgroundColor(Color.parseColor("#333333"));
+			} else {
+				Tools.setDayChange(getActivity(), false);
+				settingLayout.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

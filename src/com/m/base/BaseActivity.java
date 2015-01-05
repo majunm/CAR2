@@ -8,18 +8,19 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.m.car2.R;
 
 public abstract class BaseActivity extends FragmentActivity implements OnClickListener {
 	protected Context mContext;
-
+	/** 是白天黑夜? */
+	protected boolean isNight = false;
 	/** 重置标题导航条 */
 	public abstract void resetNavigation();
 
@@ -49,6 +50,7 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 			LayoutInflater inflator = (LayoutInflater) this
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			View v = inflator.inflate(layoutId, null);
+			actionbarLayout = (RelativeLayout) v.findViewById(R.id.car_actionbarLayout);
 			carCommonTitle = (TextView) v.findViewById(R.id.car_common_title);
 			carCommonMore = (ImageView) v.findViewById(R.id.car_common_more);
 			carCommonMore.setOnClickListener(this);
@@ -77,24 +79,28 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			try {
-				if (intent.getAction().equals("chage_status")) {
-					if (intent.getStringExtra("dayornight").equals("night")) {
-						Log.e("car", "NIGHT");
-					} else if (intent.getStringExtra("dayornight").equals("day")) {
-						Log.e("car", "DAY");
-					} else {
-						Log.e("car", "UNKNOW WHY!");
-					}
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-				Log.e("car", "UNKNOW WHY! EXCEPTION ");
-			}
+			receiver(context, intent);
+//			try {
+//				if (intent.getAction().equals("chage_status")) {
+//					if (intent.getStringExtra("dayornight").equals("night")) {
+//						Log.e("car", "NIGHT");
+//					} else if (intent.getStringExtra("dayornight").equals("day")) {
+//						Log.e("car", "DAY");
+//					} else {
+//						Log.e("car", "UNKNOW WHY!");
+//					}
+//				}
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//				Log.e("car", "UNKNOW WHY! EXCEPTION ");
+//			}
 		}
 	};
-	private IntentFilter filter;
+	protected IntentFilter filter;
+	protected RelativeLayout actionbarLayout;
 
+	public abstract void receiver(Context context, Intent intent);
+	
 	protected void onDestroy() {
 		try {
 			super.onDestroy();
