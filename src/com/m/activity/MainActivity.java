@@ -236,9 +236,11 @@ public class MainActivity extends BaseActivity {
 				break;
 			}
 			if (isNight) {
+				Tools.setDayChange(mContext, true);
 				actionbarLayout.setBackgroundResource(R.drawable.car_night_titlebg);
 				carCommonTitle.setTextColor(Color.parseColor("#B7B7B7"));
 			} else {
+				Tools.setDayChange(mContext, false);
 				actionbarLayout.setBackgroundResource(R.drawable.car_title_bg);
 				carCommonTitle.setTextColor(Color.parseColor("#4C4D4E"));
 			}
