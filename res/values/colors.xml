@@ -52,7 +52,7 @@
     <color name="black">#ff000000</color>
     <color name="darkgray">#ffc3c4c6</color>
     <color name="text_color_h">#ffdbdad5</color>
-    <color name="dimgray">#ff696969</color>
+    <color name="dimgray">#FF696969</color>
     <color name="text_color_normal">#ff666666</color>
     <color name="home_page_author">#ff838383</color>
     <color name="home_page_date">#ffaaaaaa</color>

@@ -36,7 +36,6 @@
     <item type="id" name="ImageView01">false</item>
     <item type="id" name="copyright_textview">false</item>
     <item type="id" name="oneDetailsPage_Line3">false</item>
-    <item type="id" name="car_copyright_layout">false</item>
     <item type="id" name="version_icon">false</item>
     <item type="id" name="feedback_textview">false</item>
     <item type="id" name="oneDetailsPage_Line5">false</item>
@@ -211,20 +210,20 @@
     <item type="id" name="sina_text">false</item>
     <item type="id" name="microBolg_linearLayout">false</item>
     <item type="id" name="microblog_text">false</item>
-    <item type="id" name="copyRight">false</item>
+    <item type="id" name="car_copyright_layout">false</item>
     <item type="id" name="one_teams">false</item>
     <item type="id" name="car_copyright_details">false</item>
     <item type="id" name="car_feedback_layout">false</item>
     <item type="id" name="one_feedback">false</item>
-    <item type="id" name="textView1">false</item>
+    <item type="id" name="car_fback_contact_us">false</item>
     <item type="id" name="car_feedback_details">false</item>
-    <item type="id" name="textView3">false</item>
+    <item type="id" name="car_fback_email_title">false</item>
     <item type="id" name="car_feedback_email">false</item>
     <item type="id" name="emailClew_textView">false</item>
-    <item type="id" name="textView4">false</item>
-    <item type="id" name="mobile_editText1">false</item>
-    <item type="id" name="textView6">false</item>
-    <item type="id" name="feedbackContent_editText">false</item>
+    <item type="id" name="car_fback_phone_tite">false</item>
+    <item type="id" name="car_feedback_mobile">false</item>
+    <item type="id" name="car_fback_content_title">false</item>
+    <item type="id" name="car_feedback_content">false</item>
     <item type="id" name="feedbackClew_textView">false</item>
     <item type="id" name="submitFeedBack">false</item>
     <item type="id" name="cacheImage_View">false</item>
