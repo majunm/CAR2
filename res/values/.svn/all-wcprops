@@ -1,9 +1,19 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/car2/!svn/ver/16/CAR2/res/values
+END
+integers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/car2/!svn/ver/8/CAR2/res/values/integers.xml
 END
 colors.xml
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/svn/car2/!svn/ver/13/CAR2/res/values/colors.xml
+/svn/car2/!svn/ver/16/CAR2/res/values/colors.xml
 END
 styles.xml
 K 25
@@ -11,9 +21,21 @@ svn:wc:ra_dav:version-url
 V 48
 /svn/car2/!svn/ver/13/CAR2/res/values/styles.xml
 END
+strings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/car2/!svn/ver/8/CAR2/res/values/strings.xml
+END
+dimens.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/car2/!svn/ver/8/CAR2/res/values/dimens.xml
+END
 ids.xml
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/svn/car2/!svn/ver/13/CAR2/res/values/ids.xml
+/svn/car2/!svn/ver/16/CAR2/res/values/ids.xml
 END

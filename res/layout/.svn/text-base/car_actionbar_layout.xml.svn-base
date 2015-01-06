@@ -2,10 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/car_actionbarLayout"
     android:layout_width="fill_parent"
-    android:layout_height="45dp"
+    android:layout_height="48.0dp"
     android:background="@drawable/car_title_bg" >
 
     <!-- #BED6DE   #F0F0F0 -->
+
+    <ImageView
+        android:id="@id/car_copyright_return"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:contentDescription="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/return_button"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/car_common_title"

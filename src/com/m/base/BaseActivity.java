@@ -17,7 +17,8 @@ import android.widget.TextView;
 
 import com.m.car2.R;
 
-public abstract class BaseActivity extends FragmentActivity implements OnClickListener {
+public abstract class BaseActivity extends FragmentActivity implements
+		OnClickListener {
 	protected Context mContext;
 	/** 是白天黑夜? */
 	protected static boolean isNight = false;
@@ -52,7 +53,8 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 			LayoutInflater inflator = (LayoutInflater) this
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			View v = inflator.inflate(layoutId, null);
-			actionbarLayout = (RelativeLayout) v.findViewById(R.id.car_actionbarLayout);
+			actionbarLayout = (RelativeLayout) v
+					.findViewById(R.id.car_actionbarLayout);
 			carCommonTitle = (TextView) v.findViewById(R.id.car_common_title);
 			carCommonMore = (ImageView) v.findViewById(R.id.car_common_more);
 			backButton = (ImageView) v.findViewById(R.id.car_copyright_return);
@@ -87,7 +89,8 @@ public abstract class BaseActivity extends FragmentActivity implements OnClickLi
 				if (intent.getAction().equals("chage_status")) {
 					if (intent.getStringExtra("dayornight").equals("night")) {
 						isNight = true;
-					} else if (intent.getStringExtra("dayornight").equals("day")) {
+					} else if (intent.getStringExtra("dayornight")
+							.equals("day")) {
 						isNight = false;
 					} else {
 						isNight = false;

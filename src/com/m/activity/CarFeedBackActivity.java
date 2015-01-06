@@ -7,14 +7,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.m.base.BaseActivity;
 import com.m.car2.R;
-import com.m.car2.R.id;
-import com.m.car2.R.layout;
 import com.m.util.Tools;
 
 public class CarFeedBackActivity extends BaseActivity {

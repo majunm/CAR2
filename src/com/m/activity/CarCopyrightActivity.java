@@ -2,7 +2,6 @@ package com.m.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,7 +11,6 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
@@ -22,8 +20,6 @@ import android.widget.TextView;
 
 import com.m.base.BaseActivity;
 import com.m.car2.R;
-import com.m.car2.R.id;
-import com.m.car2.R.layout;
 import com.m.util.Tools;
 
 public class CarCopyrightActivity extends BaseActivity {
@@ -42,8 +38,8 @@ public class CarCopyrightActivity extends BaseActivity {
 		copyrightLoading = (ImageView) findViewById(R.id.car_copyright_loading);
 		copyrightLayout = (RelativeLayout) findViewById(R.id.car_copyright_layout);
 		copyrightDetail = (TextView) findViewById(R.id.car_copyright_details);
-		animation = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f,
-				Animation.RELATIVE_TO_SELF, 0.5f);
+		animation = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF,
+				0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 		animation.setDuration(700);
 		animation.setRepeatCount(-1);
 		backButton.setOnClickListener(this);
@@ -144,7 +140,7 @@ public class CarCopyrightActivity extends BaseActivity {
 	}
 
 	/** 白天 */
-	private void day() { 
+	private void day() {
 		copyrightLayout.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
 		carCommonTitle.setTextColor(Color.parseColor("#4C4D4E"));
 		actionbarLayout.setBackgroundResource(R.drawable.car_title_bg);

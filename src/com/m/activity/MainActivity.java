@@ -20,7 +20,7 @@ import com.m.base.BaseActivity;
 import com.m.car2.R;
 import com.m.fragment.CarFragment;
 import com.m.fragment.SettingFragment;
-import com.m.fragment.TestFragment;
+import com.m.fragment.TopicFragment;
 import com.m.util.Tools;
 
 public class MainActivity extends BaseActivity {
@@ -56,7 +56,8 @@ public class MainActivity extends BaseActivity {
 
 	public OnCheckedChangeListener onCheckedChangeListener = new OnCheckedChangeListener() {
 		public void onCheckedChanged(RadioGroup group, int checkedId) {
-			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+			FragmentTransaction ft = getSupportFragmentManager()
+					.beginTransaction();
 			clearColorStatus();
 			hideFragments(ft);
 			switch (checkedId) {
@@ -82,7 +83,7 @@ public class MainActivity extends BaseActivity {
 					classify.setTextColor(Color.parseColor("#21EEFE"));
 				}
 				if (testFragment == null) {
-					testFragment = new TestFragment();
+					testFragment = new TopicFragment();
 					ft.add(R.id.car_cotainer, testFragment);
 				} else {
 					ft.show(testFragment);
@@ -172,7 +173,7 @@ public class MainActivity extends BaseActivity {
 				} else {
 					classify.setTextColor(Color.parseColor("#21EEFE"));
 				}
-				f = new TestFragment();
+				f = new TopicFragment();
 			}
 			return f;
 		}
@@ -183,7 +184,7 @@ public class MainActivity extends BaseActivity {
 		}
 	};
 	private CarFragment carFragment;
-	private TestFragment testFragment;
+	private TopicFragment testFragment;
 	private SettingFragment settingFragment;
 
 	/**
@@ -237,7 +238,8 @@ public class MainActivity extends BaseActivity {
 			}
 			if (isNight) {
 				Tools.setDayChange(mContext, true);
-				actionbarLayout.setBackgroundResource(R.drawable.car_night_titlebg);
+				actionbarLayout
+						.setBackgroundResource(R.drawable.car_night_titlebg);
 				carCommonTitle.setTextColor(Color.parseColor("#B7B7B7"));
 			} else {
 				Tools.setDayChange(mContext, false);

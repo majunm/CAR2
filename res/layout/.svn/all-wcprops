@@ -1,3 +1,7 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/car2/!svn/ver/18/CAR2/res/layout
 END
 activity_main.xml
 K 25
@@ -11,6 +15,12 @@ svn:wc:ra_dav:version-url
 V 56
 /svn/car2/!svn/ver/12/CAR2/res/layout/activity_main2.xml
 END
+car_setting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/car2/!svn/ver/8/CAR2/res/layout/car_setting.xml
+END
 car_item.xml
 K 25
 svn:wc:ra_dav:version-url
@@ -21,19 +31,37 @@ car_actionbar_layout.xml
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/car2/!svn/ver/12/CAR2/res/layout/car_actionbar_layout.xml
+/svn/car2/!svn/ver/22/CAR2/res/layout/car_actionbar_layout.xml
 END
 car_test.xml
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/car2/!svn/ver/12/CAR2/res/layout/car_test.xml
+/svn/car2/!svn/ver/15/CAR2/res/layout/car_test.xml
 END
 car_settings.xml
 K 25
 svn:wc:ra_dav:version-url
 V 54
 /svn/car2/!svn/ver/12/CAR2/res/layout/car_settings.xml
+END
+check_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/car2/!svn/ver/15/CAR2/res/layout/check_view.xml
+END
+single_check_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/car2/!svn/ver/15/CAR2/res/layout/single_check_view.xml
+END
+car_feedback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/car2/!svn/ver/18/CAR2/res/layout/car_feedback.xml
 END
 mini_web.xml
 K 25
@@ -45,5 +73,5 @@ car_copyright.xml
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/car2/!svn/ver/12/CAR2/res/layout/car_copyright.xml
+/svn/car2/!svn/ver/18/CAR2/res/layout/car_copyright.xml
 END

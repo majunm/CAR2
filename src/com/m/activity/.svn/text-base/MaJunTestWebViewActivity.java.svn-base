@@ -3,7 +3,9 @@ package com.m.activity;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.JsPromptResult;
@@ -16,8 +18,6 @@ import android.webkit.WebViewClient;
 
 import com.m.base.BaseActivity;
 import com.m.car2.R;
-import com.m.car2.R.id;
-import com.m.car2.R.layout;
 import com.m.util.Tools;
 
 public class MaJunTestWebViewActivity extends BaseActivity {
@@ -56,6 +56,7 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 		// // 使用WebView来显示图片
 		// content_wv.loadData("<img src='http://orgcent.com'/>", "text/html",
 		// "utf8");
+		backButton.setOnClickListener(this);
 	}
 
 	private class WebViewClientDemo extends WebViewClient {
@@ -77,7 +78,8 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 
 		// JavaScript弹出框
 		@Override
-		public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+		public boolean onJsAlert(WebView view, String url, String message,
+				JsResult result) {
 			return super.onJsAlert(view, url, message, result);
 		}
 
@@ -99,6 +101,17 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 	@Override
 	public void resetNavigation() {
 		carCommonMore.setVisibility(View.GONE);
+		carCommonTitle.setText("评分");
+	}
+
+	@Override
+	public void onClick(View v) {
+		super.onClick(v);
+		switch (v.getId()) {
+		case R.id.car_copyright_return:
+			Tools.beginExit(mContext);
+			break;
+		}
 	}
 
 	@Override
@@ -112,6 +125,30 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 
 	@Override
 	public void receiver(Context context, Intent intent) {
-		
+
 	}
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		Log.e("car", "isNight=" + isNight);
+		if (isNight) {
+			night();
+		} else {
+			day();
+		}
+	}
+
+	/** 晚上 */
+	private void night() {
+		carCommonTitle.setTextColor(Color.parseColor("#B7B7B7"));
+		actionbarLayout.setBackgroundResource(R.drawable.car_night_titlebg);
+	}
+
+	/** 白天 */
+	private void day() {
+		carCommonTitle.setTextColor(Color.parseColor("#4C4D4E"));
+		actionbarLayout.setBackgroundResource(R.drawable.car_title_bg);
+	}
+
 }

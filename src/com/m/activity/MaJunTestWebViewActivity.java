@@ -78,7 +78,8 @@ public class MaJunTestWebViewActivity extends BaseActivity {
 
 		// JavaScript弹出框
 		@Override
-		public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+		public boolean onJsAlert(WebView view, String url, String message,
+				JsResult result) {
 			return super.onJsAlert(view, url, message, result);
 		}
 

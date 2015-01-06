@@ -126,7 +126,7 @@ public class CarDetailFragment extends BaseFragment {
 		}
 	}
 
-	private static LinkedHashMap<Integer, CarInfo> map;
+	public static LinkedHashMap<Integer, CarInfo> map;
 
 	/** 获取fragment */
 	public static CarDetailFragment newInstance(int currentIndex) {
@@ -162,8 +162,8 @@ public class CarDetailFragment extends BaseFragment {
 			visibleView = mainLayout;
 			invisibleView = carStoryScorll;
 		}
-		ObjectAnimator visToInvis = ObjectAnimator.ofFloat(visibleView, "rotationY", 0f,
-				90f);
+		ObjectAnimator visToInvis = ObjectAnimator.ofFloat(visibleView,
+				"rotationY", 0f, 90f);
 		visToInvis.setDuration(500);
 		visToInvis.setInterpolator(accelerator);
 		final ObjectAnimator invisToVis = ObjectAnimator.ofFloat(invisibleView,
@@ -183,8 +183,8 @@ public class CarDetailFragment extends BaseFragment {
 							Tools.showProgressDialog(getActivity(), "正在加载....");
 							new Thread() {
 								public void run() {
-									storyContent = Tools
-											.loadData(getActivity(), position);
+									storyContent = Tools.loadData(
+											getActivity(), position);
 									mHandler.sendEmptyMessage(0);
 								}
 							}.start();
@@ -272,7 +272,11 @@ public class CarDetailFragment extends BaseFragment {
 		map.put(0, new CarInfo(R.drawable.a0, "劳斯莱斯", "Rolls-Royce", "劳斯莱斯",
 				"劳斯莱斯以一个“贵族化”的汽车公司享誉全球，同时也是目前世界三大航空发动机生产商之一。"));
 		map.put(1,
-				new CarInfo(R.drawable.a1, "宾利", "Bentley", "宾利",
+				new CarInfo(
+						R.drawable.a1,
+						"宾利",
+						"Bentley",
+						"宾利",
 						"宾利(又译作本特利)(Bentley)轿车标志是以公司名的第一个字母“B”为主体，生出一对翅膀，似凌空翱翔的雄鹰，此标志一直沿用至今，过去曾用过一个展翅飞翔的“B”标志。"));
 		map.put(2, new CarInfo(R.drawable.a2, "保时捷", "Porsche", "保时捷",
 				"保时捷的英文车标引采用德国保时捷公司创始人费迪南德·保时捷的姓氏。图形车标采用公司所在地斯图加特市的盾形市徽。"));
@@ -283,8 +287,9 @@ public class CarDetailFragment extends BaseFragment {
 						"Ferrari",
 						"法拉利",
 						"第一辆披着法拉利“红鬃烈马”标徽，在赛道上先驰得点的，是由125型赛车加以改良的166型SPYDER CORSA，搭配一九九二毫升直列六缸引擎，勇夺一九四八年意大利的塔卡-傅里欧(TARG FLORIO)及米里-麦利亚(MILLE MIGLIA)大赛的双项冠军，“法拉利”从此一举成名，并接连胜出超过五千场赛事的“跃马传奇”。"));
-		map.put(4, new CarInfo(R.drawable.a4, "玛莎拉蒂", "Maserati", "玛莎拉蒂",
-				"玛莎拉蒂是七十余年间生产了多辆传奇式赛车、跑车的意大利品牌，它在历史上各款车型制造过程中体现了精湛技艺和思维方面的独创性让人着迷。"));
+		map.put(4,
+				new CarInfo(R.drawable.a4, "玛莎拉蒂", "Maserati", "玛莎拉蒂",
+						"玛莎拉蒂是七十余年间生产了多辆传奇式赛车、跑车的意大利品牌，它在历史上各款车型制造过程中体现了精湛技艺和思维方面的独创性让人着迷。"));
 		map.put(7,
 				new CarInfo(
 						R.drawable.a5,
@@ -322,7 +327,11 @@ public class CarDetailFragment extends BaseFragment {
 						"路特斯(Lotus Cars，曾被译为“莲花汽车”)是世界著名的跑车与赛车生产商，总部设在英国诺福克郡(Norfolk)的Hethel，由柯林·查普曼(Colin Chapman)创立于1952年，旗下的跑车以纯粹的驾驶乐趣和轻量化的设计而著称。1996年，Lotus被马来西亚汽车制造商宝腾(Proton)收购，2011年6月，Lotus品牌正式进入中国，并发布其中文官方名称“路特斯”。"));
 
 		map.put(10,
-				new CarInfo(R.drawable.b0, "奥迪", "Audi", "奥迪",
+				new CarInfo(
+						R.drawable.b0,
+						"奥迪",
+						"Audi",
+						"奥迪",
 						"奥迪轿车的标志为四个圆环，代表着合并前的四家公司。这些公司曾经是自行车、摩托车及小客车的 生产厂家。由于该公司原是由4家公司合并而成，因此每一环都是其中一个公司的象征。"));
 		map.put(11,
 				new CarInfo(
@@ -338,10 +347,12 @@ public class CarDetailFragment extends BaseFragment {
 						"Land Rover",
 						"路虎",
 						"路虎(Landrover)，曾在中国大陆翻译成陆虎(香港地区称为“越野路华”)，是世界著名的英国越野车品牌。今天，路虎公司是世界上唯一专门生产四驱车的公司。或许正是由于这一点，才使得路虎的价值--冒险、勇气和至尊，闪耀在其各款汽车中。"));
-		map.put(13, new CarInfo(R.drawable.b3, "莲花", "LianHua", "莲花",
-				"莲花汽车公司成立于1952年1月1日，是世界上著名的运动汽车生产厂家，与法拉利、保时捷一起并称为世界三大跑车制造商，在世界上享有盛誉。"));
-		map.put(14, new CarInfo(R.drawable.b4, "阿尔法·罗密欧", "Alfa Romeo", "阿尔法·罗密欧",
-				"阿尔法·罗密欧的风格如此特别，在现代的风格中带有历史的回归，暗示着始终的创新与技术完美，有着诗意的名字，就像一个梦中的精灵。"));
+		map.put(13,
+				new CarInfo(R.drawable.b3, "莲花", "LianHua", "莲花",
+						"莲花汽车公司成立于1952年1月1日，是世界上著名的运动汽车生产厂家，与法拉利、保时捷一起并称为世界三大跑车制造商，在世界上享有盛誉。"));
+		map.put(14,
+				new CarInfo(R.drawable.b4, "阿尔法·罗密欧", "Alfa Romeo", "阿尔法·罗密欧",
+						"阿尔法·罗密欧的风格如此特别，在现代的风格中带有历史的回归，暗示着始终的创新与技术完美，有着诗意的名字，就像一个梦中的精灵。"));
 		map.put(15, new CarInfo(R.drawable.b5, "吉利", "GEELY", "吉利",
 				"“椭圆”：象征地球，表示面向世界、走向国际化;椭圆在动态中是最稳定的，喻示及祝愿吉利的事业稳如磐石，在风雨中屹立不倒."));
 		map.put(16,
@@ -478,7 +489,11 @@ public class CarDetailFragment extends BaseFragment {
 						"吉利帝豪",
 						"帝豪EMGRAND，象征“豪华、稳健、力量 ”，是吉利汽车在吉利母品牌之下构建的一个子品牌。帝豪品牌对吉利汽车有传承亦有突破，其标识设计高贵、庄雅透露着浓郁的国际化特质，在甩掉吉利原有历史印象包袱的同时，也有效地传承了优秀固有文化基因。稳重、高贵的标识内涵将卓有成效地为帝豪品牌开拓广阔而稳定的全新市场助力。"));
 		map.put(36,
-				new CarInfo(R.drawable.d6, "英伦", "engloncar", "英伦",
+				new CarInfo(
+						R.drawable.d6,
+						"英伦",
+						"engloncar",
+						"英伦",
 						"英伦汽车，既现代又古典、既繁华又祥和、既庄重又内敛，彰显自信气度，阐释了融汇西方先进的生产工艺和管理理念，自主创新、开拓进取，打造属于中国的国际化品牌的决心和信念!"));
 		map.put(37,
 				new CarInfo(
@@ -511,7 +526,11 @@ public class CarDetailFragment extends BaseFragment {
 						"标致",
 						"“标致”(PEUGEOT)曾译名为 “别儒”，公司采用 “狮子”作为汽车的商标。 “标致”的商标图案是蒙贝利亚尔创建人别儒家族的徽章。据说别儒的祖先曾到美洲和非洲探险，在那里见到了令人惊奇的动物—狮子，为此就用狮子作为本家族的徽章。后来，这尊小狮子又成为蒙贝利亚尔省的省徽。"));
 		map.put(41,
-				new CarInfo(R.drawable.e1, "启辰", "Venucia", "启辰",
+				new CarInfo(
+						R.drawable.e1,
+						"启辰",
+						"Venucia",
+						"启辰",
 						"“蔚蓝星空”寓意着启辰立志高远，矢志不渝的无限追求; “五星辉映”源自“天有五星，地有五行”，“五行俱全”寓意和谐，蕴涵祥瑞之意，并诠释着启辰更深层次的品牌内涵。"));
 		map.put(42,
 				new CarInfo(
@@ -521,7 +540,11 @@ public class CarDetailFragment extends BaseFragment {
 						"本田",
 						"本田公司在80年代成立了商标设计研究组，从来自世界各地的2500多件设计图稿中，确定了现在的三弦音箱式商标，也就是带框的“H”，图案中的H是“本田”拼音Honda的第一个字母。这个标志体现出技术创新，职工完美和经营坚实的特点，同时还有紧张感和可以放松一下的轻松感。"));
 		map.put(43,
-				new CarInfo(R.drawable.e3, "GMC", "GMC", "GMC",
+				new CarInfo(
+						R.drawable.e3,
+						"GMC",
+						"GMC",
+						"GMC",
 						"GMC是通用集团旗下的MPV部门。现有使节(Envoy)、峡谷(Canyon)、西拉(Sierra)育空河(Yukon)、旅行(Safari)、Savana等一系列车型。"));
 		map.put(44,
 				new CarInfo(R.drawable.e4, "宝马Mini", "Mini", "宝马Mini",
@@ -565,8 +588,9 @@ public class CarDetailFragment extends BaseFragment {
 						"Chevrolet",
 						"雪佛兰",
 						"雪佛兰汽车公司(Chevrolet)，亦作雪佛莱或雪福兰，由美国人威廉·杜兰特与通用汽车大股东不合离开后与瑞士赛车手、工程师路易斯·雪佛兰于1911年在美国底特律创立，美国人常昵称雪佛兰为Chevy。"));
-		map.put(51, new CarInfo(R.drawable.f1, "福特", "Ford", "福特",
-				"福特汽车的标志是采用福特英文Ford字样，蓝底白字。由于创建人亨利·福特喜欢小动物，所以标志设计者把福特的英文画成一只小白兔样子的图案。"));
+		map.put(51,
+				new CarInfo(R.drawable.f1, "福特", "Ford", "福特",
+						"福特汽车的标志是采用福特英文Ford字样，蓝底白字。由于创建人亨利·福特喜欢小动物，所以标志设计者把福特的英文画成一只小白兔样子的图案。"));
 		map.put(52,
 				new CarInfo(
 						R.drawable.f2,
@@ -655,8 +679,8 @@ public class CarDetailFragment extends BaseFragment {
 						"Pagani Zonda堪称超级跑车，敢与法拉利、保时捷、兰博基尼等跑车界大腕一比高下，其完美的做工足以让法拉利汗颜。每一辆交付客户的Zonda皆具有款型皆具有独特的上空魅力、超强的动力性能，以及承袭自Pagani手工制作的尊荣质感，使到限量生产的Pagani Zonda超级跑车，身价益发不凡。"));
 		map.put(66, new CarInfo(R.drawable.g6, "西雅特", "Seat", "西雅特",
 				"西亚特(Seat)是西班牙最大的汽车公司，1950年成立于巴塞罗那。现在属于德国大众汽车公司子公司。"));
-		map.put(67,
-				new CarInfo(R.drawable.g7, "现代劳恩斯", "----", "现代劳恩斯", "隶属公司：韩车现代汽车车公司"));
+		map.put(67, new CarInfo(R.drawable.g7, "现代劳恩斯", "----", "现代劳恩斯",
+				"隶属公司：韩车现代汽车车公司"));
 		map.put(68,
 				new CarInfo(
 						R.drawable.g8,
@@ -847,7 +871,11 @@ public class CarDetailFragment extends BaseFragment {
 						"海格",
 						"金龙联合汽车工业(苏州)有限公司成立于1998年底，一般被人们简称为“苏州金龙”。10年来，苏州金龙艰辛探索，拼搏成长，建成50万平方米的现代化客车制造基地，年销量突破50亿元大关，海格客车驰骋全球55个国家和地区，以年均51%的增速迅猛崛起，开辟了一条可持续的快速发展之路。"));
 		map.put(92,
-				new CarInfo(R.drawable.j2, "红旗", "----", "红旗",
+				new CarInfo(
+						R.drawable.j2,
+						"红旗",
+						"----",
+						"红旗",
 						"红旗轿车在中国是个家喻户晓的名字。“红旗”二字已经远远超出了一个轿车品牌的含义，新中国发生的太多历史事件都与“红旗”有关。在国人心里，它有其他品牌所不能代替的位置。"));
 		map.put(93,
 				new CarInfo(
@@ -858,8 +886,9 @@ public class CarDetailFragment extends BaseFragment {
 						"华泰汽车集团是一家集汽车研发、核心零部件生产和整车制造于一体的综合性汽车制造企业。集团成立于2000年，现有总资产120亿元，员工7000余人。总部位于北京，下设北京汽车研发中心和山东荣成、内蒙古鄂尔多斯、吉林延边三个汽车生产基地及在内蒙古包头设有一个模具厂。华泰汽车以产业报国为己任，崇尚技术，创造品味，开发低炭技术，履行社会责任，以打造世界级的中高端汽车品牌为目标。目前已具备年产30万台欧Ⅳ/Ⅴ清洁柴油乘用车发动机、45万台自动变速器，35万辆整车的生产制造能力。"));
 		map.put(94, new CarInfo(R.drawable.j4, "黄海", "----", "黄海",
 				"“黄海”汽车是中国驰名商标。是辽宁曙光汽车集团股份有限公司旗下汽车品牌。"));
-		map.put(95, new CarInfo(R.drawable.j5, "吉普", "Jeep", "吉普",
-				"JEEP车标的含义就是英文吉普的意思，也是戴姆勒·克莱斯勒公司旗下生产越野车的公司JEEP的名称。而越野是泛指有越野性能的车。"));
+		map.put(95,
+				new CarInfo(R.drawable.j5, "吉普", "Jeep", "吉普",
+						"JEEP车标的含义就是英文吉普的意思，也是戴姆勒·克莱斯勒公司旗下生产越野车的公司JEEP的名称。而越野是泛指有越野性能的车。"));
 		map.put(96,
 				new CarInfo(
 						R.drawable.j6,
@@ -868,7 +897,11 @@ public class CarDetailFragment extends BaseFragment {
 						"江铃",
 						"江铃汽车股份有限公司(简称“江铃”，英文全称Jiangling Motors Co., Ltd.，英文缩写JMC)，中国商用车行业最大的企业之一,连续四年位列中国上市公司百强。江铃于二十世纪八十年代中期在中国率先引进国际先进技术制造轻型卡车，成为中国主要的轻型卡车制造商。"));
 		map.put(97,
-				new CarInfo(R.drawable.j7, "金杯", "----", "金杯",
+				new CarInfo(
+						R.drawable.j7,
+						"金杯",
+						"----",
+						"金杯",
 						"公司是华晨汽车集团所属的金杯汽车股份有限公司控股的国内主要卡车生产厂之一，于1958年建厂，具有悠久的发展历史，2002年由沈阳汽车制造厂重组为沈阳金杯车辆制造有限公司。"));
 		map.put(98,
 				new CarInfo(
@@ -887,8 +920,9 @@ public class CarDetailFragment extends BaseFragment {
 		/** ++++++++++++++++++++++20++++++++++++++++++++++++ */
 		map.put(100, new CarInfo(R.drawable.k0, "威兹曼", "Wiesmann", "威兹曼",
 				"威兹曼以蜥蜴做为自己的品牌标志，表明所生产的跑车具备蜥蜴一般完全的抓地力和快速奔跑时突然改变方向的灵活身手!"));
-		map.put(101, new CarInfo(R.drawable.k1, "双环", "----", "双环",
-				"社会责任感和使命感的体现;所生产的品牌汽车以“华而不贵”为导向，不仅 得到了中国政府和广大消费者的推崇，同时也赢得了世界市场的普遍认同。"));
+		map.put(101,
+				new CarInfo(R.drawable.k1, "双环", "----", "双环",
+						"社会责任感和使命感的体现;所生产的品牌汽车以“华而不贵”为导向，不仅 得到了中国政府和广大消费者的推崇，同时也赢得了世界市场的普遍认同。"));
 		map.put(102,
 				new CarInfo(
 						R.drawable.k2,
@@ -925,7 +959,11 @@ public class CarDetailFragment extends BaseFragment {
 						"讴歌",
 						"讴歌(Acura)是日本本田汽车公司旗下的高端子品牌，于1986年在美国创立，其名称Acura源于拉丁语Accuracy(精确)，标志为一个用于工程测量的卡钳形象，反映出讴歌精湛的造车工艺与追求完美的理念。作为第二个日系豪华汽车品牌，讴歌以个性化和前瞻科技的“运动豪华”理念对豪华车的概念进行了重新诠释，品牌一经推出即在北美市场获得了巨大的成功。讴歌的车型均在北美进行设计、开发和生产，先后开发出了以TL、RL、MDX等车型为首的丰富产品线。讴歌品牌于2006年9月27日正式登陆中国市场。"));
 		map.put(107,
-				new CarInfo(R.drawable.k7, "思铭", "CIIMO", "思铭",
+				new CarInfo(
+						R.drawable.k7,
+						"思铭",
+						"CIIMO",
+						"思铭",
 						"在2011年的广州车展上，东风本田发布了旗下的自主品牌标识，同时还有其首款车型的名称——思铭。近日，有消息称，该车将在今年4月份上市，而价格预计在11万起。"));
 		map.put(108,
 				new CarInfo(
@@ -1044,7 +1082,11 @@ public class CarDetailFragment extends BaseFragment {
 						"哈弗",
 						"哈弗是长城汽车定位为CUV车型(City Utility Vehicle)，其中文 意思是指城市多功能车， 05年哈弗英文名为“HOVER”，代表“自由翱翔”。由于06年开始批量出口欧盟，在国际市场有了一定影响，原来的英文名字已被很多国家注册。只好重新寻找了一个在英文里没有实际意义、全球发音更一致的单词：“HAVAL”。我们想赋予它have all(无所不能)的含义，这就是LOGO “HAVAL”的起源。"));
 		map.put(125,
-				new CarInfo(R.drawable.m5, "达西亚", "Dacia", "达西亚",
+				new CarInfo(
+						R.drawable.m5,
+						"达西亚",
+						"Dacia",
+						"达西亚",
 						"达西亚——雷诺汽车公司旗下品牌之一。Dacia达西亚是与罗马尼亚的汽车工业一起成厂起来的汽车品牌，成立于1966年。与雷诺汽车的合作是达西亚快速发展的开始。"));
 		map.put(126,
 				new CarInfo(
@@ -1071,7 +1113,11 @@ public class CarDetailFragment extends BaseFragment {
 				"摩根汽车公司是一家有100年历史的英国汽车公司。自1902年推出首辆三轮汽车至今，这个地方几乎就没有改变过。"));
 
 		map.put(130,
-				new CarInfo(R.drawable.n0, "九龙汽车", "joylong", "九龙汽车",
+				new CarInfo(
+						R.drawable.n0,
+						"九龙汽车",
+						"joylong",
+						"九龙汽车",
 						"公司于2007年注册成立，是主要从事豪华商务车及大中型客车研发、生产和销售、服务的企业。扬州江都区南临长江，北接淮水，东望上海，地处上海经济圈和南京都市圈交汇地带，交通便捷。"));
 		map.put(131,
 				new CarInfo(R.drawable.n1, "华骐", "HORKI", "华骐",
@@ -1083,8 +1129,8 @@ public class CarDetailFragment extends BaseFragment {
 						"CHTC",
 						"恒天汽车",
 						"保定恒天汽车投资有限公司是国务院国资委所属企业-中国恒天集团有限公司下属子公司，是恒天集团进军汽车业的重要平台之一，致力于在皮卡和SUV细分市场上作出自己的特色。将针对中国汽车消费者的需求特点，为中国消费者精心打造适合中国国情的皮卡和SUV产品。"));
-		map.put(133, new CarInfo(R.drawable.n3, "Hennessey", "Hennessey ", "Hennessey",
-				"Hennessey---产　　地：美国"));
+		map.put(133, new CarInfo(R.drawable.n3, "Hennessey", "Hennessey ",
+				"Hennessey", "Hennessey---产　　地：美国"));
 		map.put(134, new CarInfo(R.drawable.n4, "福汽新龙马", "NLM MOTOR", "福汽新龙马",
 				"福汽新龙马是一个微车系自主研发品牌，隶属于福建省汽车工业集团控股公司，具有完全自主知识产权。"));
 		map.put(135,

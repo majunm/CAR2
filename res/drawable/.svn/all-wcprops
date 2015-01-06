@@ -1,21 +1,61 @@
-END
-car_night_name_bg.9.png
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/car2/!svn/ver/10/CAR2/res/drawable/car_night_name_bg.9.png
+V 39
+/svn/car2/!svn/ver/19/CAR2/res/drawable
 END
-car_day_name_bg.9.png
+umeng_update_button_cancel_tap.xml
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/car2/!svn/ver/10/CAR2/res/drawable/car_day_name_bg.9.png
+V 73
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancel_tap.xml
 END
-car_night.9.png
+umeng_update_cancle_selector.xml
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/car2/!svn/ver/10/CAR2/res/drawable/car_night.9.png
+V 71
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_cancle_selector.xml
+END
+umeng_update_button_cancle_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancle_normal.xml
+END
+radius.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/car2/!svn/ver/8/CAR2/res/drawable/radius.xml
+END
+night_register_btn_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/car2/!svn/ver/8/CAR2/res/drawable/night_register_btn_bg_selector.xml
+END
+liearlayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/car2/!svn/ver/8/CAR2/res/drawable/liearlayout.xml
+END
+umeng_common_gradient_red.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_red.xml
+END
+operate_excute_radius_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable/operate_excute_radius_bg.xml
+END
+umeng_common_gradient_orange.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_orange.xml
 END
 car_night_titlebg.png
 K 25
@@ -23,9 +63,255 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/car2/!svn/ver/10/CAR2/res/drawable/car_night_titlebg.png
 END
+edit_radius.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/car2/!svn/ver/8/CAR2/res/drawable/edit_radius.xml
+END
+seekbar_style.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/car2/!svn/ver/8/CAR2/res/drawable/seekbar_style.xml
+END
 car_day.9.png
 K 25
 svn:wc:ra_dav:version-url
 V 53
 /svn/car2/!svn/ver/10/CAR2/res/drawable/car_day.9.png
+END
+car_img_bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/car2/!svn/ver/8/CAR2/res/drawable/car_img_bg.png
+END
+mini_status_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/car2/!svn/ver/8/CAR2/res/drawable/mini_status_selector.xml
+END
+car_checked.png
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/car2/!svn/ver/8/CAR2/res/drawable/car_checked.png
+END
+register_btn_bg_selector01.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable/register_btn_bg_selector01.xml
+END
+umeng_update_button_ok_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_selector.xml
+END
+car_title_bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/car2/!svn/ver/8/CAR2/res/drawable/car_title_bg.png
+END
+umeng_update_button_ok_tap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_tap.xml
+END
+share_btn_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/8/CAR2/res/drawable/share_btn_selector.xml
+END
+car_day_name_bg.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/10/CAR2/res/drawable/car_day_name_bg.9.png
+END
+answer_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/8/CAR2/res/drawable/answer_bg_selector.xml
+END
+popwindow_left_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable/popwindow_left_bg_selector.xml
+END
+night_write_answer_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/car2/!svn/ver/8/CAR2/res/drawable/night_write_answer_bg_selector.xml
+END
+one_list_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/car2/!svn/ver/8/CAR2/res/drawable/one_list_selector.xml
+END
+night_opeexecute_radius_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable/night_opeexecute_radius_bg.xml
+END
+umeng_common_gradient_green.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_green.xml
+END
+umeng_update_button_cancle_tap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancle_tap.xml
+END
+no_register_btn_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable/no_register_btn_selector.xml
+END
+umeng_update_button_cancel_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancel_normal.xml
+END
+feedback_edit_night_bg.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/car2/!svn/ver/19/CAR2/res/drawable/feedback_edit_night_bg.9.png
+END
+umeng_update_title_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_title_bg.xml
+END
+feedback_btn_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable/feedback_btn_selector.xml
+END
+list_item_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/8/CAR2/res/drawable/list_item_selector.xml
+END
+car_night.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/car2/!svn/ver/10/CAR2/res/drawable/car_night.9.png
+END
+popwindow_right_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/car2/!svn/ver/8/CAR2/res/drawable/popwindow_right_bg_selector.xml
+END
+popwindow_center_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/car2/!svn/ver/8/CAR2/res/drawable/popwindow_center_bg_selector.xml
+END
+register_btn_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable/register_btn_bg_selector.xml
+END
+radius_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/car2/!svn/ver/8/CAR2/res/drawable/radius_bg.xml
+END
+weibo_login_btn_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable/weibo_login_btn_selector.xml
+END
+car_night_name_bg.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/car2/!svn/ver/10/CAR2/res/drawable/car_night_name_bg.9.png
+END
+car_unchecked.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/car2/!svn/ver/8/CAR2/res/drawable/car_unchecked.png
+END
+umeng_update_wifi_disable.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_wifi_disable.png
+END
+umeng_update_dialog_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_dialog_bg.xml
+END
+umeng_update_ok_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_ok_selector.xml
+END
+car_name_bg.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/car2/!svn/ver/8/CAR2/res/drawable/car_name_bg.9.png
+END
+umeng_update_button_ok_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_normal.xml
+END
+default_main.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/car2/!svn/ver/8/CAR2/res/drawable/default_main.png
+END
+answer_list_item_click_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/car2/!svn/ver/8/CAR2/res/drawable/answer_list_item_click_selector.xml
+END
+umeng_update_button_cancel_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancel_selector.xml
+END
+mini_more_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/8/CAR2/res/drawable/mini_more_selector.xml
 END
