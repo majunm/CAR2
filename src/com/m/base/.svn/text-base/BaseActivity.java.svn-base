@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.m.car2.R;
+import com.umeng.analytics.MobclickAgent;
 
 public abstract class BaseActivity extends FragmentActivity implements
 		OnClickListener {
@@ -115,5 +116,14 @@ public abstract class BaseActivity extends FragmentActivity implements
 			e.printStackTrace();
 		}
 	}
+	
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+		}
+		public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
+		}
 
 }

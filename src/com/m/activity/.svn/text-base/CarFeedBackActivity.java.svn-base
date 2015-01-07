@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -41,6 +43,7 @@ public class CarFeedBackActivity extends BaseActivity {
 		feedbackDetails.setSelected(true);
 		backButton.setOnClickListener(this);
 		Tools.closeSoftKeyboard(feedEmail, this);
+		findViewById(R.id.submitFeedBack).setOnClickListener(this);
 	}
 
 	@Override
@@ -51,6 +54,33 @@ public class CarFeedBackActivity extends BaseActivity {
 			break;
 		case R.id.car_copyright_return:
 			Tools.beginExit(mContext);
+			break;
+		case R.id.submitFeedBack:
+			if (Tools.isConnect(mContext)) {
+				if (Tools.isEmpty(feedEmail.getText().toString())) {
+					Tools.showToast(mContext, "邮箱不能为空!");
+				} else if (Tools.isEmpty(feedPhone.getText().toString())) {
+					Tools.showToast(mContext, "手机号不能为空!");
+				} else if (Tools.isEmpty(feedContent.getText().toString())) {
+					Tools.showToast(mContext, "反馈内容不能为空!");
+				} else {
+					Tools.showProgressDialog(mContext, "正在提交反馈~~~");
+					new Handler().postDelayed(new Runnable() {
+
+						@Override
+						public void run() {
+							Tools.dismissProgressDialog();
+							Tools.showToast(mContext, "反馈已提交,感谢您的参与!");
+							feedPhone.setText("");
+							feedContent.setText("");
+							feedEmail.setText("");
+						}
+					}, 2000);
+				}
+
+			} else {
+				Tools.showNetisDead(mContext);
+			}
 			break;
 		}
 	}

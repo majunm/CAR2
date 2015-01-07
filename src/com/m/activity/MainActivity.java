@@ -1,5 +1,6 @@
 package com.m.activity;
 
+import net.youmi.android.AdManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -52,6 +53,13 @@ public class MainActivity extends BaseActivity {
 		getSupportFragmentManager().beginTransaction()
 				.add(R.id.car_cotainer, carFragment).commit();
 		// group.check(currentIndex);
+		initAdvertisement();
+	}
+
+	private void initAdvertisement() {
+		// 参数：appId, appSecret, 调试模式
+		AdManager.getInstance(this).init("ecc641beff695908",
+				"f13c061ac7ffb94c", false);
 	}
 
 	public OnCheckedChangeListener onCheckedChangeListener = new OnCheckedChangeListener() {
@@ -229,10 +237,15 @@ public class MainActivity extends BaseActivity {
 		try {
 			switch (currentIndex) {
 			case 0:
+				carCommonTitle.setText("汽车品牌浏览");
+				carCommonMore.setVisibility(View.VISIBLE);
+				break;
 			case 1:
+				carCommonTitle.setText("问答");
 				carCommonMore.setVisibility(View.VISIBLE);
 				break;
 			case 2:
+				carCommonTitle.setText("设置");
 				carCommonMore.setVisibility(View.GONE);
 				break;
 			}

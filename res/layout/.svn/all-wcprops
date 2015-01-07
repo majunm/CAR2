@@ -37,7 +37,7 @@ car_test.xml
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/car2/!svn/ver/15/CAR2/res/layout/car_test.xml
+/svn/car2/!svn/ver/34/CAR2/res/layout/car_test.xml
 END
 car_settings.xml
 K 25
@@ -55,7 +55,7 @@ single_check_view.xml
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/car2/!svn/ver/15/CAR2/res/layout/single_check_view.xml
+/svn/car2/!svn/ver/34/CAR2/res/layout/single_check_view.xml
 END
 car_feedback.xml
 K 25

@@ -7,7 +7,7 @@ BaseActivity.java
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/car2/!svn/ver/23/CAR2/src/com/m/base/BaseActivity.java
+/svn/car2/!svn/ver/33/CAR2/src/com/m/base/BaseActivity.java
 END
 CheckView.java
 K 25
@@ -19,7 +19,7 @@ SingleCheckView.java
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/car2/!svn/ver/15/CAR2/src/com/m/base/SingleCheckView.java
+/svn/car2/!svn/ver/34/CAR2/src/com/m/base/SingleCheckView.java
 END
 BaseApplication.java
 K 25

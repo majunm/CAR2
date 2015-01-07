@@ -27,7 +27,6 @@ public class SingleCheckView extends RelativeLayout implements OnClickListener {
 	
 	private void init(Context context){
 		View.inflate(context, R.layout.single_check_view, this);
-		setGravity(Gravity.CENTER);
 		check = (CheckBox) findViewById(R.id.check_check);
 		
 		text = (TextView) findViewById(R.id.check_text);

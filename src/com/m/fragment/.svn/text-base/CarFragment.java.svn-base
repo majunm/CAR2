@@ -20,6 +20,7 @@ import com.m.util.Tools;
 public class CarFragment extends BaseFragment {
 	private ViewPager m_vp;
 	private LinearLayout lLayout;
+	private MyViewPagerAdapter myViewPagerAdapter;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,8 +28,9 @@ public class CarFragment extends BaseFragment {
 		View view = View.inflate(getActivity(), R.layout.activity_main2, null);
 		m_vp = (ViewPager) view.findViewById(R.id.viewpager);
 		lLayout = (LinearLayout) view.findViewById(R.id.car_fragment_layout);
-		m_vp.setAdapter(new MyViewPagerAdapter(getActivity()
-				.getSupportFragmentManager()));
+		myViewPagerAdapter = new MyViewPagerAdapter(getActivity()
+				.getSupportFragmentManager());
+		m_vp.setAdapter(myViewPagerAdapter);
 		return view;
 	}
 
@@ -84,6 +86,17 @@ public class CarFragment extends BaseFragment {
 			lLayout.setBackgroundColor(Color.parseColor("#333333"));
 		} else {
 			lLayout.setBackgroundColor(Color.parseColor("#F4F5F7"));
+		}
+		try {
+			if (myViewPagerAdapter != null) {
+				if (myViewPagerAdapter.getCount() == 0) {
+					myViewPagerAdapter = new MyViewPagerAdapter(getActivity()
+							.getSupportFragmentManager());
+					m_vp.setAdapter(myViewPagerAdapter);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

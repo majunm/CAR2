@@ -3,6 +3,18 @@ svn:wc:ra_dav:version-url
 V 30
 /svn/car2/!svn/ver/8/CAR2/libs
 END
+YoumiSdk_v5.00_2014-12-25.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/car2/!svn/ver/36/CAR2/libs/YoumiSdk_v5.00_2014-12-25.jar
+END
+umeng-analytics-v5.2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/car2/!svn/ver/33/CAR2/libs/umeng-analytics-v5.2.4.jar
+END
 android-support-v4.jar
 K 25
 svn:wc:ra_dav:version-url

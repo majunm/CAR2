@@ -27,6 +27,7 @@ import com.m.base.BaseFragment;
 import com.m.car2.R;
 import com.m.domain.CarInfo;
 import com.m.util.Tools;
+import com.umeng.analytics.MobclickAgent;
 
 public class CarDetailFragment extends BaseFragment {
 	/** 车的logo显示 */
@@ -35,6 +36,7 @@ public class CarDetailFragment extends BaseFragment {
 	private TextView carDetailInfo;
 
 	public int currentIndex = -1;
+	public static int BROWSERCOUNT = 0;
 
 	public int getCurrentIndex() {
 		return currentIndex;
@@ -56,6 +58,8 @@ public class CarDetailFragment extends BaseFragment {
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
+		if (outState != null) {
+		}
 	}
 
 	@Override
@@ -247,12 +251,6 @@ public class CarDetailFragment extends BaseFragment {
 	public void onDetach() {
 		super.onDetach();
 		Log.e("car", "CarDetailFragment -- onDetach---------->");
-	}
-
-	@Override
-	public void onPause() {
-		super.onPause();
-		Log.e("car", "CarDetailFragment -- onPause()---------->");
 	}
 
 	public static String PARCELABLE_KEY = "hehe";
@@ -1178,6 +1176,22 @@ public class CarDetailFragment extends BaseFragment {
 	public void onStart() {
 		super.onStart();
 		dayOrNight();
+		BROWSERCOUNT += 1;
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onPageStart("CarDetailFragment"); // 统计页面
+		if (BROWSERCOUNT > 0 && BROWSERCOUNT % 10 == 0) {
+			Tools.money(getActivity(), false);
+		}
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPageEnd("CarDetailFragment");
 	}
 
 }
