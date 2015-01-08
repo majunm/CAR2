@@ -232,14 +232,14 @@ m
 
 umeng_common_gradient_red.xml
 file
+42
 
 
 
-
-2015-01-06T15:42:16.574513Z
-53b716a8425640007bc25b5246c081e2
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.143437Z
+645b5841d78c19cea2bfa22aa2d5c033
+2015-01-08T12:34:55.334107Z
+42
 m
 
 
@@ -262,7 +262,7 @@ m
 
 
 
-307
+288
 
 operate_excute_radius_bg.xml
 file
@@ -300,14 +300,14 @@ m
 
 umeng_common_gradient_orange.xml
 file
+42
 
 
 
-
-2015-01-06T15:42:16.580513Z
-917b171d0aae595a63c993dabe9fa23e
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.104434Z
+aed6930c5ee88e167bb8b2c059258447
+2015-01-08T12:34:55.334107Z
+42
 m
 
 
@@ -330,7 +330,7 @@ m
 
 
 
-307
+288
 
 car_night_titlebg.png
 file
@@ -434,40 +434,6 @@ m
 
 794
 
-car_day.9.png
-file
-
-
-
-
-2015-01-06T15:42:16.598514Z
-77661859a953781250ba8bef85724806
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3595
-
 car_img_bg.png
 file
 
@@ -502,16 +468,84 @@ has-props
 
 5947
 
-car_checked.png
+umeng_update_button_cancel_bg_normal.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.150437Z
+e5cb5e96c856ad616577bd958b90ff25
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+327
+
+umeng_update_button_cancel_bg_focused.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.146437Z
+618ad331ab50c42fb3a04cd9b0c6b40f
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+303
+
+car_day.9.png
 file
 
 
 
 
-2015-01-06T15:42:16.614515Z
-6d4129bac8c0ccc6e1615ac804084f3a
-2015-01-04T15:21:08.578216Z
-8
+2015-01-06T15:42:16.598514Z
+77661859a953781250ba8bef85724806
+2015-01-05T15:40:52.800655Z
+10
 m
 has-props
 
@@ -534,7 +568,7 @@ has-props
 
 
 
-459
+3595
 
 mini_status_selector.xml
 file
@@ -569,6 +603,40 @@ m
 
 
 281
+
+car_checked.png
+file
+
+
+
+
+2015-01-06T15:42:16.614515Z
+6d4129bac8c0ccc6e1615ac804084f3a
+2015-01-04T15:21:08.578216Z
+8
+m
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+459
 
 register_btn_bg_selector01.xml
 file
@@ -672,17 +740,18 @@ has-props
 
 230
 
-umeng_update_button_ok_tap.xml
+car_day_name_bg.9.png
 file
 
 
 
 
-2015-01-06T15:42:16.642517Z
-dc74de0f58f091617882d24ebbf1b80f
-2015-01-04T15:21:08.578216Z
-8
+2015-01-06T15:42:16.634516Z
+b34db5784f72068df11417c5fac55f7b
+2015-01-05T15:40:52.800655Z
+10
 m
+has-props
 
 
 
@@ -703,8 +772,7 @@ m
 
 
 
-
-292
+737
 
 share_btn_selector.xml
 file
@@ -740,18 +808,17 @@ m
 
 523
 
-car_day_name_bg.9.png
+umeng_update_button_ok_tap.xml
 file
 
 
 
 
-2015-01-06T15:42:16.634516Z
-b34db5784f72068df11417c5fac55f7b
-2015-01-05T15:40:52.800655Z
-10
+2015-01-06T15:42:16.642517Z
+dc74de0f58f091617882d24ebbf1b80f
+2015-01-04T15:21:08.578216Z
+8
 m
-has-props
 
 
 
@@ -772,7 +839,8 @@ has-props
 
 
 
-737
+
+292
 
 answer_bg_selector.xml
 file
@@ -946,14 +1014,14 @@ m
 
 umeng_common_gradient_green.xml
 file
+42
 
 
 
-
-2015-01-06T15:42:16.663518Z
-03749a74210df25b6360c044fd527b43
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.078433Z
+71d0a10b7c0893f8c6d54809bebf18a9
+2015-01-08T12:34:55.334107Z
+42
 m
 
 
@@ -976,7 +1044,41 @@ m
 
 
 
-307
+288
+
+umeng_update_button_ok_bg_normal.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.178439Z
+c74c7ed145f09cb5789720ce36dc7bef
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+327
 
 umeng_update_button_cancle_tap.xml
 file
@@ -1011,6 +1113,40 @@ m
 
 
 292
+
+umeng_update_button_ok_bg_focused.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.175438Z
+591b03b6e8d208e49c2358f571972840
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+303
 
 no_register_btn_selector.xml
 file
@@ -1114,16 +1250,16 @@ m
 
 350
 
-umeng_update_title_bg.xml
+umeng_update_button_cancel_bg_selector.xml
 file
+42
 
 
 
-
-2015-01-06T15:42:16.684519Z
-a97563bfca7925afcdb194f650489d93
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.154437Z
+f8c96819a17e293770a859a5dc5f57e0
+2015-01-08T12:34:55.334107Z
+42
 m
 
 
@@ -1146,7 +1282,41 @@ m
 
 
 
-400
+501
+
+umeng_update_title_bg.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.226441Z
+4c7d2127056fe1f15698aec2258888d0
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+382
 
 feedback_btn_selector.xml
 file
@@ -1249,6 +1419,40 @@ has-props
 
 
 3415
+
+umeng_update_button_cancel_bg_tap.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.158437Z
+8a318985c7af52a17e8212da7b051036
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+274
 
 popwindow_right_bg_selector.xml
 file
@@ -1490,14 +1694,14 @@ has-props
 
 umeng_update_wifi_disable.png
 file
+42
 
 
 
-
-2015-01-06T15:42:16.730522Z
-47b2688e91330f83b7d94914aca3a6c2
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.064432Z
+cc03e07bb77894036355941589cb2e82
+2015-01-08T12:34:55.334107Z
+42
 m
 has-props
 
@@ -1520,18 +1724,18 @@ has-props
 
 
 
-2572
+3228
 
 umeng_update_dialog_bg.xml
 file
+42
 
 
 
-
-2015-01-06T15:42:16.735522Z
-4f265e90385cac60fc5555e518888a70
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:25:24.198440Z
+a8357f310af7459e99610557aa0fc6d3
+2015-01-08T12:34:55.334107Z
+42
 m
 
 
@@ -1554,7 +1758,75 @@ m
 
 
 
-227
+215
+
+umeng_update_button_close_bg_selector.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.171438Z
+a55b39a7034dfb1cecc222e9b6021050
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+454
+
+umeng_update_button_check_selector.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.165438Z
+b71bd7956ed06b31039b348e89623878
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1611
 
 umeng_update_ok_selector.xml
 file
@@ -1658,6 +1930,40 @@ m
 
 350
 
+umeng_update_button_ok_bg_selector.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.181439Z
+13e155f1c93b850b27d4dbb5846886e2
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+495
+
 default_main.png
 file
 
@@ -1759,6 +2065,40 @@ m
 
 
 335
+
+umeng_update_button_ok_bg_tap.xml
+file
+42
+
+
+
+2015-01-08T12:25:24.186439Z
+6a0378d91f5228e1c71b28cbc8b18e3a
+2015-01-08T12:34:55.334107Z
+42
+m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+274
 
 mini_more_selector.xml
 file

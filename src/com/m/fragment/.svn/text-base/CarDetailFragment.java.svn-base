@@ -22,12 +22,16 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.m.base.BaseFragment;
 import com.m.car2.R;
 import com.m.domain.CarInfo;
 import com.m.util.Tools;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UmengUpdateListener;
+import com.umeng.update.UpdateResponse;
 
 public class CarDetailFragment extends BaseFragment {
 	/** 车的logo显示 */
@@ -1192,6 +1196,11 @@ public class CarDetailFragment extends BaseFragment {
 	public void onPause() {
 		super.onPause();
 		MobclickAgent.onPageEnd("CarDetailFragment");
+	}
+
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
 	}
 
 }

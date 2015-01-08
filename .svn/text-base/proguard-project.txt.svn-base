@@ -1,20 +1,89 @@
-# To enable ProGuard in your project, edit project.properties
-# to define the proguard.config property as described in that file.
-#
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in ${sdk.dir}/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the ProGuard
-# include property in project.properties.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontskipnonpubliclibraryclassmembers
+-keepclassmembers class fqcn.of.javascript.interface.for.webview{
+   public *;
+}
 
-# Add any project specific keep options here:
+-keep public class * extends android.app.Activity                     
+-keep public class * extends android.app.Application                  
+-keep public class * extends android.app.Service                      
+-keep public class * extends android.content.BroadcastReceiver 
+-keep public class * extends android.content.ContentProvider  
+-keep public class * extends android.app.backup.BackupAgentHelper     
+-keep public class * extends android.preference.Preference  
+-keep public class com.android.vending.licensing.ILicensingService
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+
+-keepclasseswithmembernames class * {
+	native <methods>;
+}
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.app.Activity {
+	public void *(android.view.View);
+}
+-keepclassmembers enum * {
+public static **[] values();
+	public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+	public static final android.os.Parcelable$Creator *;
+}
+
+#不混淆第三方jar包中的类
+-dontwarn net.youmi.android.**
+-dontwarn cn.domob.android.**
+-keep class net.youmi.android.** {
+    *;
+}
+
+##使用友盟自动更新，如果应用使用了混淆， 请添加##
+-keepclassmembers class * {
+ 
+   public <init>(org.json.JSONObject);
+ 
+}
+
+-dontwarn org.xmlpull.**
+-dontwarn com.android.**
+-keep class com.android.** { *; }
+
+-dontwarn android.support.**
+-keep class android.support.** { *; }
+
+-dontwarn org.apache.**
+-keep class org.apache.** { *; }
+
+#声明第三方jar包,不用管第三方jar包中的.so文件(如果有)
+-libraryjars libs/umeng-analytics-v5.2.4.jar
+#-libraryjars libs/umeng-update-v2.4.2.jar
+#-libraryjars libs/domob_android_sdk.jar
+-libraryjars libs/YoumiSdk_v5.00_2014-12-25.jar
+-libraryjars libs/android-support-v4.jar
+-dontoptimize
+
+##这是由于SDK中的部分代码使用反射来调用构造函数， 如果被混淆掉， 在运行时会提示"NoSuchMethod"错误。 ##
+##另外，由于SDK需要引用导入工程的资源文件，通过了反射机制得到资源引用文件R.java，##
+##但是在开发者通过proguard等混淆/优化工具处理apk时，proguard可能会将R.java删除，##
+##如果遇到这个问题，请在proguard配置文件中添加keep命令如：##
+-keep public class com.sprite.superface.R$*{
+ 
+	public static final int *;
+ 
+}
+##把[您的应用包名] 替换成您自己的包名，如com.yourcompany.example。 ##
+##如果您使用了双向反馈功能，还需要添加下面代码，以免我们自定义的UI被混淆：##
+-keep public class com.umeng.fb.ui.ThreadView {
+ 
+}
+
+

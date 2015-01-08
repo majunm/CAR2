@@ -63,7 +63,7 @@
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="Channel ID" />
-         <!-- youmi -->
+        <!-- ############################### youmi ############################### -->
         <service
             android:name="net.youmi.android.AdService"
             android:exported="false" >
@@ -76,7 +76,18 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <!-- youmi -->
+        <!-- ############################### youmi ############################### -->
+        <!-- ############################### umeng ############################### -->
+          <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- ############################### umeng ############################### -->
     </application>
 
 </manifest>

@@ -23,6 +23,9 @@ import com.m.fragment.CarFragment;
 import com.m.fragment.SettingFragment;
 import com.m.fragment.TopicFragment;
 import com.m.util.Tools;
+import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UmengUpdateListener;
+import com.umeng.update.UpdateResponse;
 
 public class MainActivity extends BaseActivity {
 
@@ -54,6 +57,7 @@ public class MainActivity extends BaseActivity {
 				.add(R.id.car_cotainer, carFragment).commit();
 		// group.check(currentIndex);
 		initAdvertisement();
+		autoUpdate();
 	}
 
 	private void initAdvertisement() {
@@ -314,4 +318,40 @@ public class MainActivity extends BaseActivity {
 		}
 	}
 
+
+	/**
+	 * umeng 自动更新。。。。。。。。。。。。。。。。。
+	 */
+	public void autoUpdate() {
+		UmengUpdateAgent.update(this); // 从服务器获取更新信息
+		UmengUpdateAgent.setUpdateOnlyWifi(false); // 是否在只在wifi下提示更新，默认为
+													// true
+		UmengUpdateAgent.setUpdateAutoPopup(true); // 是否自动弹出更新对话框
+		UmengUpdateAgent.setDownloadListener(null); // 下载新版本过程事件监听，可设为 null
+		UmengUpdateAgent.setDialogListener(null); // 用户点击更新对话框按钮的回调事件，直接
+													// null
+		// 从服务器获取更新信息的回调函数
+		UmengUpdateAgent.setUpdateListener(new UmengUpdateListener() {
+			@Override
+			public void onUpdateReturned(int updateStatus,
+					UpdateResponse updateInfo) {
+				switch (updateStatus) {
+				case 0: // 有更新
+					UmengUpdateAgent
+							.showUpdateDialog(mContext, updateInfo);
+					break;
+				case 1: // 无更新
+					Log.e("majunjunQ", "is latest version");
+					//Toast.makeText(getActivity(), "当前已是最新版....", 0).show();
+					break;
+				case 2: // 如果设置为wifi下更新且wifi无法打开时调用
+					break;
+				case 3: // 连接超时
+					//Toast.makeText(getActivity(), "连接超时，请稍候重试", 0).show();
+					break;
+				}
+			}
+		});
+	}
+	
 }

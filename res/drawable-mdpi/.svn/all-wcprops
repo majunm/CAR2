@@ -9,3 +9,9 @@ svn:wc:ra_dav:version-url
 V 59
 /svn/car2/!svn/ver/8/CAR2/res/drawable-mdpi/ic_launcher.png
 END
+car_car.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/car2/!svn/ver/45/CAR2/res/drawable-mdpi/car_car.png
+END

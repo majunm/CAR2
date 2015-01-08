@@ -21,3 +21,9 @@ svn:wc:ra_dav:version-url
 V 53
 /svn/car2/!svn/ver/8/CAR2/libs/android-support-v4.jar
 END
+umeng-update-v2.4.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/car2/!svn/ver/40/CAR2/libs/umeng-update-v2.4.2.jar
+END

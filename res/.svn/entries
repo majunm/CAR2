@@ -50,9 +50,15 @@ dir
 drawable-mdpi
 dir
 
+layout-v9
+dir
+
 drawable-xhdpi
 dir
 
 layout
+dir
+
+values-zh
 dir
 

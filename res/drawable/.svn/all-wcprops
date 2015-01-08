@@ -42,8 +42,8 @@ END
 umeng_common_gradient_red.xml
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_red.xml
+V 69
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_common_gradient_red.xml
 END
 operate_excute_radius_bg.xml
 K 25
@@ -54,8 +54,8 @@ END
 umeng_common_gradient_orange.xml
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_orange.xml
+V 72
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_common_gradient_orange.xml
 END
 car_night_titlebg.png
 K 25
@@ -87,17 +87,29 @@ svn:wc:ra_dav:version-url
 V 53
 /svn/car2/!svn/ver/8/CAR2/res/drawable/car_img_bg.png
 END
-mini_status_selector.xml
+umeng_update_button_cancel_bg_focused.xml
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/car2/!svn/ver/8/CAR2/res/drawable/mini_status_selector.xml
+V 81
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_cancel_bg_focused.xml
+END
+umeng_update_button_cancel_bg_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_cancel_bg_normal.xml
 END
 car_checked.png
 K 25
 svn:wc:ra_dav:version-url
 V 54
 /svn/car2/!svn/ver/8/CAR2/res/drawable/car_checked.png
+END
+mini_status_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/car2/!svn/ver/8/CAR2/res/drawable/mini_status_selector.xml
 END
 register_btn_bg_selector01.xml
 K 25
@@ -117,11 +129,11 @@ svn:wc:ra_dav:version-url
 V 55
 /svn/car2/!svn/ver/8/CAR2/res/drawable/car_title_bg.png
 END
-umeng_update_button_ok_tap.xml
+car_day_name_bg.9.png
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_tap.xml
+V 61
+/svn/car2/!svn/ver/10/CAR2/res/drawable/car_day_name_bg.9.png
 END
 share_btn_selector.xml
 K 25
@@ -129,11 +141,11 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/car2/!svn/ver/8/CAR2/res/drawable/share_btn_selector.xml
 END
-car_day_name_bg.9.png
+umeng_update_button_ok_tap.xml
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/car2/!svn/ver/10/CAR2/res/drawable/car_day_name_bg.9.png
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_tap.xml
 END
 answer_bg_selector.xml
 K 25
@@ -168,14 +180,26 @@ END
 umeng_common_gradient_green.xml
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_common_gradient_green.xml
+V 71
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_common_gradient_green.xml
 END
 umeng_update_button_cancle_tap.xml
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancle_tap.xml
+END
+umeng_update_button_ok_bg_focused.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_ok_bg_focused.xml
+END
+umeng_update_button_ok_bg_normal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_ok_bg_normal.xml
 END
 no_register_btn_selector.xml
 K 25
@@ -195,11 +219,17 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/car2/!svn/ver/19/CAR2/res/drawable/feedback_edit_night_bg.9.png
 END
+umeng_update_button_cancel_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_cancel_bg_selector.xml
+END
 umeng_update_title_bg.xml
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_title_bg.xml
+V 65
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_title_bg.xml
 END
 feedback_btn_selector.xml
 K 25
@@ -218,6 +248,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 55
 /svn/car2/!svn/ver/10/CAR2/res/drawable/car_night.9.png
+END
+umeng_update_button_cancel_bg_tap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_cancel_bg_tap.xml
 END
 popwindow_right_bg_selector.xml
 K 25
@@ -264,14 +300,26 @@ END
 umeng_update_wifi_disable.png
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_wifi_disable.png
+V 69
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_wifi_disable.png
 END
 umeng_update_dialog_bg.xml
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_dialog_bg.xml
+V 66
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_dialog_bg.xml
+END
+umeng_update_button_check_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_check_selector.xml
+END
+umeng_update_button_close_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_close_bg_selector.xml
 END
 umeng_update_ok_selector.xml
 K 25
@@ -291,6 +339,12 @@ svn:wc:ra_dav:version-url
 V 72
 /svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_ok_normal.xml
 END
+umeng_update_button_ok_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_ok_bg_selector.xml
+END
 default_main.png
 K 25
 svn:wc:ra_dav:version-url
@@ -308,6 +362,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 78
 /svn/car2/!svn/ver/8/CAR2/res/drawable/umeng_update_button_cancel_selector.xml
+END
+umeng_update_button_ok_bg_tap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/car2/!svn/ver/42/CAR2/res/drawable/umeng_update_button_ok_bg_tap.xml
 END
 mini_more_selector.xml
 K 25
