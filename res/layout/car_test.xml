@@ -31,27 +31,42 @@
             android:layout_marginRight="8dp"
             android:background="#C3C4C6" />
     </LinearLayout>
-    
-	<LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:orientation="vertical"
-	    >
-	    <ImageView
-	        android:layout_marginTop="10dip"
-	        android:id="@+id/car_image"
-	        android:layout_width="match_parent"
-	        android:layout_height="150dip"
-	        />
-	    
-	    <com.m.base.CheckView
-	        android:layout_marginTop="20dip"
-	        android:id="@+id/check"
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-	        />
-	</LinearLayout>    
-    
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:contentDescription="@string/car_logo"
+            android:paddingBottom="15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/a0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <com.m.base.CheckView
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -79,10 +79,12 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 	@Override
 	public void onStart() {
 		super.onStart();
-		if (Tools.isDayChange(getActivity()) || isNight) {
-			testLayout.setBackgroundColor(Color.parseColor("#333333"));
+		if (isNight) {
+			testLayout.setBackgroundColor(Color.parseColor("#202022"));
+			check.setBackgroundColor(Color.parseColor("#202022"));
 		} else {
 			testLayout.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
+			check.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
 		}
 		if (ERRORCOUNT > 0 && ERRORCOUNT % 10 == 0) {
 			Tools.money(getActivity(), false);
@@ -93,9 +95,11 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 	public void receiver(Context context, Intent intent) {
 		try {
 			if (isNight) {
-				testLayout.setBackgroundColor(Color.parseColor("#333333"));
+				testLayout.setBackgroundColor(Color.parseColor("#202022"));
+				check.setBackgroundColor(Color.parseColor("#202022"));
 			} else {
 				testLayout.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
+				check.setBackgroundColor(Color.parseColor("#FFF4F5F7"));
 			}
 		} catch (Exception e) {
 		}
@@ -129,6 +133,9 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 			break;
 		case CANCEL:
 			check.clear(answer);
+			if (ERRORCOUNT > 0 && ERRORCOUNT % 10 == 0) {
+				Tools.money(getActivity(), false);
+			}
 			break;
 		}
 		return false;
@@ -145,4 +152,5 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 		super.onPause();
 		MobclickAgent.onPageEnd("TopicFragment");
 	}
+	
 }
