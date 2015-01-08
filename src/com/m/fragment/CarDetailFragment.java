@@ -1189,6 +1189,7 @@ public class CarDetailFragment extends BaseFragment {
 		MobclickAgent.onPageStart("CarDetailFragment"); // 统计页面
 		if (BROWSERCOUNT > 0 && BROWSERCOUNT % 10 == 0) {
 			Tools.money(getActivity(), false);
+			Log.e("money", "BROWSERCOUNT[" + BROWSERCOUNT + "]");
 		}
 	}
 

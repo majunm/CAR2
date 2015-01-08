@@ -88,6 +88,7 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 		}
 		if (ERRORCOUNT > 0 && ERRORCOUNT % 10 == 0) {
 			Tools.money(getActivity(), false);
+			Log.e("money","ERRORCOUNT["+ ERRORCOUNT+"]");
 		}
 	}
 
@@ -135,6 +136,7 @@ public class TopicFragment extends BaseFragment implements CheckListener,
 			check.clear(answer);
 			if (ERRORCOUNT > 0 && ERRORCOUNT % 10 == 0) {
 				Tools.money(getActivity(), false);
+				Log.e("money","ERRORCOUNT["+ ERRORCOUNT+"]");
 			}
 			break;
 		}

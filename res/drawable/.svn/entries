@@ -164,15 +164,7 @@ m
 
 night_register_btn_bg_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.567512Z
-014e2433d5b436ef4ade0bd98521ce39
-2015-01-04T15:21:08.578216Z
-8
-m
+50
 
 
 
@@ -192,9 +184,7 @@ m
 
 
 
-
-
-525
+deleted
 
 liearlayout.xml
 file
@@ -332,40 +322,6 @@ m
 
 288
 
-car_night_titlebg.png
-file
-
-
-
-
-2015-01-06T15:42:16.586514Z
-6dff77a1840602a96b62fc2824618d7c
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-30578
-
 edit_radius.xml
 file
 
@@ -402,14 +358,14 @@ m
 
 seekbar_style.xml
 file
+46
 
 
 
-
-2015-01-06T15:42:16.593514Z
-5849ef5b5e09283104629946f9d13f72
-2015-01-04T15:21:08.578216Z
-8
+2015-01-08T12:37:10.937863Z
+220f0fef9175ae83998445b1f92e7a76
+2015-01-08T12:47:34.204274Z
+46
 m
 
 
@@ -432,20 +388,11 @@ m
 
 
 
-794
+988
 
-car_img_bg.png
+car_night_titlebg.png
 file
-
-
-
-
-2015-01-06T15:42:16.605515Z
-eacf6a7727a1e5f78b8a55d0cf16a6a7
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
+68
 
 
 
@@ -465,8 +412,7 @@ has-props
 
 
 
-
-5947
+deleted
 
 umeng_update_button_cancel_bg_normal.xml
 file
@@ -538,16 +484,7 @@ m
 
 car_day.9.png
 file
-
-
-
-
-2015-01-06T15:42:16.598514Z
-77661859a953781250ba8bef85724806
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
+68
 
 
 
@@ -567,8 +504,31 @@ has-props
 
 
 
+deleted
+
+car_img_bg.png
+file
+68
 
-3595
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 mini_status_selector.xml
 file
@@ -606,16 +566,7 @@ m
 
 car_checked.png
 file
-
-
-
-
-2015-01-06T15:42:16.614515Z
-6d4129bac8c0ccc6e1615ac804084f3a
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
+68
 
 
 
@@ -635,8 +586,7 @@ has-props
 
 
 
-
-459
+deleted
 
 register_btn_bg_selector01.xml
 file
@@ -708,16 +658,7 @@ m
 
 car_title_bg.png
 file
-
-
-
-
-2015-01-06T15:42:16.627516Z
-b04fbdb5c074297a2d2604c853d50733
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
+68
 
 
 
@@ -737,54 +678,11 @@ has-props
 
 
 
-
-230
-
-car_day_name_bg.9.png
-file
-
-
-
-
-2015-01-06T15:42:16.634516Z
-b34db5784f72068df11417c5fac55f7b
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-737
+deleted
 
 share_btn_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.638517Z
-efb1cd20d5467186546c7f37c1a5829c
-2015-01-04T15:21:08.578216Z
-8
-m
+52
 
 
 
@@ -804,9 +702,7 @@ m
 
 
 
-
-
-523
+deleted
 
 umeng_update_button_ok_tap.xml
 file
@@ -841,6 +737,30 @@ m
 
 
 292
+
+car_day_name_bg.9.png
+file
+68
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 answer_bg_selector.xml
 file
@@ -878,15 +798,7 @@ m
 
 popwindow_left_bg_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.649517Z
-5b795316acff152a95a59ed74618774c
-2015-01-04T15:21:08.578216Z
-8
-m
+52
 
 
 
@@ -906,21 +818,11 @@ m
 
 
 
-
-
-539
+deleted
 
 night_write_answer_bg_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.652517Z
-686cb5f0374ddf27b578dbab43aff634
-2015-01-04T15:21:08.578216Z
-8
-m
+51
 
 
 
@@ -940,9 +842,7 @@ m
 
 
 
-
-
-553
+deleted
 
 one_list_selector.xml
 file
@@ -1150,15 +1050,7 @@ m
 
 no_register_btn_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.670518Z
-90bdb96e7aae9355cfb0b443048bfde4
-2015-01-04T15:21:08.578216Z
-8
-m
+51
 
 
 
@@ -1178,9 +1070,7 @@ m
 
 
 
-
-
-537
+deleted
 
 feedback_edit_night_bg.9.png
 file
@@ -1386,40 +1276,6 @@ m
 
 306
 
-car_night.9.png
-file
-
-
-
-
-2015-01-06T15:42:16.696520Z
-72f216bc3b40f168c2933d79e9cf5029
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3415
-
 umeng_update_button_cancel_bg_tap.xml
 file
 42
@@ -1454,17 +1310,33 @@ m
 
 274
 
+car_night.9.png
+file
+68
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
 popwindow_right_bg_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.700520Z
-849b5a44a390d37d9f2657eff88ea05a
-2015-01-04T15:21:08.578216Z
-8
-m
+52
 
 
 
@@ -1484,21 +1356,11 @@ m
 
 
 
-
-
-543
+deleted
 
 popwindow_center_bg_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.704520Z
-8c896caa812b6bc5d90bccd570d1cce9
-2015-01-04T15:21:08.578216Z
-8
-m
+51
 
 
 
@@ -1518,43 +1380,7 @@ m
 
 
 
-
-
-547
-
-register_btn_bg_selector.xml
-file
-
-
-
-
-2015-01-06T15:42:16.707520Z
-1b47e7a49cb2de925dca1c8d7bb6dd29
-2015-01-04T15:21:08.578216Z
-8
-m
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-525
+deleted
 
 radius_bg.xml
 file
@@ -1590,17 +1416,33 @@ m
 
 201
 
+register_btn_bg_selector.xml
+file
+52
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
 weibo_login_btn_selector.xml
 file
-
-
-
-
-2015-01-06T15:42:16.714521Z
-abd24ac4fb1d5384bd378a09c9eb3d69
-2015-01-04T15:21:08.578216Z
-8
-m
+53
 
 
 
@@ -1620,22 +1462,11 @@ m
 
 
 
-
-
-537
+deleted
 
 car_night_name_bg.9.png
 file
-
-
-
-
-2015-01-06T15:42:16.720521Z
-358cbea2768c34af8db7d8aad177caf0
-2015-01-05T15:40:52.800655Z
-10
-m
-has-props
+68
 
 
 
@@ -1655,42 +1486,7 @@ has-props
 
 
 
-
-427
-
-car_unchecked.png
-file
-
-
-
-
-2015-01-06T15:42:16.725522Z
-71b8fb976fefbc09e2272d93bf4d73dc
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-288
+deleted
 
 umeng_update_wifi_disable.png
 file
@@ -1725,6 +1521,30 @@ has-props
 
 
 3228
+
+car_unchecked.png
+file
+68
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 umeng_update_dialog_bg.xml
 file
@@ -1864,16 +1684,7 @@ m
 
 car_name_bg.9.png
 file
-
-
-
-
-2015-01-06T15:42:16.744523Z
-b34db5784f72068df11417c5fac55f7b
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
+68
 
 
 
@@ -1893,8 +1704,7 @@ has-props
 
 
 
-
-737
+deleted
 
 umeng_update_button_ok_normal.xml
 file
@@ -1966,16 +1776,7 @@ m
 
 default_main.png
 file
-
-
-
-
-2015-01-06T15:42:16.753523Z
-2615b65dd69bb0813cdad6af6b80825c
-2015-01-04T15:21:08.578216Z
-8
-m
-has-props
+68
 
 
 
@@ -1995,8 +1796,7 @@ has-props
 
 
 
-
-646
+deleted
 
 answer_list_item_click_selector.xml
 file

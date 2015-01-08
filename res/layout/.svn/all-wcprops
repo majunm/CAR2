@@ -51,6 +51,12 @@ svn:wc:ra_dav:version-url
 V 52
 /svn/car2/!svn/ver/15/CAR2/res/layout/check_view.xml
 END
+activity_welcome.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/car2/!svn/ver/48/CAR2/res/layout/activity_welcome.xml
+END
 single_check_view.xml
 K 25
 svn:wc:ra_dav:version-url

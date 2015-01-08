@@ -9,83 +9,71 @@ svn:wc:ra_dav:version-url
 V 81
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_question_page_question_image.png
 END
-mobile_one_question_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_button.9.png
-END
-quespage_center_press_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_center_press_bg.png
-END
-mobile_night_questionpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_questionpage_btn.9.png
-END
 car_more_apply_press_down.png
 K 25
 svn:wc:ra_dav:version-url
 V 74
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/car_more_apply_press_down.png
 END
-mobile_one_more_apply.png
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_more_apply.png
-END
-mobile_night_contentpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_contentpage_btn.9.png
-END
-quespage_right_press_bg.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_right_press_bg.9.png
-END
-mobile_one_more_apply_press_down.png
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_more_apply_press_down.png
-END
-mobile_night_settingpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_settingpage_btn.9.png
-END
-night_stowpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_stowpage_btn_press.9.png
-END
-mobile_night_model_one_more_apply_press_down.png
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_model_one_more_apply_press_down.png
-END
-quespage_left_press_bg.9.png
+weichat_fri_icon_default.png
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_left_press_bg.9.png
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_fri_icon_default.png
+END
+weichat_icon_default.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_icon_default.png
+END
+sina_icon_default.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/sina_icon_default.png
+END
+mobile_one_question_page_answer.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_answer.png
+END
+not_register_icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/not_register_icon.png
+END
+return_button_press_down.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/return_button_press_down.png
 END
 one_question_page_answer.png
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_question_page_answer.png
+END
+tencent_icon_press.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/tencent_icon_press.png
+END
+renn_icon_press.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/renn_icon_press.png
+END
+app_intro_img01.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img01.png
 END
 app_intro_img02.png
 K 25
@@ -99,11 +87,11 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/car2/!svn/ver/45/CAR2/res/drawable-xhdpi/car_car.png
 END
-quespage_center_normal_bg.png
+app_intro_img03.png
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_center_normal_bg.png
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img03.png
 END
 checkbox_click.png
 K 25
@@ -117,215 +105,17 @@ svn:wc:ra_dav:version-url
 V 63
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/car_more_apply.png
 END
+app_intro_img05.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img05.png
+END
 have_been_stow_icon.png
 K 25
 svn:wc:ra_dav:version-url
 V 68
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/have_been_stow_icon.png
-END
-one_stow_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_stow_page_press_down.9.png
-END
-mobile_one_question_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_press_down.9.png
-END
-register_sina_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/register_sina_icon.png
-END
-weichat_fri_icon_press.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_fri_icon_press.png
-END
-mobile_one_content_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_content_page_press_down.9.png
-END
-one_content_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_content_page_button.9.png
-END
-ic_launcher.png
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/ic_launcher.png
-END
-mobile_default_read_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_default_read_icon.png
-END
-mobile_night_stowpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_stowpage_btn.9.png
-END
-night_model_one_more_apply_press_down.png
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_model_one_more_apply_press_down.png
-END
-one_home_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_home_page_button.9.png
-END
-one_title_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_title_bg.png
-END
-night_stowpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_stowpage_btn.9.png
-END
-mobile_night_stowpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_stowpage_btn_press.9.png
-END
-weichat_icon_default.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_icon_default.png
-END
-night_homepage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_homepage_btn_press.9.png
-END
-one_client_copyright.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_client_copyright.png
-END
-night_answer_btn_default_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_answer_btn_default_bg.png
-END
-one_more_apply.png
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_more_apply.png
-END
-mobile_one_title.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_title.png
-END
-mobile_night_questionpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_questionpage_btn_press.9.png
-END
-mobile_one_details_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_details_page_button.9.png
-END
-not_register_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/not_register_icon.png
-END
-start_app_bg_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/start_app_bg_icon.png
-END
-setting.png
-K 25
-svn:wc:ra_dav:version-url
-V 56
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/setting.png
-END
-def_userphoto_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/def_userphoto_bg.png
-END
-one_content_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_content_page_press_down.9.png
-END
-tencent_icon_press.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/tencent_icon_press.png
-END
-daytime_model_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/daytime_model_icon.png
-END
-renn_icon_press.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/renn_icon_press.png
-END
-night_corporation_name.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_corporation_name.png
-END
-mobile_one_stow_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_stow_page_press_down.9.png
-END
-one_home_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_home_page_press_down.9.png
-END
-show_set_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/show_set_icon.png
 END
 stow_icon.png
 K 25
@@ -333,239 +123,17 @@ svn:wc:ra_dav:version-url
 V 58
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/stow_icon.png
 END
-save_image_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/save_image_icon.png
-END
-mobile_night_title_center_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_title_center_icon.png
-END
-night_contentpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_contentpage_btn.9.png
-END
-quespage_left_normal_bg.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_left_normal_bg.9.png
-END
-night_settingpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_settingpage_btn.9.png
-END
-night_apply_download_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_apply_download_icon.png
-END
-renn_icon_default.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/renn_icon_default.png
-END
-recom_app_line02.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/recom_app_line02.png
-END
-one_question_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_question_page_press_down.9.png
-END
-mobile_night_homepage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_homepage_btn.9.png
-END
-night_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_icon.png
-END
-night_model_one_more_apply.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_model_one_more_apply.png
-END
-mobile_one_details_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_details_page_press_down.9.png
-END
-mobile_one_question_page_question_image.png
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_question_image.png
-END
-write_answer_default_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/write_answer_default_icon.png
-END
-one_client_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_client_bg.png
-END
-night_homepage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_homepage_btn.9.png
-END
-mobile_night_homepage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_homepage_btn_press.9.png
-END
-welcome_image.png
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/welcome_image.png
-END
-mobile_one_content_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_content_page_button.9.png
-END
-night_model_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_model_icon.png
-END
-night_questionpage_btn.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_questionpage_btn.9.png
-END
-mobile_one_question_page_answer.png
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_answer.png
-END
-mobile_night_contentpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_contentpage_btn_press.9.png
-END
-recom_title_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/recom_title_bg.png
-END
-indivdua_btn_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/indivdua_btn_bg.png
-END
-night_questionpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_questionpage_btn_press.9.png
-END
-mobile_night_model_read_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_model_read_icon.png
-END
-discuss_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/discuss_icon.png
-END
-mobile_one_home_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_home_page_press_down.9.png
-END
-icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/icon.png
-END
-app_intro_img01.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img01.png
-END
-app_intro_img03.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img03.png
-END
-one_details_page_press_down.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_details_page_press_down.9.png
-END
-app_intro_img05.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/app_intro_img05.png
-END
-user_bg_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/user_bg_icon.png
-END
-default_night_model_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/default_night_model_icon.png
-END
 weichat_icon_press.png
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_icon_press.png
 END
-mobile_night_model_one_more_apply.png
+weichat_fri_icon_press.png
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_model_one_more_apply.png
+V 71
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_fri_icon_press.png
 END
 return_button.png
 K 25
@@ -573,11 +141,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/return_button.png
 END
-one_more_apply_press_down.png
+tencent_icon_default.png
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_more_apply_press_down.png
+V 69
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/tencent_icon_default.png
+END
+renn_icon_default.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/renn_icon_default.png
 END
 sina_icon_press.png
 K 25
@@ -585,161 +159,17 @@ svn:wc:ra_dav:version-url
 V 64
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/sina_icon_press.png
 END
-night_shareset_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_shareset_icon.png
-END
-share_dialog_night_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/share_dialog_night_bg.png
-END
-mobile_one_stow_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_stow_page_button.9.png
-END
-weixinlogo.png
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weixinlogo.png
-END
-night_contentpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_contentpage_btn_press.9.png
-END
-night_titlebg_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_titlebg_icon.png
-END
-night_model_read_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_model_read_icon.png
-END
-quespage_right_normal_bg.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/quespage_right_normal_bg.9.png
-END
-weichat_fri_icon_default.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/weichat_fri_icon_default.png
-END
-mobile_homepage_laud_bg.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_homepage_laud_bg.9.png
-END
-sina_icon_default.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/sina_icon_default.png
-END
-one_question_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_question_page_button.9.png
-END
-return_button_press_down.png
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/return_button_press_down.png
-END
-mobile_night_settingpage_btn_press.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_settingpage_btn_press.9.png
-END
-night_title_center_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_title_center_icon.png
-END
-default_read_icon.png
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/default_read_icon.png
-END
-welcome_image_name.png
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/welcome_image_name.png
-END
-one_client_hint.png
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_client_hint.png
-END
-mobile_night_model_homepage_laud_bg.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_model_homepage_laud_bg.9.png
-END
-tencent_icon_default.png
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/tencent_icon_default.png
-END
-recom_app_line01.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/recom_app_line01.png
-END
-mobile_one_home_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_home_page_button.9.png
-END
-night_answer_btn_press_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_answer_btn_press_bg.png
-END
-free_download_bg.png
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/free_download_bg.png
-END
 one_title.png
 K 25
 svn:wc:ra_dav:version-url
 V 58
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_title.png
 END
-one_details_page_button.9.png
+mobile_one_question_page_question_image.png
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_details_page_button.9.png
+V 88
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_one_question_page_question_image.png
 END
 attention_sportq_bg.png
 K 25
@@ -747,21 +177,15 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/attention_sportq_bg.png
 END
-night_settingpage_btn_press.9.png
+one_title_bg.png
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/night_settingpage_btn_press.9.png
+V 61
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_title_bg.png
 END
-user_default_icon.png
+mobile_night_homepage_btn_press.9.png
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/user_default_icon.png
-END
-one_stow_page_button.9.png
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/one_stow_page_button.9.png
+V 82
+/svn/car2/!svn/ver/8/CAR2/res/drawable-xhdpi/mobile_night_homepage_btn_press.9.png
 END

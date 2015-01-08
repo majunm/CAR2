@@ -429,23 +429,17 @@ svn:wc:ra_dav:version-url
 V 39
 /svn/car2/!svn/ver/20/CAR2/assets/3.txt
 END
-131.txt
-K 25
-svn:wc:ra_dav:version-url
-V 41
-/svn/car2/!svn/ver/20/CAR2/assets/131.txt
-END
 5.txt
 K 25
 svn:wc:ra_dav:version-url
 V 39
 /svn/car2/!svn/ver/20/CAR2/assets/5.txt
 END
-133.txt
+131.txt
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/car2/!svn/ver/20/CAR2/assets/133.txt
+/svn/car2/!svn/ver/20/CAR2/assets/131.txt
 END
 7.txt
 K 25
@@ -453,17 +447,23 @@ svn:wc:ra_dav:version-url
 V 39
 /svn/car2/!svn/ver/20/CAR2/assets/7.txt
 END
-9.txt
+133.txt
 K 25
 svn:wc:ra_dav:version-url
-V 39
-/svn/car2/!svn/ver/20/CAR2/assets/9.txt
+V 41
+/svn/car2/!svn/ver/20/CAR2/assets/133.txt
 END
 135.txt
 K 25
 svn:wc:ra_dav:version-url
 V 41
 /svn/car2/!svn/ver/20/CAR2/assets/135.txt
+END
+9.txt
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/car2/!svn/ver/20/CAR2/assets/9.txt
 END
 137.txt
 K 25
@@ -693,17 +693,17 @@ svn:wc:ra_dav:version-url
 V 40
 /svn/car2/!svn/ver/20/CAR2/assets/53.txt
 END
-90.txt
-K 25
-svn:wc:ra_dav:version-url
-V 40
-/svn/car2/!svn/ver/20/CAR2/assets/90.txt
-END
 18.txt
 K 25
 svn:wc:ra_dav:version-url
 V 40
 /svn/car2/!svn/ver/20/CAR2/assets/18.txt
+END
+90.txt
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/car2/!svn/ver/20/CAR2/assets/90.txt
 END
 55.txt
 K 25
